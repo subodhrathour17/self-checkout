@@ -12,4 +12,9 @@ import Young from './young.png';
 import Comp1 from './comp1.png';
 import Girl from './girl.png';
 
-export { Logo, BflGroupLogo, Merge, Vector2, Vector6, Vector1, Rectangle30, Young, Comp1, Girl };
+//payment page image
+import GoBack from './goback.png';
+import Status from './status.png';
+import MaskGroup from './Maskgroup.png';
+
+export { Logo, BflGroupLogo, Merge, Vector2, Vector6, Vector1, Rectangle30, Young, Comp1, Girl, GoBack,Status,MaskGroup};

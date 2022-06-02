@@ -1,0 +1,78 @@
+
+.gobutton-btn{
+    height: 90px;
+    width: auto;
+    position: fixed;
+}
+.go-btn{
+    /* background-color: #FEB23B; */
+    width: auto;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-color: white;
+    
+}
+.img-goback{
+    margin: 10px;
+}
+.Paytext1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    left: 501px;
+    min-height: 94px;
+    position: fixed;
+    top: 11px;
+    width: 439px;
+  }
+  
+  .title {
+    letter-spacing: 0;
+    min-height: 59px;
+    min-width: 439px;
+  }
+
+  .bfl-logo{
+    height: 67px;
+    margin-top: 10px;
+    margin-left: 83%;
+    left: 0;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    width: 232px;
+    z-index: 1;
+  }
+  .BackGround{
+      margin-top: 20px;
+      margin-left: 10px;
+      width: 139px;
+      background-color:#333333;
+      height: 990px;
+      border-radius: 10px;
+  }
+  .StatusTick {
+    display: flex;
+    height: 49px;
+    min-width: 49px;
+    padding: 50px 15.5px;
+    margin-left: 35px;
+  }
+  .vector {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .back-design {
+    align-items: center;
+    margin-top: 20px;
+    min-width: 1400px;
+    margin-left: 16.1rem;
+    margin-bottom: 30rem;
+    border-radius: 10px;
+    background-color:#FEB23B;
+  }
+  .back-design img{
+      align-items: center;
+  }
