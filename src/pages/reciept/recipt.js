@@ -3,7 +3,7 @@ import {BflGroupLogo,
     GoBack,Status,MaskGroup,Down,Visa,Discover,MasterCard, GiftCard, Wallet,Line,Number1,Line2,Number2 ,Number3 
 } from "../../assets/images";
 import "./index.css";
-const Payment = () => {
+const Recipt = () => {
     
   return (
     <Fragment>
@@ -20,12 +20,12 @@ const Payment = () => {
   )
 }
 
-export default Payment
+export default Recipt
 
 function Paytext1() {
     return (
       <div className="Paytext1 ">
-        <h1 className="titlesegoeui-semi-bold-tundora-44-5px">
+        <h1 className="title segoeui-semi-bold-tundora-44-5px">
           <span className="segoeui-semi-bold-tundora-44-5px">Select Payment Mode</span>
         </h1>
         <img className="bfl-logo" src={BflGroupLogo} />
