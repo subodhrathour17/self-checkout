@@ -1,0 +1,66 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.fcard{
+    height: auto;
+    /* position: sticky; */
+    background-color: #FFF8EF;
+    background-image: url(../../assets/images/vector6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.ftop{
+    display: flex;
+    justify-content: space-evenly;
+    height: 46px;
+    background-color: white;
+}
+.ft{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+.ft2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+.flogo{
+    width: 150px;
+}
+.fb{
+    margin: 0 20px;
+    padding: 5px 20px;
+}
+.btngroup{
+    margin-top: 25px;
+    margin-left: 31%;
+}
+.btngroup2{
+    margin-top: 46px;
+
+}
+.fsubmit{
+    padding: 8px 65px;
+    margin-left: 43%;
+}
+.fskip{
+    padding: 8px 65px;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 200px;
+    margin-left: 29%;
+
+}
+.fhappy{
+    width: 160px;
+    margin-left: 32%;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+.fsad{
+    width: 160px;
+    margin: 0 12% ;
+}
