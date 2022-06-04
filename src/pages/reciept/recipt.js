@@ -1,9 +1,12 @@
-import React ,{ Fragment } from 'react'
+import React ,{ Fragment, useState } from 'react'
+
 import {BflGroupLogo,
-    GoBack,Status,MaskGroup,Down,Visa,Discover,MasterCard, GiftCard, Wallet,Line,Number1,Line2,Number2 ,Number3 
+    GoBack,Status,MaskGroup,Down,Line,Digital,PrintReciept,NoReciept,Number4
 } from "../../assets/images";
 import "./index.css";
+import DegitalReceiptOpen from '../../popup/digital-receipt'
 const Recipt = () => {
+  
     
   return (
     <Fragment>
@@ -25,8 +28,8 @@ export default Recipt
 function Paytext1() {
     return (
       <div className="Paytext1 ">
-        <h1 className="title segoeui-semi-bold-tundora-44-5px">
-          <span className="segoeui-semi-bold-tundora-44-5px">Select Payment Mode</span>
+        <h1 className="title ">
+          <span>Print Your Receipt</span>
         </h1>
         <img className="bfl-logo" src={BflGroupLogo} />
         <UpDesign/>
@@ -44,18 +47,18 @@ function Paytext1() {
       <span>Article List</span>
       <img className="line-1" src={Line} />;
     </div>
-    <img className="number-1" src={Number1} />
+    <img className="number-1" src={Status} />
     <div className="pay-list">
       <span>Pay</span>
-      <img className="line-2" src={Line2} />
+      <img className="line-2" src={Line} />
     </div>
-    <img className="number-1" src={Number2} />
+    <img className="number-1" src={Status} />
     <div className="pay-list">
       <span className='remove-tag'>Remove Tag</span>
-      <img className="line-3" src={Line2} />
+      <img className="line-3" src={Line} />
     </div>
-    <img className="number-1" src={Number3} />
-    <div className="pay-list">
+    <img className="number-1" src={Number4} />
+    <div className="pay-list recipt">
       <span>Recipt</span>
     </div>
       <DownDesign/>
@@ -81,70 +84,47 @@ function Paytext1() {
   }
  
   const Cards = () => {
-    return (
-      <div className='cardmain'>
-      <div className="form-back p1">
-        <h1>Credit / Debit Card</h1>
-      <div className="group-197 border-1px-bon-jour">
+    const [show, setShow] = useState(false);
+
+  const handleClose = () => {
+    setShow(false);
+  };
+
+  const handleOpen = () => {
+    setShow(true);
+  };
+  return (
+    <div className='cardmain'>
+      <div className="form-back text1" onClick={handleOpen}>
+        <h1>Digital Receipt</h1>
+      <div className="png-all">
+        <img className="digital-img" src={Digital} />
+        </div>
+        </div>
+    <div className="form-back text2">
+        <h3>Print Receipt</h3>
+      <div className="png-all">
       <img
-        className="x35-351793_credit-or"
-        src={Visa}
-        />
-      <div className="flex-row">
-        <img
-          className="x35-351793_credit-or-1"
-          src={Discover}
-          />
-        <img className="group-40" src={MasterCard}/>
-      </div>
-      
-    </div>
-    
-    </div>
-    <div className="form-back">
-        <h3>Gift Card</h3>
-      <div className="group-197 border-1px-bon-jour">
-      <img
-        className="gift-card-img"
-        src={GiftCard}
+        className="print-reciept"
+        src={PrintReciept}
         />
       
       
     </div>
     
     </div>
-    <div className="form-back">
-        <h2 className='wallet-text'>Wallet</h2>
-      <div className="group-197 border-1px-bon-jour">
+    <div className="form-back text3">
+        <h2 className='wallet-text'>I Don’t want Receipt</h2>
+      <div className="png-all">
       <img
-        className="wallet-img"
-        src={Wallet}
+        className="no-reciept"
+        src={NoReciept}
         />
       
     </div>
     
     </div>
+    <DegitalReceiptOpen show={show} handleClose={handleClose}/>
           </div>
     )
   }
-
-  function Group272() {
-    
-  
-    return (
-      <div className="group-27">
-        <div className="overlap-group1border-2px-white">
-          <div className="numbersegoeui-semi-bold-white-18-8px">
-            <span className="segoeui-semi-bold-white-18-8px">2</span>
-          </div>
-          <div className="overlap-group">
-            <div className="number-1segoeui-bold-black-24-1px">
-              <span className="segoeui-bold-black-24-1px">sdfgvbh</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-  
- 

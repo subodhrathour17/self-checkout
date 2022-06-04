@@ -149,7 +149,7 @@
       position: absolute;
       font-size: 1.5rem;
   }
-  .group-197 {
+  .card-design-all {
     border:  2px solid #333333;
     position: absolute;
     margin-top: 1rem;
@@ -165,7 +165,7 @@
     z-index: 25;
   }
   
-  .x35-351793_credit-or {
+  .card-visa {
     align-self: center;
     height: 36px;
     margin-right: 2px;
@@ -179,12 +179,12 @@
     min-width: 127px;
   }
   
-  .x35-351793_credit-or-1 {
+  .card-discover {
     height: 36px;
     width: 59px;
   }
   
-  .group-40 {
+  .card-mastercard {
     height: 36px;
     margin-left: 9px;
     width: 59px;

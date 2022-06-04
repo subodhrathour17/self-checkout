@@ -85,17 +85,17 @@ function Paytext1() {
       <div className='cardmain'>
       <div className="form-back p1">
         <h1>Credit / Debit Card</h1>
-      <div className="group-197 border-1px-bon-jour">
+      <div className="card-design-all ">
       <img
-        className="x35-351793_credit-or"
+        className="card-visa"
         src={Visa}
         />
       <div className="flex-row">
         <img
-          className="x35-351793_credit-or-1"
+          className="card-discover"
           src={Discover}
           />
-        <img className="group-40" src={MasterCard}/>
+        <img className="card-mastercard" src={MasterCard}/>
       </div>
       
     </div>
@@ -103,7 +103,7 @@ function Paytext1() {
     </div>
     <div className="form-back">
         <h3>Gift Card</h3>
-      <div className="group-197 border-1px-bon-jour">
+      <div className="card-design-all">
       <img
         className="gift-card-img"
         src={GiftCard}
@@ -115,7 +115,7 @@ function Paytext1() {
     </div>
     <div className="form-back">
         <h2 className='wallet-text'>Wallet</h2>
-      <div className="group-197 border-1px-bon-jour">
+      <div className="card-design-all ">
       <img
         className="wallet-img"
         src={Wallet}
@@ -127,24 +127,3 @@ function Paytext1() {
           </div>
     )
   }
-
-  function Group272() {
-    
-  
-    return (
-      <div className="group-27">
-        <div className="overlap-group1border-2px-white">
-          <div className="numbersegoeui-semi-bold-white-18-8px">
-            <span className="segoeui-semi-bold-white-18-8px">2</span>
-          </div>
-          <div className="overlap-group">
-            <div className="number-1segoeui-bold-black-24-1px">
-              <span className="segoeui-bold-black-24-1px">sdfgvbh</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-  
- 
