@@ -29,9 +29,20 @@ import Number2 from './number3.png';
 import Number3 from './number4.png';
 import Happy from './happy.png'
 import sad from './sad.png'
+// Security
 
-export { Logo, BflGroupLogo, Merge, Vector2,
-     Vector6, Vector1, Rectangle30, Young, Happy,sad,
-     Comp1, Girl, GoBack,Status,MaskGroup,Down,
+import shirt  from './shirt.png'
+import pant1  from './pant1.png'
+import pant2  from './pant2.png'
+import security from './security.png'
+import detag from './detag.png'
+import tag1 from './tag1.png'
+import tag4 from './tag4.png'
+import greentag from './greentag.png'
+import circular from './circular.png'
+
+export { Logo, BflGroupLogo,circular,greentag, Merge, Vector2,security,pant2,pant1,shirt,
+     Vector6, Vector1,tag4, Rectangle30, Young, Happy,sad,detag,
+     Comp1,tag1, Girl, GoBack,Status,MaskGroup,Down,
      Visa,Discover,MasterCard,GiftCard,Wallet,Line,Number1,Line2,Number2 ,Number3 
     };
