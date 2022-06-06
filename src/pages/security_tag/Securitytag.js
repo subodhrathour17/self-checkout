@@ -1,7 +1,7 @@
 import React from 'react'
 import './security.css'
-import Navlayout from '../../components/helper/navlayout/Navlayout'
-import { detag, pant1, pant2, security, shirt, tag1, tag4 } from '../../assets/images'
+import Navlayout from './Navlayout'
+import { detag, pant1, pant2, security, shirt,tag4 } from '../../assets/images'
 const Securitytag = () => {
   return (
     <>

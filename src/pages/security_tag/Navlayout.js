@@ -1,7 +1,7 @@
 import React ,{ Fragment } from 'react'
 import {BflGroupLogo,
-    GoBack,Status,MaskGroup,Down,Visa,Discover,MasterCard, GiftCard, Wallet,Line,Number1,Line2,Number2 ,Number3 
-} from "../../../assets/images";
+    Status,MaskGroup,Down,Line,Number1,Line2,Number2 ,Number3 
+} from "../../assets/images";
 import "./navlayout.css";
 const Navlayout = () => {
     
@@ -43,12 +43,16 @@ function Paytext1() {
       <span>Article List</span>
       <img className="line-1" src={Line} />
     </div>
-    <img className="number-1" src={Number1} />
+    {/* <img className="number-1" src={Number1} /> */}
+    <img className="number-1" src={Status} />
+
     <div className="pay-list">
       <span>Pay</span>
       <img className="line-2" src={Line2} />
     </div>
-    <img className="number-1 number-3" src={Number2} />
+    <img className="number-1 number-3" src={Number1} />
+
+    {/* <img className="number-1 number-3" src={Number2} /> */}
     <div className="pay-list">
       <span className='remove-tag'>Remove Tag</span>
       <img className="line-3" src={Line2} />
@@ -63,7 +67,7 @@ function Paytext1() {
   }
   function UpDesign() {
     return (
-      <div className="back-design">
+      <div className="back-design-r">
         <img className='top-image' src={MaskGroup} />
         
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../App.css'
-import Navlayout from '../../components/helper/navlayout/Navlayout'
-import { circular, detag, pant1, pant2, security, shirt, tag1, tag4 } from '../../assets/images'
+import Navlayout from './Navlayout'
+import { circular, pant1, pant2, security, shirt } from '../../assets/images'
 import './security.css'
 import { greentag } from '../../assets/images'
  
@@ -14,7 +14,7 @@ const Securitysuccess = () => {
       <div className='shead'>
       <span>Please Remove the Security Tag</span>
       </div>
-      <div className="scontainer">
+      <div className="scontainer scontainersuccess">
         <div className='sitems' >
           <div>
         <img className='scloths'  src={shirt} alt="" srcset="" />
@@ -41,7 +41,7 @@ const Securitysuccess = () => {
           <hr />
         </div>
         <img className='stag2 App-logo' src={circular} alt="" srcset="" />
-        <img className='sbg' src={security} alt="" srcset="" />
+        <img className='sbg sbgsuccess' src={security} alt="" srcset="" />
       </div>
     </>
   )

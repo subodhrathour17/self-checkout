@@ -5,6 +5,7 @@ import Register from "./pages/register";
 import Feedback from "./pages/feedback/Feedback";
 import Securitytag from "./pages/security_tag/Securitytag";
 import Securitysuccess from "./pages/security_tag/Securitysuccess";
+import Addtocart from "./pages/addtocart/Addtocart";
 const AppRoute = () => {
   return (
     <Fragment>
@@ -12,6 +13,7 @@ const AppRoute = () => {
         <Routes>
           <Route exact path="/" element={<Login />} />
           <Route exact path="/register" element={<Register />} />
+          <Route exact path="/addtocart" element={<Addtocart />} />
           <Route exact path="/feedback" element={<Feedback />} />
           <Route exact path="/security" element={<Securitytag />} />
           <Route exact path="/securitysuccess" element={<Securitysuccess />} />

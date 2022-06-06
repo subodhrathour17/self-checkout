@@ -38,11 +38,11 @@
   }
   .BackGround{
       position: absolute;
-      margin-top: 60px;
-      margin-left: 10px;
+      margin-top: 71px;
+      /* margin-left: 10px; */
       width: 139px;
       background-color:#333333;
-      height: 34rem;
+      height: 35rem;
   }
   .StatusTick {
     display: flex;
@@ -100,11 +100,11 @@
      color: #ffff;
      margin-left: 3.5rem;
  }
-  .back-design {
+  .back-design-r {
     align-items: center;
     margin-top: 66px;
-    min-width: 1500px;
-    margin-left: 22rem;
+    min-width: 1277px;
+    margin-left: 7rem;
     margin-bottom: 30rem;
     background-color:#FEB23B;
     border-bottom-right-radius: 1920%;
@@ -118,10 +118,62 @@
   }
 
   .down-design {
-    /* margin-top: -1.6rem; */
-    margin-left: 138px;
+    margin-left: 140px;
     height: 120px;
     width: 1288px;
   }
-
+@media (max-width:992px){
+  .bfl-logo{
+    height: 24px;
+    margin-top: 15px;
+    margin-left: 76%;
+    width: 219px;
+  }
+  .BackGround{
+    margin-top: 82.5px;
+    margin-left: 2px;
+    width: 128px;
+    background-color:#333333;
+    height: 32rem;
+}
+.back-design-r {
+  /* align-items: center; */
+  margin-top: 66px;
+  min-width: 992px;
+  margin-left: -16rem;
+}
+.down-design {
+  margin-left: 128px;
+  height: 56px;
+  width: 1288px;
+}
+}
  
+  @media (max-width: 768px) {
+    .bfl-logo{
+      height: 24px;
+      margin-top: 7px;
+      margin-left: 60%;
+      width: 219px;
+    }
+    .BackGround{
+      position: absolute;
+      margin-top: 50px;
+      margin-left: 1px;
+      width: 118px;
+      background-color:#333333;
+      height: 31rem;
+  }
+  .StatusTick {
+    display: flex;
+    padding: 40px 15.5px;
+    margin-left: 35px;
+  }
+  .back-design {
+    align-items: center;
+    margin-top: 33px;
+    min-width: 1500px;
+    margin-left: 18rem;
+    margin-bottom: 30rem;
+  }
+  }

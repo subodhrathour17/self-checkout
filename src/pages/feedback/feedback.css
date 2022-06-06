@@ -2,8 +2,6 @@
     margin: 0;padding: 0;box-sizing: border-box;
 }
 .fcard{
-    height: auto;
-    /* position: sticky; */
     background-color: #FFF8EF;
     background-image: url(../../assets/images/vector6.png);
     background-repeat: no-repeat;
@@ -48,7 +46,7 @@
     margin-left: 43%;
 }
 .fskip{
-    padding: 8px 65px;
+    padding: 18px 65px;
     border-bottom-left-radius: 200px;
     border-top-left-radius: 200px;
     margin-left: 29%;
@@ -63,4 +61,22 @@
 .fsad{
     width: 160px;
     margin: 0 12% ;
+}
+
+@media(max-width:992px){
+    .btngroup2{
+        margin-top: 40px;
+    
+    }
+    .fsubmit{
+        padding: 8px 65px;
+        margin-left: 20%;
+    }
+    .fskip{
+        padding: 8px 65px;
+        border-bottom-left-radius: 200px;
+        border-top-left-radius: 200px;
+        margin-left: 29%;
+    
+    }
 }

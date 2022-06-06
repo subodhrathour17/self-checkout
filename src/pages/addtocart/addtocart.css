@@ -1,0 +1,10 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.container{
+}
+
+.atoptext {
+    margin-left: 536px;
+    margin-top: 14px;
+    font-size: 33px;
+    font-weight: 700;
+}
