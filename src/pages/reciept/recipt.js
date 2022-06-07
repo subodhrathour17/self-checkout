@@ -1,7 +1,7 @@
 import React ,{ Fragment, useState } from 'react'
 
 import {BflGroupLogo,
-    GoBack,Status,MaskGroup,Down,Line,Digital,PrintReciept,NoReciept,Number4
+    GoBack,Status,MaskGroup,Down,Line,Digital,PrintReciept,NoReciept,Number4,UpDesignImg
 } from "../../assets/images";
 import "./index.css";
 import DegitalReceiptOpen from '../../popup/digital-receipt'
@@ -11,8 +11,8 @@ const Recipt = () => {
   return (
     <Fragment>
       <section className="payment">
-      <div className="gobutton-btn text-left pt-10 ">
-        <button className='go-btn  login-color'  type="submit"><img src={GoBack} alt="vector" className="img-goback" /></button>
+      <div className="gobutton-btn ">
+        <button className='go-btn'  type="submit"><img src={GoBack} alt="vector" className="img-goback" /></button>
         <Paytext1 />
         <StatusTick/>
         <Cards/>
@@ -27,8 +27,8 @@ export default Recipt
 
 function Paytext1() {
     return (
-      <div className="Paytext1 ">
-        <h1 className="title ">
+      <div className="Paytext1-r Paytext1-r-s">
+        <h1 className="title-r title-small">
           <span>Print Your Receipt</span>
         </h1>
         <img className="bfl-logo" src={BflGroupLogo} />
@@ -68,15 +68,14 @@ function Paytext1() {
   function UpDesign() {
     return (
       <div className="back-design">
-        <img className='top-image' src={MaskGroup} />
-        
+        <img className='top-image' src={UpDesignImg} />
       </div>
     );
   }
   function DownDesign() {
     return (
-    <div className="downdesign">
-    <img className="down-design " src={Down}/>
+    <div className="downdesign downdesign-992 ">
+    <img className="down-design-r" src={Down}/>
     
     </div>
     
@@ -94,28 +93,26 @@ function Paytext1() {
     setShow(true);
   };
   return (
-    <div className='cardmain'>
-      <div className="form-back text1" onClick={handleOpen}>
+    <div className='cardmain p-card  card-small'>
+      <div className="form-back form-backbig text1-d text1-1400 form-backsmall " onClick={handleOpen}>
         <h1>Digital Receipt</h1>
-      <div className="png-all">
-        <img className="digital-img" src={Digital} />
+          <div className="png-all png-all-dig png-small ">
+            <img className="digital-img digital-small" src={Digital} />
+            </div>
         </div>
-        </div>
-    <div className="form-back text2">
+      <div className="form-back text1-d text2 form-backsmall ">
         <h3>Print Receipt</h3>
-      <div className="png-all">
-      <img
-        className="print-reciept"
-        src={PrintReciept}
-        />
-      
-      
+          <div className="png-all print-all-print print-small">
+          <img
+            className="print-reciept"
+            src={PrintReciept}
+            />
+        </div>
     </div>
-    
-    </div>
-    <div className="form-back text3">
+
+    <div className="form-back text1-d text3 form-backsmall">
         <h2 className='wallet-text'>I Don’t want Receipt</h2>
-      <div className="png-all">
+      <div className="png-all no-all-receipt no-re-small">
       <img
         className="no-reciept"
         src={NoReciept}
@@ -124,6 +121,7 @@ function Paytext1() {
     </div>
     
     </div>
+
     <DegitalReceiptOpen show={show} handleClose={handleClose}/>
           </div>
     )

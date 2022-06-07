@@ -16,20 +16,21 @@
 .img-goback{
     margin: 10px;
 }
-.Paytext1 {
+.Paytext1-r {
     display: flex;
     flex-direction: column;
     left: 600px;
-    
+    margin-left: -29rem;
     min-height: 94px;
     position: fixed;
     top: 11px;
     width: 439px;
   }
   
-  .title {
+  .title-r {
     min-height: 59px;
     min-width: 439px;
+    margin-left: 30rem;
   }
 
   .bfl-logo{
@@ -106,28 +107,27 @@
     align-items: center;
     margin-top: 11px;
     min-width: 1500px;
-    margin-left: 9.9rem;
+    margin-left: -9rem;
     margin-bottom: 30rem;
-    background-color:#FEB23B;
-    border-bottom-right-radius: 700%;
-    border-bottom-left-radius: 500%;
-    z-index: 2;
+   
+    
   }
   .top-image{
       margin-left: 10%;
   }
 
-  .down-design {
-    margin-top: -1.6rem;
+  .down-design-r{
+    margin-top: -1.5rem;
     margin-left: 139px;
     height: 120px;
-    width: 1288px;
+    width: 1600px;
   }
   .cardmain{
       position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      /* display: flex; */
+      /* justify-content: center;
+      align-items: center; */
+      margin-top: -2rem;
   }
   .form-back{
     border-radius: 10px;
@@ -137,10 +137,11 @@
     height: 20rem;
     background-color: white;
     /* z-index: 18; */
-    margin-top: 15rem;
-    margin-left: 11rem;
+    /* margin-top: 15rem; */
+    margin-left: 11.5rem;
    
   }
+
   .cardmain :hover{
     background-color: #FEB23B;
 
@@ -174,7 +175,7 @@
     align-self: center;
     height: 80px;
   }
-  .text1 h1{
+  .text1-d h1{
     align-items: center;
     margin-left: 5rem;
   }
@@ -195,15 +196,155 @@
     width: 85px;
   }
 @media (max-width: 768px) {
+ .form-backsmall{
+  max-width: 155px;
+  top: 27px;
+  /* max-height: 17rem;
+  display: flex;
+  flex-direction: row;
+  left: 10px; */
+}
+.card-small{
  
+ flex-direction: row;
+ margin-left: 41px;
+}
+.png-small{
   
+  width: 79px;
+}
+.print-small{
+  width: 79px;
+}
+.no-re-small{
+  width: 79px;
+}
+.text1-d h1{
+  font-size: 10px;
+  font-weight: bolder;
+  top: 4px;
+}
+.text1-d h3{
+  font-size: 10px;
+  font-weight: bolder;
+}
+.form-backsmall h2{
+  font-size: 1;
+  font-weight: bold;
+}
+.Paytext1-r h1 {
+  margin-top: 1rem;
+  margin-left: 5rem;
+  left: 190px;
+  font-size: 34px;
+  font-weight: bold;
+}
+.Paytext1-r-s img {
+  left: -12rem;
+}
 }
 
 @media (max-width: 992px) {
-  
+  .Paytext1-r img{
+    margin-left: 45rem;
+  }
+  .back-design{
+    margin-left: 31rem;
+    margin-top: -5px;
+    margin-right: 1rem;
+  }
+  .back-design img{
+      width: 57%;
+      margin-left: -31rem;
+  }
+
+.form-back{
+  margin-top: 295px;
+  width: 17rem;
+  height: 17rem;
+  margin-left: 3rem;
+  left: -29px;
+ }
+ .png-all-dig img{
+   margin-left: -50px;
+   /* border: 3px solid black; */
+   border-radius: 10px;
+   margin-top: -0.9px;
+ }
+ .print-all-print img{
+  margin-left: -50px;
+  /* border: 3px solid black; */
+  width: 69px;
+  border-radius: 10px;
+  margin-top: -0.9px;
+ }
+ .p-card h1 {
+  left: -12px;
+  margin-top: 175px;
+}
+.text3 h2 {
+  left: -18px;
+  font-size: 23px;
+  margin-top: 175px;
+  top: -43px;
+}
+.text2 h3 {
+  left: -19px;
+  /* margin-top: 175px; */
+  top: -43px;
+}
+ .no-all-receipt img{
+  margin-left: -50px;
+  /* border: 3px solid black; */
+  width: 85px;
+  border-radius: 10px;
+  margin-top: -0.9px;
+ }
+ .png-all{
+   border: none;
+ }
+.title-r{ 
+  margin-top: 1rem;
+  margin-left: 12rem;
+  left: 190px;
+  font-size: 34px;
+  font-weight: bold;
+}
+.down-design-r{
+  margin-top: -1.5rem;
+  margin-left: 139px;
+  height: 128px;
+  width: 848px;
+}
+ 
 }
 
+
 @media (max-width: 1400px) {
- 
-  
+  .cardmain{
+    padding-right: 10%;
+  }
+ .form-backbig{
+   margin-left: 190px;
+}
+.png-all{
+  margin-left: 60px;
+}
+.text1-1400 h1{
+  margin-left: 51px;
+}
+.text2 h3{
+  margin-top: 220px;
+  margin-left: 4rem;
+}
+.text3 h2{
+  margin-top: 220px;
+  margin-left: 1.4rem;
+}
+.Paytext1-r{
+  margin-left: -29rem;
+}
+.title{
+  margin-left: 30rem;
+}
 }

@@ -1,6 +1,6 @@
 import React ,{ Fragment } from 'react'
 import {BflGroupLogo,
-    GoBack,Status,MaskGroup,Down,Visa,Discover,MasterCard, GiftCard, Wallet,Line,Number1,Line2,Number2 ,Number3 
+    GoBack,Status,MaskGroup,Down,Visa,Discover,MasterCard, GiftCard, Wallet,Line,Number1,Line2,Number2 ,Number3,UpDesignImg
 } from "../../assets/images";
 import "./index.css";
 const Payment = () => {
@@ -24,11 +24,11 @@ export default Payment
 
 function Paytext1() {
     return (
-      <div className="Paytext1 ">
-        <h1 className="titlesegoeui-semi-bold-tundora-44-5px">
-          <span className="segoeui-semi-bold-tundora-44-5px">Select Payment Mode</span>
+      <div className="Paytext1 Paytext-M-text Paytext-s-scr-text ">
+        <h1 className="title Paytext-full-text  Paytext-s-text">
+          <span className='pa-tex-sc'>Select Payment Mode</span>
         </h1>
-        <img className="bfl-logo" src={BflGroupLogo} />
+        <img className="bfl-logo bfl-logo-full bfl-logo-m bfl-lo-sc" src={BflGroupLogo} />
         <UpDesign/>
         
       </div>
@@ -64,8 +64,8 @@ function Paytext1() {
   }
   function UpDesign() {
     return (
-      <div className="back-design">
-        <img className='top-image' src={MaskGroup} />
+      <div className=" back-design-pyment back-design-m-screen  back-design-main form-backsmall-p  background-img-s">
+        <img className='top-image top-img-s' src={UpDesignImg} />
         
       </div>
     );
@@ -82,10 +82,10 @@ function Paytext1() {
  
   const Cards = () => {
     return (
-      <div className='cardmain'>
-      <div className="form-back p1">
-        <h1>Credit / Debit Card</h1>
-      <div className="card-design-all ">
+      <div className='cardmain card-full card-m card-m-pay card-s'>
+      <div className="form-back form-full form-m form-m-cd-text form-s-p">
+        <h1 className='tex-h1 text-s-h1'>Credit / Debit Card</h1>
+      <div className="card-design-all card-design-all-full card-design-all-m  card-design-all-s">
       <img
         className="card-visa"
         src={Visa}
@@ -95,15 +95,15 @@ function Paytext1() {
           className="card-discover"
           src={Discover}
           />
-        <img className="card-mastercard" src={MasterCard}/>
+        <img className="card-mastercard " src={MasterCard}/>
       </div>
       
     </div>
     
     </div>
-    <div className="form-back">
-        <h3>Gift Card</h3>
-      <div className="card-design-all">
+    <div className="form-back form-back-text-full form-m form-s-p">
+        <h3 className='text-s-h3'>Gift Card</h3>
+      <div className="card-design-all card-design-all-full-gift card-design-all-m-gift card-design-all-s-gift">
       <img
         className="gift-card-img"
         src={GiftCard}
@@ -113,9 +113,9 @@ function Paytext1() {
     </div>
     
     </div>
-    <div className="form-back">
-        <h2 className='wallet-text'>Wallet</h2>
-      <div className="card-design-all ">
+    <div className="form-back form-back-text-full form-m form-s-p">
+        <h2 className='wallet-text text-s-h2'>Wallet</h2>
+      <div className="card-design-all  card-design-all-full-w card-design-all-m-wallet card-design-all-s-wallet">
       <img
         className="wallet-img"
         src={Wallet}
@@ -124,6 +124,6 @@ function Paytext1() {
     </div>
     
     </div>
-          </div>
+    </div>
     )
   }

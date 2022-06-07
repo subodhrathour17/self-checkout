@@ -5,7 +5,7 @@
     position: fixed;
 }
 .go-btn{
-    /* background-color: #FEB23B; */
+    background-color: #FEB23B;
     width: auto;
     margin-top: 15px;
     margin-left: 10px;
@@ -30,6 +30,7 @@
   .title {
     min-height: 59px;
     min-width: 439px;
+    margin-left: 13rem;
   }
 
   .bfl-logo{
@@ -100,17 +101,22 @@
      color: #ffff;
      margin-left: 3.5rem;
  }
-  .back-design {
-    align-items: center;
+  .back-design-main{
+    /* align-items: center;
     margin-top: 20px;
     min-width: 1500px;
-    margin-left: 22.5rem;
+    margin-left: 3rem;
     margin-bottom: 30rem;
-    /* border-radius: 10px; */
-    background-color:#FEB23B;
+    border-radius: 10px; */
+    /* background-color:#FEB23B;
     border-bottom-right-radius: 700%;
-    border-bottom-left-radius: 500%;
-    z-index: 2;
+    border-bottom-left-radius: 500%; */
+    /* z-index: 2; */
+    align-items: center;
+    margin-top: 11px;
+    min-width: 1500px;
+    margin-left: 1.7rem;
+    /* margin-bottom: 30rem; */
   }
   .top-image{
       margin-left: 10%;
@@ -125,19 +131,18 @@
   .cardmain{
       position: relative;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      margin-left: -1.5rem;
   }
   .form-back{
     border-radius: 10px;
     border:  2px solid #333333;
     position: relative;
-    width: 20rem;
+    width: rem;
     height: 20rem;
     background-color: white;
     z-index: 18;
     margin-top: 15rem;
-    margin-left: 10rem;
+    margin-left: 1rem;
    
   }
   .p1{
@@ -212,3 +217,127 @@
     position: absolute;
     font-size: 1.5rem;
   }
+
+  @media (max-width: 768px) {
+    .card-s{
+      max-width: 688px;
+    }
+    .card-s .form-s-p{
+      left: -46px;
+    }
+    .card-s .card-design-all-s{
+      left: -53px;
+    }
+    .card-s .card-design-all-s-gift{
+      left: -51px;
+    }
+    .card-s .card-design-all-s-wallet{
+      left: -51px;
+    }
+    .form-s-p .text-s-h1{
+    left: -20px;
+    font-size: 19px;
+    font-weight: bold;
+    }
+    .form-s-p .text-s-h3{
+      left: -37px;
+      font-size: 19px;
+      font-weight: bold;
+      }
+      .form-s-p .text-s-h2{
+        left: -40px;
+        font-size: 19px;
+        font-weight: bold;
+        }
+        .background-img-s img{
+          width: 80rem;
+          padding-left: 225px;
+          top: 10px;
+          
+        }
+        .Paytext-s-text .pa-tex-sc{
+          margin-left: -345px;
+        }
+        .Paytext-s-scr-text .bfl-lo-sc{
+         padding-left: -50rem;
+        }
+  }
+  
+@media (max-width: 992px) {
+  .Paytext-M-text h1{
+    margin-left: 8rem;
+  }
+  .Paytext1 .bfl-logo-m{
+    left: -25rem;
+  }
+ .back-design-m-screen .top-image{
+  margin-left: -4rem;
+  margin-top: 16px;
+  }
+  
+  .card-m .form-m{
+    margin-left: 19px;
+    width: 246px;
+  }
+  .card-m{
+    margin-left: 12rem;
+  }
+  .card-design-all-m{
+    left: -18px;
+  }
+  .card-design-all-m-gift{
+   left: -18px;
+  }
+  .card-design-all-m-wallet{
+    left: -18px;
+  }
+  .form-m-cd-text .tex-h1{
+    margin-left: 24px;
+    margin-top: 202px;
+}
+.form-m h3{
+  margin-left: 84px;
+  margin-top: 202px;
+}
+  .form-m h2{
+    margin-left: 97px;
+    margin-top: 202px;
+}
+  
+  
+}
+  
+@media (max-width: 1400px) {
+   .Paytext-full-text span{
+    margin-left: -15rem;
+   }
+   .Paytext1 .bfl-logo-full{
+     margin-left: 72rem;
+   }
+  .card-full{
+    left: -3px;
+    width: 98rem;
+  }
+  .card-design-all-full{
+    margin-left: 3.9rem;
+  }
+  .card-design-all-full-gift{
+    margin-left: 3.9rem;
+  }
+  .card-design-all-full-w{
+    margin-left: 3.9rem;
+  }
+  .form-full h1{
+    left: -8px;
+    font-weight: bold;
+  }
+  .form-back-text-full h3{
+    left: -15px;
+    font-weight: bold;
+  }
+  .form-back-text-full h2{
+    left: -15px;
+    font-weight: bold;
+  }
+
+} 
