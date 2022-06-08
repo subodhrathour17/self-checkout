@@ -249,17 +249,18 @@
         font-size: 19px;
         font-weight: bold;
         }
-        .background-img-s img{
+        .background-img-s .bi-im-s{
           width: 80rem;
-          padding-left: 225px;
+          left: -100px;
           top: 10px;
           
         }
         .Paytext-s-text .pa-tex-sc{
-          margin-left: -345px;
+          margin-left: -354px;
+          font-size: 26px;
         }
-        .Paytext-s-scr-text .bfl-lo-sc{
-         padding-left: -50rem;
+        .bfl-logo-s-pa .bfl-lo-sc{
+          margin-left: 37rem;
         }
   }
   
@@ -267,12 +268,12 @@
   .Paytext-M-text h1{
     margin-left: 8rem;
   }
-  .Paytext1 .bfl-logo-m{
-    left: -25rem;
-  }
+  .bfl-logo-m-pa .bfl-logo-m {
+    left: -5rem;
+}
  .back-design-m-screen .top-image{
-  margin-left: -4rem;
-  margin-top: 16px;
+  margin-left: 14rem;
+    margin-top: 3px;
   }
   
   .card-m .form-m{
@@ -311,9 +312,7 @@
    .Paytext-full-text span{
     margin-left: -15rem;
    }
-   .Paytext1 .bfl-logo-full{
-     margin-left: 72rem;
-   }
+   
   .card-full{
     left: -3px;
     width: 98rem;

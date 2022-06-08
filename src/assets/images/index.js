@@ -36,8 +36,12 @@ import NoReciept from './noreceipt-img.png';
 import Number4 from './number4-y.png';
 import UpDesignImg from './up-design-new.png'
 
+//payment Done Screen
+import PayDownImg from './paydownimg.png'
+
 export { Logo, BflGroupLogo, Merge, Vector2,
      Vector6, Vector1, Rectangle30, Young, 
      Comp1, Girl, GoBack,Status,MaskGroup,Down,
-     Visa,Discover,MasterCard,GiftCard,Wallet,Line,Number1,Line2,Number2 ,Number3,Digital,PrintReciept,NoReciept,Number4,UpDesignImg
+     Visa,Discover,MasterCard,GiftCard,Wallet,Line,Number1,Line2,
+     Number2 ,Number3,Digital,PrintReciept,NoReciept,Number4,UpDesignImg,PayDownImg 
     };

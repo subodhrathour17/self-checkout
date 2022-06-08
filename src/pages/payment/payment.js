@@ -24,7 +24,7 @@ export default Payment
 
 function Paytext1() {
     return (
-      <div className="Paytext1 Paytext-M-text Paytext-s-scr-text ">
+      <div className="Paytext1 Paytext-M-text Paytext-s-scr-text bfl-logo-m-pa bfl-logo-s-pa">
         <h1 className="title Paytext-full-text  Paytext-s-text">
           <span className='pa-tex-sc'>Select Payment Mode</span>
         </h1>
@@ -65,7 +65,7 @@ function Paytext1() {
   function UpDesign() {
     return (
       <div className=" back-design-pyment back-design-m-screen  back-design-main form-backsmall-p  background-img-s">
-        <img className='top-image top-img-s' src={UpDesignImg} />
+        <img className='top-image top-img-s bi-im-s' src={UpDesignImg} />
         
       </div>
     );
