@@ -3,7 +3,7 @@ import { Button, Modal, Image, Form, Col, Row } from "react-bootstrap";
 import { GoArrowRight } from "react-icons/go";
 import { Logo } from "../assets/images";
 import TillOpen from "../popup/till-open";
-import "./index.css";
+import "./index.scss";
 
 const RegisterOpen = ({ show, handleClose }) => {
   const [tillShow, setTillShow] = useState(false);
@@ -24,9 +24,9 @@ const RegisterOpen = ({ show, handleClose }) => {
           <div className="register-heading">
             <p>REGISTER OPEN</p>
           </div>
-          <Form.Group as={Row} className="mb-3 register-main">
+          <Form.Group as={Row} className="mb-3 register-main-box">
             <Form.Label column sm="2" required>
-              Enter Register Id :-
+              Enter Register Id
             </Form.Label>
             <Col sm="10">
               <Form.Control type="number" placeholder="8701" />

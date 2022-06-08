@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import {
   BflGroupLogo,
   Merge,
@@ -7,56 +7,60 @@ import {
   Vector2,
   Vector6,
 } from "../../assets/images";
-import "./index.css";
+import "./index.scss";
 
 const Login = () => {
   const navigate = useNavigate();
 
-  const submitHandler = () => {
+  const submitHandler = (e) => {
+    e.preventDefault()
     navigate("/register");
   };
   return (
     <Fragment>
       <section className="login">
         <div className="container-fluid">
-          <div className="row">
-            <div className="col-sm-7 position-relative">
-              <div className="logo text-center pb-5">
-                <img src={BflGroupLogo} alt="bfl" className="img-fluid" />
+          <div className="row login-section-main">
+            <div className="col1 position-relative">
+              <div className="bfl-main text-center pb-4">
+                <img src={BflGroupLogo} alt="bfl" />
               </div>
-              <div className="login-sm text-center pb-3">
-                <img src={Merge} alt="login-sm" className="img-fluid" />
-              </div>
+              <div className="login-sm text-center">
+                <img src={Merge} alt="login-sm" />
+                <div className="welcome-mobile">
+                  <h2>Welcome Back</h2>
+                </div>
+                </div>
             </div>
-            <div className="col-sm-5 position-relative login-color">
+            <div className="position-relative login-color col2">
               <div className="welcome">
                 <h2>Welcome Back</h2>
               </div>
 
               <form type="form" onSubmit={submitHandler}>
                 <div className="login-main">
-                  <div className="login-box pb-3">
+                  <div className="login-box pb-3 userId">
                     <div className="login-icon">
                       <img src={Vector2} alt="profile" className="img-fluid" />
                     </div>
-                    <input type="text" placeholder="Enter User Id" required />
+                    <input type="text" placeholder="User ID" required />
                   </div>
-                  <div className="login-box">
+                  <div className="login-box password">
                     <div className="login-icon">
-                      <img src={Vector1} alt="password" className="img-fluid" />
+                      <img src={Vector1} alt="password" />
                     </div>
                     <input
                       type="password"
-                      placeholder="Enter Password"
+                      placeholder="********"
                       required
                     />
                   </div>
 
-                  <div className="login-btn text-center pt-5">
-                    <button type="submit">LOGIN</button>
+                  <div className="login-btn text-center submit">
+                    <button type="button"><Link to="/register">LOGIN</Link></button>
                   </div>
                   <div className="login-image">
-                    <img src={Vector6} alt="vector" className="img-fluid" />
+                    <img src={Vector6} alt="vector" />
                   </div>
                 </div>
               </form>
