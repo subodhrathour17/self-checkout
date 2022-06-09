@@ -5,6 +5,7 @@ import Ereceipt from '../../assets/images/transactions/E-receipt-512 1.png';
 import Glasses from '../../assets/images/transactions/vr-glasses.png';
 import Noreceipt from '../../assets/images/transactions/no-receipt 1.png';
 import { Link } from "react-router-dom";
+import Sidebar from "../../Sidebar/Sidebar";
 
 const Receipt = () => {
   return (
@@ -21,14 +22,16 @@ const Receipt = () => {
           </div>
         </section>
 
-        <section class="payment-main">
+          <Sidebar />
+        <section className="main-payment">
+        <div class="payment-main">
           <div className="container"></div>
-        </section>
+        </div>
 
-        <section className="payment-detils">
+        <div className="payment-detils">
           <div className="container">
-            <div className="row">
-              <div className="col-md-4">
+            <div className="row justify-content-center">
+              <div className="col-lg-3">
               <Link to="/rating">
 
                 <div className="credit-cards">
@@ -40,7 +43,7 @@ const Receipt = () => {
               </Link>
 
               </div>
-              <div className="col-md-4">
+              <div className="col-lg-3">
                 <div className="credit-cards">
                   <div className="payment-icons">
                       <img src={Glasses} alt="icon" className="img-fluid"/>
@@ -48,7 +51,7 @@ const Receipt = () => {
                   <h3>Print Receipt</h3>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-lg-3">
                 <div className="credit-cards">
                   <div className="payment-icons">
                   <img src={Noreceipt} alt="icon" className="img-fluid"/>
@@ -59,9 +62,10 @@ const Receipt = () => {
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
         <div className="payment-deatil-box"></div>
+        </section>
       </Fragment>
     </>
   )

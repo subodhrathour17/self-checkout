@@ -5,12 +5,13 @@ import Gift from '../../assets/images/payment-mode/gift-card.png'
 import Wallet from '../../assets/images/payment-mode/wallet-remove.png'
 import Credit from '../../assets/images/payment-mode/payment-main.png'
 import { Link } from "react-router-dom";
+import Sidebar from "../../Sidebar/Sidebar";
 
 const PaymentDetails = () => {
   return (
     <>
       <Fragment>
-        <section className="payment-nav ">
+        <div className="payment-nav ">
           <div className="container-fluid d-flex">
             <button type="button">
               <BsFillCaretLeftFill />
@@ -19,17 +20,18 @@ const PaymentDetails = () => {
             <h3>Select Payment Mode</h3>
             <img src={logoBfl} alt="logo-main" className="img-fluid" />
           </div>
-        </section>
-
-        <section class="payment-main">
+        </div>
+        <Sidebar/>
+        <section className="main-payment">
+        <div class="payment-main">
           <div className="container"></div>
-        </section>
+        </div>
 
-        <section className="payment-detils">
+        <div className="payment-detils">
           <div className="container">
-            <div className="row">
+            <div className="row justify-content-center">
             
-              <div className="col-md-4">
+              <div className="col-md-3">
               <Link to="/payment">
                 <div className="credit-cards">
                   <div className="payment-icons">
@@ -40,7 +42,7 @@ const PaymentDetails = () => {
                 </Link>
               </div>
             
-              <div className="col-md-4">
+              <div className="col-md-3">
               <Link to="/gift-voucher">
                 <div className="credit-cards">
                   <div className="payment-icons">
@@ -50,7 +52,7 @@ const PaymentDetails = () => {
                 </div>
                 </Link>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-3">
                 <Link to="/digital-wallet">
                 <div className="credit-cards">
                   <div className="payment-icons">
@@ -62,9 +64,11 @@ const PaymentDetails = () => {
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
         <div className="payment-deatil-box"></div>
+        </section>
+        
       </Fragment>
     </>
   );

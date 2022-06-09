@@ -7,6 +7,7 @@ import Amazon from "../../assets/images/transactions/Amazon Pay.png";
 import Arrow from "../../assets/images/transactions/right-arrow.png";
 import Scanner from "../../assets/images/transactions/Scanner.png";
 import { Link } from "react-router-dom";
+import Sidebar from "../../Sidebar/Sidebar";
 
 const DigitalWallet = () => {
   return (
@@ -23,11 +24,13 @@ const DigitalWallet = () => {
           </div>
         </section>
 
-        <section class="payment-main">
+        <Sidebar />
+        <scetion className="main-payment">
+        <div class="payment-main">
           <div className="container"></div>
-        </section>
+        </div>
 
-        <section className="payment-detils">
+        <div className="payment-detils">
           <div className="container">
             <div className="payment-details-box d-flex">
               <div className="digital-wallet">
@@ -48,9 +51,11 @@ const DigitalWallet = () => {
               <Link to="/sucessfull"><img src={Scanner} alt="cards" className="img-fluid sucessful-scan" /></Link>
             </div>
           </div>
-        </section>
+        </div>
 
-        <div className="payment-box"></div>
+        <div className="payment-box-main"></div>
+        </scetion>
+        
       </Fragment>
     </>
   );

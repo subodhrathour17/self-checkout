@@ -15,9 +15,8 @@ import {
   CashPayment,
   DiscoverCard,
 } from "../../assets/images";
-import Transactions from "../credit-debit";
-import PaymentMode from "../select-payment-mode";
 import { Link } from "react-router-dom";
+import Sidebar from "../../Sidebar/Sidebar";
 import "./index.scss";
 
 const Checkout = () => {
@@ -57,35 +56,10 @@ const Checkout = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-12 col-md-2 bg-dark text-center left-nav">
-              <div id="article-list" className="nav-header">
-                <div className="mz-step-indicator">
-                  <span>1</span>
-                </div>
-                <div>Article List</div>
-              </div>
-              <div id="pay" className="nav-header">
-                <div className="mz-step-indicator">
-                  <span>2</span>
-                </div>
-                <div>Pay</div>
-              </div>
-              <div id="remove-security" className="nav-header">
-                <div className="mz-step-indicator">
-                  <span>3</span>
-                </div>
-                <div>Remove The Security Tags</div>
-              </div>
-              <div id="reciept" className="nav-header">
-                <div className="mz-step-indicator">
-                  <span>4</span>
-                </div>
-                <div>Reciept</div>
-              </div>
-            </div>
+              <Sidebar />
             <div className="col-12 col-md-10 article-list-wrapper">
-              <div id="article-list" className="content-section">
-                <div className="row">
+              <div className="content-section">
+                <div className="row product-list-main">
                   <div className="col-12 col-md-4 product-list">
                     <div className="row">
                       <div className="col-4 product-image">
@@ -115,7 +89,7 @@ const Checkout = () => {
                     <button>remove</button>
                   </div>
                 </div>
-                <div className="row">
+                <div className="row product-list-main">
                   <div className="col-12 col-md-4 product-list">
                     <div className="row">
                       <div className="col-4 product-image">
@@ -145,7 +119,7 @@ const Checkout = () => {
                     <button>remove</button>
                   </div>
                 </div>
-                <div className="row">
+                <div className="row product-list-main">
                   <div className="col-12 col-md-4 product-list">
                     <div className="row">
                       <div className="col-4 product-image">
@@ -175,7 +149,7 @@ const Checkout = () => {
                     <button>remove</button>
                   </div>
                 </div>
-                <div className="row">
+                <div className="row product-list-main">
                   <div className="col-12 col-md-4 product-list">
                     <div className="row">
                       <div className="col-4 product-image">
@@ -221,33 +195,11 @@ const Checkout = () => {
                         Total AED <span>150.8</span>
                       </div>
                       <div className="col-4 text-right action-button">
-                        <button id="cancel">Cancel</button>
+                        <button>Cancel</button>
                         <button>
                           <img src={CashPayment} alt="Cash" width="20px" /><Link to="/payment-details">Pay</Link>
                         </button>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="pay" className="content-section">
-                <PaymentMode />
-                <div className="fixed-bottom">
-                  <div className="col-12">
-                    <div className="text-right action-button">
-                      <button id="cancel">Cancel</button>
-                      <button id="next-step">Next</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="remove-security" className="content-section">
-                <Transactions/>
-                <div className="fixed-bottom">
-                  <div className="col-12">
-                    <div className="text-right action-button">
-                      <button id="cancel">Cancel</button>
-                      <button id="next-step">Next</button>
                     </div>
                   </div>
                 </div>

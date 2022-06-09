@@ -7,6 +7,7 @@ import Machine from '../../assets/images/transactions/atm-mechine.png'
 
 
 import "./index.scss";
+import Sidebar from "../../Sidebar/Sidebar";
 
 const PaymentMode = () => {
   return (
@@ -20,13 +21,15 @@ const PaymentMode = () => {
         </div>
       </section>
 
+      <Sidebar />
+      <section className="main-payment">
 
-      <section class="payment-main">
+      <div className="payment-main">
         <div className="container">
           </div>
-      </section>
+      </div>
 
-      <section className="payment-detils">
+      <div  className="payment-detils">
         <div className="container">
           <div className="payment-details-box d-flex">
             <img src={Cards} alt="cards" className="img-fluid"/>
@@ -36,9 +39,10 @@ const PaymentMode = () => {
 
           </div>
         </div>
-      </section>
+      </div>
       
-      <div className="payment-box"></div>
+      <div className="payment-box-main"></div>
+      </section>
     </Fragment>
   );
 };

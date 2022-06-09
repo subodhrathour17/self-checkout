@@ -6,6 +6,7 @@ import Button from "../../assets/images/remove/button.png";
 
 import "./index.scss";
 import { Link } from "react-router-dom";
+import Sidebar from "../../Sidebar/Sidebar";
 
 const RemoveTag = () => {
   return (
@@ -15,8 +16,12 @@ const RemoveTag = () => {
         <h3>Remove Tag</h3>
         <img src={Logo} alt="logo" className="img-fluid" />
       </div>
-      <div className="payment-sucess-main">
-        <h3>Please Remove the Security Tag</h3>
+
+      <Sidebar />
+
+     <section className="main-payment">
+     <div className="payment-sucess-main">
+        <h3 className="security-tag">Please Remove the Security Tag</h3>
         <div className="product-detail">
           <div className="row g-0">
             <div className="col-md-6">
@@ -37,11 +42,7 @@ const RemoveTag = () => {
                     <h5>Roadster</h5>
                     <p>Men White Pure Cotton T-shirt</p>
                   </div>
-                  <img
-                    src={Button}
-                    alt="tshirt"
-                    className="img-fluid red-button"
-                  />
+                  <Link to="/remove-green"><img src={Button} alt="tshirt" className="img-fluid red-button" /></Link>
                 </div>
                 <div className="product-box d-flex">
                   <img src={Tshirt} alt="tshirt" className="img-fluid" />
@@ -50,11 +51,7 @@ const RemoveTag = () => {
                     <h5>Roadster</h5>
                     <p>Men White Pure Cotton T-shirt</p>
                   </div>
-                  <img
-                    src={Button}
-                    alt="tshirt"
-                    className="img-fluid red-button"
-                  />
+                  <Link to="/remove-green"><img src={Button} alt="tshirt" className="img-fluid red-button" /></Link>
                 </div>
                 <div className="product-box d-flex">
                   <img src={Tshirt} alt="tshirt" className="img-fluid" />
@@ -63,11 +60,7 @@ const RemoveTag = () => {
                     <h5>Roadster</h5>
                     <p>Men White Pure Cotton T-shirt</p>
                   </div>
-                  <img
-                    src={Button}
-                    alt="tshirt"
-                    className="img-fluid red-button"
-                  />
+                  <Link to="/remove-green"><img src={Button} alt="tshirt" className="img-fluid red-button" /></Link>
                 </div>
               </div>
             </div>
@@ -123,6 +116,7 @@ const RemoveTag = () => {
           </div>
         </div>
       </div>
+     </section>
     </>
   );
 };

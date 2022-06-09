@@ -4,6 +4,7 @@ import logoBfl from "../../assets/images/main/bfl-group-logo.png";
 import Gift from "../../assets/images/payment-mode/gift-card.png";
 import Arrow from "../../assets/images/transactions/right-arrow.png";
 import Swipe from "../../assets/images/transactions/swipe.png";
+import Sidebar from "../../Sidebar/Sidebar";
 
 const GiftVoucher = () => {
   return (
@@ -20,11 +21,13 @@ const GiftVoucher = () => {
           </div>
         </section>
 
-        <section class="payment-main">
+        <Sidebar />
+        <section className="main-payment">
+        <div class="payment-main">
           <div className="container"></div>
-        </section>
+        </div>
 
-        <section className="payment-detils">
+        <div className="payment-detils">
           <div className="container">
             <div className="payment-details-box d-flex">
               <div className="gift-icon">
@@ -34,9 +37,10 @@ const GiftVoucher = () => {
               <img src={Swipe} alt="cards" className="img-fluid" />
             </div>
           </div>
-        </section>
+        </div>
 
-        <div className="payment-box"></div>
+        <div className="payment-box-main"></div>
+        </section>
       </Fragment>
     </>
   );

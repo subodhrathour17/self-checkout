@@ -23,6 +23,8 @@ const Welcome = () => {
           <button className="arabic choice">عربي</button>
         </div>
       </div>
+
+
       <div className="separator"></div>
       <div className="column2">
         <div className="welcome-words">
@@ -46,9 +48,9 @@ const Welcome = () => {
       <div className="Welcome-mobile">
         <div className="column2">
           <div className="welcome-words">
-            <div className="profile-img">
-              <img src={profileImg} alt="Profile" />
-            </div>
+            <Link to="/login">
+            <img src={profileImg} alt="Profile" />
+          </Link>
             <div className="welcome-wrapper">
               <h1 className="arabic">مرحبا بك </h1>
               <h1 className="english">Welcome To</h1>
@@ -64,7 +66,7 @@ const Welcome = () => {
             <p className="english">Please Select any Language</p>
           </div>
           <div className="choices">
-            <button className="english choice">English</button>
+            <button className="english choice"><Link to="/drop-you-items">English</Link></button>
             <button className="arabic choice">عربي</button>
           </div>
         </div>

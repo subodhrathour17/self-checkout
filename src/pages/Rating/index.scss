@@ -30,7 +30,7 @@
   width: 65%;
 }
 
-.emogies-section img{
+.emogies-section img {
   width: 12%;
 }
 .main-section {
@@ -62,5 +62,19 @@
   }
   .skip-button {
     float: right;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .main-section {
+    height: 700px;
+}
+  .submit-field {
+    button {
+      width: 200px;
+    }
+    .submit-button {
+      margin-left: 0px;
+    }
   }
 }

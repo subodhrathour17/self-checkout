@@ -14,12 +14,14 @@ import PaymentSucess from "./pages/select-payment-mode/PaymentSucess.js";
 import RemoveTag from "./pages/Remove-tag/index.js";
 import RemoveBox from "./pages/Remove-tag/Remove.js";
 import RecieptRating from "./pages/Rating/index.js";
+import Sidebar from "./Sidebar/Sidebar.js";
 
 
 const AppRoute = () => {
   return (
     <Fragment>
-      <Router>
+
+      <Router basename="/demo">
         <Routes>
           <Route exact path="/" element={<Welcome />} />
           <Route exact path="/login" element={<Login />} />
@@ -35,6 +37,7 @@ const AppRoute = () => {
           <Route exact path="/remove-tag" element={<RemoveTag/>}/>
           <Route exact path="/remove-green" element={<RemoveBox/>}/>
           <Route exact path="/rating" element={<RecieptRating/>}/>
+          <Route exact path="/sidebar" element={<Sidebar/>} />
         </Routes>
       </Router>
     </Fragment>

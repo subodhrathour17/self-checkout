@@ -6,6 +6,7 @@ import Greenbutton from "../../assets/images/remove/buttongreen.png";
 import Removetag from "../../assets/images/remove/remove-tag.png";
 import { Link } from "react-router-dom";
 import "./index.scss";
+import Sidebar from "../../Sidebar/Sidebar";
 
 const RemoveBox = () => {
   return (
@@ -15,8 +16,10 @@ const RemoveBox = () => {
         <h3>Remove Tag</h3>
         <img src={Logo} alt="logo" className="img-fluid" />
       </div>
+      <Sidebar/>s
+      <section className="main-payment">
       <div className="payment-sucess-main">
-        <h3>Please Remove the Security Tag</h3>
+        <h3 className="security-tag">Please Remove the Security Tag</h3>
         <div className="product-detail">
           <div className="row g-0">
             <div className="col-md-6">
@@ -28,13 +31,7 @@ const RemoveBox = () => {
                     <h5>Roadster</h5>
                     <p>Men White Pure Cotton T-shirt</p>
                   </div>
-                  <Link to="/receipt">
-                    <img
-                      src={Greenbutton}
-                      alt="tshirt"
-                      className="img-fluid red-button"
-                    />
-                  </Link>
+                  <Link to="/receipt"> <img  src={Greenbutton}  alt="tshirt" className="img-fluid red-button" /> </Link>
                 </div>
                 <div className="product-box d-flex">
                   <img src={Tshirt} alt="tshirt" className="img-fluid" />
@@ -43,11 +40,7 @@ const RemoveBox = () => {
                     <h5>Roadster</h5>
                     <p>Men White Pure Cotton T-shirt</p>
                   </div>
-                  <img
-                    src={Greenbutton}
-                    alt="tshirt"
-                    className="img-fluid red-button"
-                  />
+                  <Link to="/receipt"> <img  src={Greenbutton}  alt="tshirt" className="img-fluid red-button" /> </Link>
                 </div>
                 <div className="product-box d-flex">
                   <img src={Tshirt} alt="tshirt" className="img-fluid" />
@@ -56,11 +49,7 @@ const RemoveBox = () => {
                     <h5>Roadster</h5>
                     <p>Men White Pure Cotton T-shirt</p>
                   </div>
-                  <img
-                    src={Greenbutton}
-                    alt="tshirt"
-                    className="img-fluid red-button"
-                  />
+                  <Link to="/receipt"> <img  src={Greenbutton}  alt="tshirt" className="img-fluid red-button" /> </Link>
                 </div>
                 <div className="product-box d-flex">
                   <img src={Tshirt} alt="tshirt" className="img-fluid" />
@@ -69,11 +58,7 @@ const RemoveBox = () => {
                     <h5>Roadster</h5>
                     <p>Men White Pure Cotton T-shirt</p>
                   </div>
-                  <img
-                    src={Greenbutton}
-                    alt="tshirt"
-                    className="img-fluid red-button"
-                  />
+                  <Link to="/receipt"> <img  src={Greenbutton}  alt="tshirt" className="img-fluid red-button" /> </Link>
                 </div>
               </div>
             </div>
@@ -147,6 +132,7 @@ const RemoveBox = () => {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 };

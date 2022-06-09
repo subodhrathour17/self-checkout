@@ -6,6 +6,7 @@ import { TiTick } from "react-icons/ti";
 
 import "./index.scss";
 import { Link } from "react-router-dom";
+import Sidebar from "../../Sidebar/Sidebar";
 
 const PaymentSucess = () => {
   return (
@@ -15,6 +16,9 @@ const PaymentSucess = () => {
         <h3>Payment Successful</h3>
         <img src={Logo} alt="logo" className="img-fluid" />
       </div>
+
+      <Sidebar />
+      <section className="main-payment-box">
       <div className="payment-sucess-main">
         <div className="sucess-box">
           <div className="row">
@@ -60,6 +64,7 @@ const PaymentSucess = () => {
           <h3>Your Payment was Successful</h3>
         </div>
       </div>
+      </section>
     </>
   );
 };

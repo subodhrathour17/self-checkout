@@ -8,15 +8,11 @@ const RecieptRating = () => {
   return (
     <Fragment>
       <section className="container-fluid">
-        <div className="row hedaer-main">
-          <div className="col-sm-4">
-            <img src={Logo} alt="suntech logo" />
-          </div>
-          <div className="col-sm-4">
-            <h4>Rate Your Experience</h4>
-          </div>
-          <div className="col-sm-4 bflgroup-logo">
-            <img src={BflGroupLogo} alt="bfl group logo" />
+      <div className="payment-nav ">
+          <div className="container-fluid d-flex">
+          <img src={Logo} alt="suntech logo" />
+            <h3>Rate Your Experience</h3>
+            <img src={BflGroupLogo} alt="logo-main" className="img-fluid" />
           </div>
         </div>
         <div className="main-section">

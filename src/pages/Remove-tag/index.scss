@@ -1,9 +1,15 @@
 .payment-sucess-main {
-  padding: 2rem 0 2rem;
+  padding: 5rem 0 0rem;
+  height: 124vh;
+
   .payment-sucess-main h3 {
     text-align: center;
     padding-bottom: 2rem;
   }
+}
+.security-tag {
+  text-align: center;
+  padding-bottom: 1rem;
 }
 .product-detail {
   background-color: #f9f9ac;
@@ -20,7 +26,7 @@
   }
   .product-box {
     border-bottom: 1px solid #898989;
-    padding: 10px 0;
+    padding: 10px 0 10px 2rem;
     justify-content: space-between;
     align-items: center;
 }
