@@ -104,15 +104,15 @@
       left: 0;
 
       .young-main {
-        left: 12rem;
+        left: 9rem;
       }
       .scanner {
-        left: 17.8rem;
+        left: 14.8rem;
       }
     }
   }
   .register-box .vector-main {
-    left: 13rem;
+    left: 0rem;
   }
 }
 
@@ -161,6 +161,15 @@
   .register-main {
     height: 177vh;
   }
+}
+
+@media  screen and (max-width:426px) {
+  .register-main {
+    height: 110vh;
+}
+.register-box {
+  height: 74vh;
+}
 }
 
 @media only screen and (max-width: 376px) {

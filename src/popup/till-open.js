@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import { Button, Modal, Image, Form, Col, Row } from "react-bootstrap";
 import { GoArrowRight } from "react-icons/go";
 import { Link } from "react-router-dom";
@@ -6,7 +6,7 @@ import { Logo } from "../assets/images";
 import "./index.scss";
 
 const TillOpen = ({tillShow, closeTill}) => {
-
+  const [currentDate] = useState(new Date().toISOString().slice(0, -14));
   return (
     <Fragment>
       <Modal show={tillShow} onHide={closeTill}>
@@ -28,7 +28,7 @@ const TillOpen = ({tillShow, closeTill}) => {
               Enter Till Date
             </Form.Label>
             <Col sm="10" className="mt-4">
-              <Form.Control type="date" placeholder="30-05-2022" />
+              <Form.Control type="date" defaultValue={currentDate} />
             </Col>
           </Form.Group>
           <div className="button-section">

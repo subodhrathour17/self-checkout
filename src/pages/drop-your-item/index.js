@@ -19,7 +19,7 @@ const DropItems = () => {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row items-main ">
             <div className="col-sm-6">
               <div className="cart-main">
             <img src={Cart} alt="logo" className="img-fluid"/>

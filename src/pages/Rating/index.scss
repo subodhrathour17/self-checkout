@@ -43,7 +43,7 @@
     border-radius: 12px;
   }
   button:hover {
-    background-color: #d6c482;
+    background-color: #fece00;
   }
 }
 .submit-field {
@@ -77,4 +77,11 @@
       margin-left: 0px;
     }
   }
+}
+
+@media  screen and (max-width:426px) {
+  .submit-field button {
+    width: 170px;
+}
+  
 }

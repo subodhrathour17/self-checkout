@@ -8,12 +8,15 @@ import { Link } from "react-router-dom";
 import Sidebar from "../../Sidebar/Sidebar";
 
 const Receipt = () => {
+  const moveBack = () => {
+    window.history.back()
+  }
   return (
     <>
     <Fragment>
         <section className="payment-nav ">
           <div className="container-fluid d-flex">
-            <button type="button">
+            <button type="button" onClick={() => moveBack()}>
               <BsFillCaretLeftFill />
               Go Back
             </button>
@@ -44,14 +47,17 @@ const Receipt = () => {
 
               </div>
               <div className="col-lg-3">
+              <Link to="/rating">
                 <div className="credit-cards">
                   <div className="payment-icons">
                       <img src={Glasses} alt="icon" className="img-fluid"/>
                   </div>
                   <h3>Print Receipt</h3>
                 </div>
+                </Link>
               </div>
               <div className="col-lg-3">
+              <Link to="/rating">
                 <div className="credit-cards">
                   <div className="payment-icons">
                   <img src={Noreceipt} alt="icon" className="img-fluid"/>
@@ -59,6 +65,7 @@ const Receipt = () => {
                   <h3>I Don’t want Receipt</h3>
                   <p>( Save Tree Save Life )</p>
                 </div>
+                </Link>
               </div>
             </div>
           </div>

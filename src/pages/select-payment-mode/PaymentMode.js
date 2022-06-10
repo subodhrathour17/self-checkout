@@ -8,12 +8,15 @@ import { Link } from "react-router-dom";
 import Sidebar from "../../Sidebar/Sidebar";
 
 const PaymentDetails = () => {
+  const moveBack = () => {
+    window.history.back()
+  }
   return (
     <>
       <Fragment>
         <div className="payment-nav ">
           <div className="container-fluid d-flex">
-            <button type="button">
+            <button type="button" onClick={() => moveBack()}>
               <BsFillCaretLeftFill />
               Go Back
             </button>

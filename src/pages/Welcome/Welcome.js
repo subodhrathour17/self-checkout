@@ -66,7 +66,7 @@ const Welcome = () => {
             <p className="english">Please Select any Language</p>
           </div>
           <div className="choices">
-            <button className="english choice"><Link to="/drop-you-items">English</Link></button>
+          <button className="english choice"><Link to="/drop-you-items">English</Link></button>
             <button className="arabic choice">عربي</button>
           </div>
         </div>

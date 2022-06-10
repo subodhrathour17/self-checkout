@@ -41,7 +41,7 @@ const Checkout = () => {
         <div className="container-fluid">
           <div className="row article-list-nav">
             <div className="col-12 text-center bg-dark">
-              <div className="row">
+              <div className="row g-0">
                 <div className="col-2"></div>
                 <div className="col-10">
                   <div className="row">
@@ -59,7 +59,7 @@ const Checkout = () => {
               <Sidebar />
             <div className="col-12 col-md-10 article-list-wrapper">
               <div className="content-section">
-                <div className="row product-list-main">
+                <div className="row g-0 product-list-main">
                   <div className="col-12 col-md-4 product-list">
                     <div className="row">
                       <div className="col-4 product-image">
@@ -89,9 +89,9 @@ const Checkout = () => {
                     <button>remove</button>
                   </div>
                 </div>
-                <div className="row product-list-main">
+                <div className="row g-0 product-list-main">
                   <div className="col-12 col-md-4 product-list">
-                    <div className="row">
+                    <div className="row ">
                       <div className="col-4 product-image">
                         <img src={Jeans} alt="Jeans" />
                       </div>
@@ -119,7 +119,7 @@ const Checkout = () => {
                     <button>remove</button>
                   </div>
                 </div>
-                <div className="row product-list-main">
+                <div className="row g-0 product-list-main">
                   <div className="col-12 col-md-4 product-list">
                     <div className="row">
                       <div className="col-4 product-image">
@@ -149,7 +149,7 @@ const Checkout = () => {
                     <button>remove</button>
                   </div>
                 </div>
-                <div className="row product-list-main">
+                <div className="row  g-0 product-list-main">
                   <div className="col-12 col-md-4 product-list">
                     <div className="row">
                       <div className="col-4 product-image">

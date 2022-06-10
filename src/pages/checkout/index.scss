@@ -16,8 +16,13 @@ img{
 	max-width:100%;
 	max-height:100%
 }
+
 header{
-	padding: 10px;
+	padding: 11px;
+	position: sticky;
+	top: 0;
+	background-color: #fff;
+	z-index: 5;
 }
 main .container-fluid{
 	border-top: 2px solid #333;
@@ -25,8 +30,12 @@ main .container-fluid{
 .bg-dark{
 	background-color: #333333!important;
 }
-.article-list-nav{
-	color: #ffd100;
+.article-list-nav {
+    color: #ffd100;
+    position: sticky;
+    top: 5rem;
+    z-index: 5;
+    height: 49px;
 }
 .article-list-nav .bg-dark{
 	padding: 12px 15px;
@@ -42,12 +51,17 @@ main .container-fluid{
 	border-bottom: 1px solid #ccc;
 	padding: 15px 0;
 }
-.content-section .fixed-bottom {
+.content-section {
+    position: relative;
+    width: 100%;
+    left: 10rem;
+.fixed-bottom {
     position: fixed;
     background-color: #f1f1f1;
     padding: 14px 0;
     bottom: 0px;
     left: 9.4rem;
+}
 }
 .article-list-wrapper .product-list-main{
 	padding: 1rem 2rem ;
@@ -84,6 +98,9 @@ main .container-fluid{
 	display: flex;
     align-items: center;
     justify-content: left;
+	img{
+		width: 150x;
+	}
 }
 
 .col.text-right {
@@ -91,6 +108,9 @@ main .container-fluid{
     display: flex;
     align-items: center;
     justify-content: right;
+	img{
+		width: 150px;
+	}
 }
 .remove button{
 	background-color: #f02622;
@@ -125,6 +145,41 @@ main .container-fluid{
 	color: #fff;
 }
 
+
+@media only screen and (max-width:1980px) {
+	.action-button {
+		padding-top: 5px;
+		text-align: right;
+		padding-right: 2rem;
+		button {
+			margin: 0 10px;
+		}
+	}
+	
+}
+@media only screen and (max-width:1024px) {
+	.content-section {
+		left: 0;
+	}
+	
+}
+@media only screen and (max-width:992px) {
+	header{
+		position: relative;
+	}
+	.article-list-nav {
+		position: relative;
+		top: 0;
+	}
+	.content-section {
+		left: 0rem;
+	}
+	.left-nav {
+		height: 83vh !important;
+	}
+	
+}
+
 @media screen and (max-width: 768px){
 	.article-list-nav{
 		display: none;
@@ -139,5 +194,63 @@ main .container-fluid{
 	header h1{
 		font-size: 24px;
 	}
+	.article-list-wrapper{
+		width: 100%;
+		.product-list-main {
+		 margin-left: 0;
+		}
+	}
+	.content-section {
+		.fixed-bottom {
+			position: static;
+			left: 0;
+			width: 100%;
+		}
+	}
 	
+}
+
+
+@media only screen and(max-width:426px) {
+	.card-images {
+		width: 100%;
+		padding: 10px;
+		img{
+			margin: 10px;
+		}
+	}
+	.grand-total {
+		width: 50%;
+	}
+	.action-button {
+		width: 60%;
+		padding: 1rem 1rem;
+		button{
+			margin: 0 2px;
+		}
+	}
+	.product-image {
+		text-align: center;
+		width: 100%;
+	}
+	.product-info {
+		width: 100%;
+		padding-top: 1rem;
+		text-align: center;
+	}
+	.price {
+		width: 100%;
+		padding: 1rem;
+	}
+	.discount {
+		width: 100%;
+	}
+	.total {
+		width: 100%;
+		padding: 1rem;
+	}
+	.remove {
+		width: 100%;
+		text-align: center;
+	}
 }

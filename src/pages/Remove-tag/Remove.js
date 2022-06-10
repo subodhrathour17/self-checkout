@@ -11,14 +11,15 @@ import Sidebar from "../../Sidebar/Sidebar";
 const RemoveBox = () => {
   return (
     <>
-      <div className="payment-nav d-flex">
+      <div className="payment-nav-main d-flex">
         <img src={Suntech} alt="logo" className="img-fluid" />
         <h3>Remove Tag</h3>
         <img src={Logo} alt="logo" className="img-fluid" />
       </div>
-      <Sidebar/>s
-      <section className="main-payment">
-      <div className="payment-sucess-main">
+      <Sidebar/>
+      <section className="remove-main">
+      <div className="main-bg">
+      <div className="payment-sucess-main-box">
         <h3 className="security-tag">Please Remove the Security Tag</h3>
         <div className="product-detail">
           <div className="row g-0">
@@ -131,6 +132,7 @@ const RemoveBox = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
       </section>
     </>

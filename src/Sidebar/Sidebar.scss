@@ -1,9 +1,10 @@
 .left-nav {
     color: #fff;
-    height: 124vh;
+    height: 86.2vh !important;
     width: 150px;
-    position: relative;
-    z-index: 2;
+    position: fixed;
+    z-index: 5;
+    top: 5.1rem;
 }
 .mz-step-indicator span{
 	width: 30px;
@@ -39,14 +40,36 @@
     border-color: #75ae52;
     color: #fff;
 }
-.nav-header>div{
-	padding: 11px 0;
+.nav-header > div {
+    padding: 3px 0;
 }
 #reciept {
     padding: 0;
 }
 
 
+@media only screen and(max-width:1980px) {
+    .left-nav {
+        height: 92vh;
+    }
+    
+}
+
+@media screen and (max-width:1024px) {
+    .left-nav {
+        height: 146vh !important;
+        position: relative;
+        top: 0;
+    }
+    
+}
+
+@media  only screen and (max-width:992px) {
+    .left-nav {
+        height: 146vh !important;
+    }
+    
+}
 
 @media only screen and (max-width:768px) {
     .left-nav {
@@ -56,6 +79,7 @@
         align-items: center;
         position: fixed;
         top: 0;
+        display: none;
     }
     .nav-header {
 	    display: inline-block;

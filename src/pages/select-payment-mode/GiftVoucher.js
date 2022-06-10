@@ -7,12 +7,15 @@ import Swipe from "../../assets/images/transactions/swipe.png";
 import Sidebar from "../../Sidebar/Sidebar";
 
 const GiftVoucher = () => {
+  const moveBack = () => {
+    window.history.back()
+  }
   return (
     <>
       <Fragment>
         <section className="payment-nav ">
           <div className="container-fluid d-flex">
-            <button type="button">
+            <button type="button"  onClick={() => moveBack()}>
               <BsFillCaretLeftFill />
               Go Back
             </button>

@@ -11,7 +11,7 @@ import Sidebar from "../../Sidebar/Sidebar";
 const PaymentSucess = () => {
   return (
     <>
-      <div className="payment-nav d-flex">
+      <div className="payment-nav-main d-flex">
         <img src={Suntech} alt="logo" className="img-fluid" />
         <h3>Payment Successful</h3>
         <img src={Logo} alt="logo" className="img-fluid" />

@@ -10,12 +10,15 @@ import "./index.scss";
 import Sidebar from "../../Sidebar/Sidebar";
 
 const PaymentMode = () => {
+  const moveBack = () => {
+    window.history.back()
+  }
   return (
     <Fragment>
 
       <section className="payment-nav ">
         <div className="container-fluid d-flex">
-        <button type="button"><BsFillCaretLeftFill/>Go Back</button>
+        <button type="button" onClick={() => moveBack()}><BsFillCaretLeftFill/>Go Back</button>
         <h3>Select Payment Mode</h3>
         <img src={logoBfl} alt="logo-main" className="img-fluid"/>
         </div>

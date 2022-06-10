@@ -1,15 +1,28 @@
-.payment-sucess-main {
+.payment-sucess-main-box {
   padding: 5rem 0 0rem;
-  height: 124vh;
+  height: 118vh ;
+  background-image: url(../../assets/images/transactions/Vector7.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #e5e5e5;
+  padding: 5rem 0 0;
+
 
   .payment-sucess-main h3 {
     text-align: center;
     padding-bottom: 2rem;
   }
 }
+.remove-main{
+  width: 89% !important;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
 .security-tag {
   text-align: center;
-  padding-bottom: 1rem;
+  padding: 1rem;
 }
 .product-detail {
   background-color: #f9f9ac;
@@ -30,9 +43,13 @@
     justify-content: space-between;
     align-items: center;
 }
-  .red-button {
-    height: 120px;
+ .red-button {
+  height: 60px;
+  margin-right: 2rem;
 }
+}
+.main-payment-box {
+  width: 89%;
 }
 
 .product-image-bg {
@@ -84,6 +101,51 @@
     background-size: contain;
 }
 
+@media only screen and (max-width:1980px) {
+
+  .main-bg{
+    .payment-sucess-main {
+      height: 100vh ;
+
+  }
+  
+}
+.remove-main {
+  width: 93% !important;
+}
+}
+
+@media only screen and (max-width:1024px){
+  .main-payment-box {
+    width: 86%;
+}
+.remove-main {
+  position: absolute;
+  width: 86% !important;
+}
+.payment-sucess-main .sucess-message h3 {
+  padding: 10px 2rem 0 ;
+}
+.payment-sucess-main {
+  height: 90.5vh ;
+}
+.payment-sucess-main-box {
+  height: 99vh;
+}
+
+.payment-sucess-main-box {
+  height: 164vh;
+}
+  
+}
+
+@media only screen and (max-width:992px) {
+    .payment-sucess-main-box {
+      height: 94vh !important;
+  }
+  
+}
+
 @media only screen and (max-width: 768px) {
   .product-detail {
     height: 850px;
@@ -96,6 +158,16 @@
       left: 42%;
     }
   }
+  .remove-main {
+    width: 100% !important;
+}
+}
+
+@media screen and (max-width:650px) {
+  .payment-sucess-main .sucess-message h3 {
+    padding: 4rem 2rem 0;
+  }
+  
 }
 
 @media only screen and (max-width: 426px) {
@@ -104,20 +176,28 @@
       margin: 0 10px;
     }
   }
+  .remove-main {
+    width: 100% !important;
+    position: absolute;
+    top: 3rem;
+}
   .product-image-bg {
     .product-slider {
         left: 23%;
     }
   }
+  .payment-sucess-main {
+    height: 117vh ;
 }
-@media only screen and (max-width: 426px) {
+}
+@media only screen and (max-width: 375px) {
     .product-image-bg {
       .product-slider {
           left: 18%;
       }
     }
   }
-  @media only screen and (max-width: 426px) {
+  @media only screen and (max-width: 320px) {
     .product-image-bg {
       .product-slider {
           left: 10%;
