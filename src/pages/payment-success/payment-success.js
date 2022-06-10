@@ -27,9 +27,9 @@ const PaymentSuccess = () => {
            <div className='No'>No: 5421********8574</div>
            <div className='AED2'>AED</div>
            <div className='Final-price'>150.8</div>
-
-         
+           <img className='check-mark-verified' src={Status } alt="" />
         </div>
+        <h3 className='YourPaymentwasSuccessful'>Your Payment was Successful</h3>
       </div>
       </section>
     </Fragment>
@@ -50,7 +50,7 @@ function StatusTick() {
     <img className="number-1-pay" src={Status} />
     <div className="pay-list-pay">
       <span>Pay</span>
-      <img className="line-2-pay" src={Line2} />
+      <img className="line-2-pay" src={Line} />
     </div>
     <img className="number-1-pay" src={Number2} />
     <div className="pay-list-pay">
@@ -58,7 +58,7 @@ function StatusTick() {
       <img className="line-3-pay" src={Line2} />
     </div>
     <img className="number-1-pay" src={Number3} />
-    <div className="pay-list-pay">
+    <div className="pay-list-receipt">
       <span>Recipt</span>
     </div>
       

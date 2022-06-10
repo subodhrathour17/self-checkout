@@ -1,0 +1,159 @@
+.gift-text-g-h1{
+    letter-spacing: 0;
+    min-height: 59px;
+    margin-left: 38%;
+    margin-top: 10px;
+}
+.bgl-logo-gift-g{
+    height: 67px;
+    left: 83%;
+    object-fit: cover;
+    position: fixed;
+    top: 10px;
+    width: 232px;
+    z-index: 1;
+}
+.updesign-gift{
+    position: absolute;
+    width: 1385px;
+    height: 364px;
+    left: 149.1px;
+    top: 88px;
+
+}
+.down-degin-gift-img-g{
+    position: absolute;
+    width: 1385px;
+    height: 150px;
+    left: 149px;
+    top: 561px;
+
+}
+.BackGround-g{
+    position: absolute;
+    margin-top: -14px;
+    margin-left: 8px;
+      width: 139px;
+      background-color:#333333;
+      height: 625px;
+  }
+  .StatusTick-pay-g {
+    display: flex;
+    height: 49px;
+    min-width: 49px;
+    padding: 50px 15.5px;
+    margin-left: 35px;
+  }
+  .vector-pay-g {
+    height: 49px;
+    width: 49px;
+    margin-top: -7px;
+    margin-left: -5px;
+  }
+  .article-list-pay-g {
+   margin-top: 11rem;
+   margin-left: 2rem;
+    position: fixed;
+    color: #fff;
+    top: 0;
+    z-index: 1;
+  }
+  .pay-list-pay-g{
+    color: #fff;
+    margin-left: 55px;
+  }
+ .line-1-pay-g {
+   margin-top: 1.7rem;
+   height: 50px;
+   position: fixed;
+   margin-left: -2.3rem;
+  }
+  .line-2-pay-g {
+    margin-top: 1.7rem;
+    height: 50px;
+    position: fixed;
+    margin-left: -0.8rem;
+   }
+   .line-3-pay-g{
+    position: fixed;
+       margin-top: 1.7rem;
+       margin-left: -2.7rem;
+       height: 50px;
+   }
+ .number-1-pay-g{
+     margin-top: 4.5rem;
+     margin-left: 2.8rem;
+ }
+ .remove-tag-pay-g {
+     margin-left: -1.8rem;
+ }
+ .pay-list-receipt-g
+{
+    color: #fff;
+    margin-left: 45px;
+}
+ 
+ .gift-credit-g img{
+    margin-left: 224px;
+    width: 250px;
+    height: 169px;
+    margin-top: 288px;
+}
+
+ .gift-credit-g{
+    margin-top: 10px;
+     margin-left: 38px;
+    height: 58px;
+    filter: drop-shadow(0px 2.66667px 5.33333px rgba(0, 0, 0, 0.25));
+    border-radius: 10.1375px;
+ }
+
+ .arror-credit-card-g{
+    animation: arrow-i 0.5s infinite;
+    position: absolute;
+    width: 113.25px;
+    height: 151px;
+    left: 631px;
+    top: 410px;
+ }
+ .card-machine-img-g{
+   
+    width: 292px;
+    height: 295px;
+   
+    filter: drop-shadow(6px 7px 11px rgba(0, 0, 0, 0.11));
+    border-radius: 42px;
+    margin-left: 900px;
+    margin-top: 105px;
+ }
+ .card-machine-img-g img{
+    width: 292px;
+    height: 320px;
+    margin-top: 4px;
+}
+ 
+ .gift-card-button-g{
+    position: absolute;
+    width: 121px;
+    height: 42.13px;
+    left: 20px;
+    top: 10px;
+    background-color: #f0bc21;
+    border-radius: 10px;
+    filter: drop-shadow(6px 7px 11px rgba(0, 0, 0, 0.11));
+ }
+ @keyframes arrow-i{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(0.75);
+        opacity: 0.25;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}

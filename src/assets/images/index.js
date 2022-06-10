@@ -39,9 +39,23 @@ import UpDesignImg from './up-design-new.png'
 //payment Done Screen
 import PayDownImg from './paydownimg.png'
 
+//credit-card-payment-page
+import AppleImg from './apay.png'
+import GoogleImg from './gpay.png'
+import ArrowImg from './arrow.png'
+import CardMachine from './credit-card-machine.png'
+import GoButton from './goback.png'
+//gift-card-screen
+import GiftMachine from './giftmachine.png'
+import ScanQr from './scanimg.png'
+import Paytm from './paytm.png'
+import PhonePe from './phonepe.png'
+import AmazonPay from './amazonpay.png'
+
 export { Logo, BflGroupLogo, Merge, Vector2,
      Vector6, Vector1, Rectangle30, Young, 
      Comp1, Girl, GoBack,Status,MaskGroup,Down,
      Visa,Discover,MasterCard,GiftCard,Wallet,Line,Number1,Line2,
-     Number2 ,Number3,Digital,PrintReciept,NoReciept,Number4,UpDesignImg,PayDownImg 
+     Number2 ,Number3,Digital,PrintReciept,NoReciept,Number4,UpDesignImg,PayDownImg,
+     AppleImg,GoogleImg,ArrowImg,CardMachine,GoButton,GiftMachine,ScanQr,Paytm,PhonePe,AmazonPay
     };

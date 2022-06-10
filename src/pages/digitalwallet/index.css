@@ -1,0 +1,199 @@
+/* .digitalwallet{
+   position: relative;
+   width: 1440px;
+   height: 1024px;
+   background: #FFF8EF;
+} */
+.digit-text-g-h1{
+    letter-spacing: 0;
+    min-height: 59px;
+    margin-left: 38%;
+    margin-top: 10px;
+}
+.bgl-logo-digit-w{
+    height: 67px;
+    left: 83%;
+    object-fit: cover;
+    position: fixed;
+    top: 10px;
+    width: 232px;
+    z-index: 1;
+}
+.updesign-digit{
+    position: absolute;
+    width: 1385px;
+    height: 364px;
+    left: 149.1px;
+    top: 88px;
+
+}
+.down-degin-digit-img-w{
+    position: absolute;
+    width: 1385px;
+    height: 150px;
+    left: 149px;
+    top: 561px;
+
+}
+.BackGround-wallet{
+    position: absolute;
+      margin-top: -15px;
+      margin-left: 10px;
+      width: 139px;
+      background-color:#333333;
+      height: 625px;
+  }
+  .StatusTick-pay-wallet{
+    display: flex;
+    height: 49px;
+    min-width: 49px;
+    padding: 50px 15.5px;
+    margin-left: 35px;
+  }
+  .vector-pay-wallet{
+    height: 49px;
+    width: 49px;
+    margin-top: -7px;
+    margin-left: -5px;
+  }
+  .article-list-pay-wallet{
+   margin-top: 11rem;
+   margin-left: 2rem;
+    position: fixed;
+    color: #fff;
+    top: 0;
+    z-index: 1;
+  }
+ .line-1-pay-wallet{
+   margin-top: 1.7rem;
+   height: 50px;
+   position: fixed;
+   margin-left: -2.3rem;
+  }
+  .line-2-pay-wallet{
+    margin-top: 1.7rem;
+    height: 50px;
+    position: fixed;
+    margin-left: -0.8rem;
+   }
+   .line-3-pay-wallet{
+    position: fixed;
+       margin-top: 1.7rem;
+       margin-left: -2.7rem;
+       height: 50px;
+   }
+ .number-1-pay-wallet{
+     margin-top: 4.5rem;
+     margin-left: 2.8rem;
+ }
+ .remove-tag-pay-wallet {
+     margin-left: -1.8rem;
+ }
+ .pay-list-pay-wallet{
+    color: #fff;
+    margin-left: 55px;
+}
+ .pay-list-receipt-wallet{
+    color: #fff;
+    margin-left: 47px;
+ }
+ .form-for-digit-w{
+    position: absolute;
+    width: 180px;
+    height: 310px;
+    left: 350px;
+    top: 290px;
+    background-color: rgba(7, 6, 6, 0.07);
+ }
+ .digit-credit-w img{
+    left: 10px;
+    width: 98px;
+    height: 53px;
+}
+.discover-credit img{
+    width: 98px;
+    height: 53px;
+}
+.master-credit img{
+    width: 98px;
+    height: 53px;
+}
+ .digit-credit-w{
+    margin-top: 10px;
+     margin-left: 38px;
+    height: 58px;
+    filter: drop-shadow(0px 2.66667px 5.33333px rgba(0, 0, 0, 0.25));
+    border-radius: 10.1375px;
+ }
+ .discover-credit{
+    margin-left: 38px;
+    height: 58px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10.14px;
+ }
+ .google-pay-credit{
+    margin-left: 38px;
+    height: 58px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 10.14px;
+ }
+ .arror-credit-card-digit{
+    animation: arrow-i 0.5s infinite;
+    position: absolute;
+    width: 113.25px;
+    height: 151px;
+    left: 631px;
+    top: 385px;
+ }
+ .card-machine-img-digit{
+    width: 292px;
+    height: 295px;
+    filter: drop-shadow(6px 7px 11px rgba(0, 0, 0, 0.11));
+    border-radius: 42px;
+    margin-left: 900px;
+    margin-top: 105px;
+ }
+ .card-machine-img-digit img{
+    box-sizing: border-box;
+    position: absolute;
+    width: 406px;
+    height: 531px;
+    left: -8px;
+    top: -68px;
+    border: 2px solid #989898;
+    filter: drop-shadow(6px 7px 11px rgba(0, 0, 0, 0.11));
+    border-radius: 42px;
+ }
+ .radriobutton{
+    
+    width: 74px;
+    height: 19px;
+    margin-left: -40px;
+    margin-top: 55px;
+
+ }
+ .digit-card-button-g{
+    position: absolute;
+    width: 121px;
+    height: 42.13px;
+    left: 20px;
+    top: 10px;
+    background-color: #f0bc21;
+    border-radius: 10px;
+    filter: drop-shadow(6px 7px 11px rgba(0, 0, 0, 0.11));
+ }
+ @keyframes arrow-i{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(0.75);
+        opacity: 0.25;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
