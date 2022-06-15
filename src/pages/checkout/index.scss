@@ -1,10 +1,4 @@
-*{
-	line-height: 1.4;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
-}
+
 html,
 body {
 	height: 100%;
@@ -55,6 +49,8 @@ main .container-fluid{
     position: relative;
     width: 100%;
     left: 10rem;
+    margin-bottom: 4rem;
+
 .fixed-bottom {
     position: fixed;
     background-color: #f1f1f1;
@@ -65,6 +61,11 @@ main .container-fluid{
 }
 .article-list-wrapper .product-list-main{
 	padding: 1rem 2rem ;
+	border-bottom: 1px solid #BBBBBB;
+	margin-left:2rem;
+}
+.product-scan-main{
+	padding: 2rem 0rem ;
 	border-bottom: 1px solid #BBBBBB;
 	margin-left:2rem;
 }

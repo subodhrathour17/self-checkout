@@ -2,8 +2,9 @@ import React, { Fragment } from "react";
 import {BsFillCaretLeftFill} from 'react-icons/bs';
 import logoBfl from '../../assets/images/main/bfl-group-logo.png';
 import Cards from '../../assets/images/transactions/cards.png'
-import Arrow from '../../assets/images/transactions/right-arrow.png'
-import Machine from '../../assets/images/transactions/atm-mechine.png'
+import Arrow from "../../assets/images/gif/Arrow.gif";
+import Machine from "../../assets/images/gif/Machine.gif";
+
 
 
 import "./index.scss";
@@ -36,8 +37,10 @@ const PaymentMode = () => {
         <div className="container">
           <div className="payment-details-box d-flex">
             <img src={Cards} alt="cards" className="img-fluid"/>
-            <img src={Arrow} alt="cards" className="img-fluid"/>
-            <img src={Machine} alt="cards" className="img-fluid"/>
+            <img src={Arrow} alt="cards" className="img-fluid arrow-main" /> 
+            <div className="scanner-box">
+            <img src={Machine} alt="cards" className="img-fluid scanner-main"/>
+            </div>
 
 
           </div>

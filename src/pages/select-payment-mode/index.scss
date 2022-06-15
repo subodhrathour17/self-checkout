@@ -176,6 +176,21 @@
   width: 300px;
 }
 
+.main-payment{
+  .arrow-main{
+    width: 200px;
+  }
+  .scanner-box {
+    border-radius: 10px;
+    img{
+      width: 300px;
+      height: 400px;
+      border-radius: 10px;
+      border: 1px solid #c7c7cc;
+    }
+}
+}
+
 // Payment sucess
 .payment-nav {
   justify-content: space-between;
@@ -212,7 +227,8 @@
   background-repeat: no-repeat;
   background-color: #e5e5e5;
   padding: 5rem 0 0;
-    height: 88.5vh !important;
+  height: 90.2vh !important;
+  
 
 
   .sucess-box {
@@ -443,7 +459,7 @@
   }
 
   .payment-details-box {
-    top: -14rem;
+    top: -8rem;
     left: 13rem;
     display: block !important;
     width: 45%;
@@ -500,7 +516,7 @@
     }
   }
   .payment-box-main {
-    margin-top: 22rem ;
+    margin-top: 29rem ;
 }
 .payment-details-box {
   top: -10rem ;

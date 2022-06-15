@@ -3,10 +3,11 @@ import Logo from "../../assets/images/main/bfl-group-logo.png";
 import Suntech from "../../assets/images/main/suntech-logo.png";
 import Tshirt from "../../assets/images/remove/tshirt.png";
 import Greenbutton from "../../assets/images/remove/buttongreen.png";
-import Removetag from "../../assets/images/remove/remove-tag.png";
+import Removetag from "../../assets/images/gif/remove-tag.gif"
 import { Link } from "react-router-dom";
 import "./index.scss";
 import Sidebar from "../../Sidebar/Sidebar";
+
 
 const RemoveBox = () => {
   return (
@@ -63,6 +64,7 @@ const RemoveBox = () => {
                 </div>
               </div>
             </div>
+            
             <div className="col-md-6">
               <div className="product-image-bg">
                 <div
@@ -96,6 +98,7 @@ const RemoveBox = () => {
                     <div class="carousel-item active">
                       <div className="product-main-image">
                         <div className="remove-main-image">
+                          <h6>Your tag is removed</h6>
                           <img
                             src={Removetag}
                             alt="tshirt"
@@ -107,6 +110,7 @@ const RemoveBox = () => {
                     <div class="carousel-item">
                       <div className="product-main-image">
                         <div className="remove-main-image">
+                        <h6>Your tag is removed</h6>
                           <img
                             src={Removetag}
                             alt="tshirt"
@@ -118,6 +122,7 @@ const RemoveBox = () => {
                     <div class="carousel-item">
                       <div className="product-main-image">
                         <div className="remove-main-image">
+                        <h6>Your tag is removed</h6>
                           <img
                             src={Removetag}
                             alt="tshirt"

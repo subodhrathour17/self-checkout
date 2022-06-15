@@ -1,6 +1,6 @@
 .left-nav {
     color: #fff;
-    height: 86.2vh !important;
+    height: 88.2vh ;
     width: 150px;
     position: fixed;
     z-index: 5;
@@ -16,7 +16,7 @@
     font-weight: 600;
 }
 .nav-header {
-    padding: 0 10px 50px;
+    padding: 10px 10px 40px;
     position: relative;
 }
 .nav-header:after{
@@ -57,16 +57,14 @@
 
 @media screen and (max-width:1024px) {
     .left-nav {
-        height: 146vh !important;
-        position: relative;
-        top: 0;
+        height: 89vh ;
     }
     
 }
 
 @media  only screen and (max-width:992px) {
     .left-nav {
-        height: 146vh !important;
+        height: 146vh ;
     }
     
 }

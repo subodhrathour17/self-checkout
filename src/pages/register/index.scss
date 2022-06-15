@@ -76,19 +76,21 @@
     border-radius: 10px;
     background-color: #b1b1b1;
     color: #fff;
-    &:hover{
+    &:active{
       background-color: #fff;
       color: #303030;
     }
   }
 }
-.register-box-buttons button:nth-child(1) {
+.register-box-buttons .register-open {
   background-color: #303030;
-}
-.register-box-buttons button:hover:nth-child(1) {
+  &:hover{
   color: #303030;
   background-color: #ffffff;
 }
+}
+
+
 
 // media query
 

@@ -9,18 +9,17 @@ import {
 } from "../../assets/images";
 import Computer from "../../assets/images/gif/computer.gif";
 import { BsFillCaretDownFill } from "react-icons/bs";
-import RegisterOpen from '../../popup/register-open';
-import "./index.scss";
+import Logout from "../../popup/logout";
+import "./tillClose.scss";
 import {Link} from "react-router-dom"
 
-const Register = () => {
+const Till = () => {
   const [show, setShow] = useState(false);
-  const handleClose = () => {
-    setShow(false)
-  }
+
+  
   return (
     <>
-      <section className="register">
+      <section className="till-close">
         <div className="row g-0">
           <div className="col-lg-8">
             <div className="register-main">
@@ -30,8 +29,8 @@ const Register = () => {
                   alt="Rectangle"
                   className="img-fluid bg-main"
                 />
-                <img src={Girl} alt="girl" className="img-fluid logo-girl" />
-                <BsFillCaretDownFill />
+                <img src={Girl} alt="girl" className="img-fluid logo-girl"  />
+                <BsFillCaretDownFill onClick={() => setShow(!show)} />
                 <img src={Logo} alt="" className="img-fluid logo-main" />
               </div>
               <div className="scanner-main d-flex">
@@ -45,18 +44,18 @@ const Register = () => {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="register-box">
+            <div className="till-box">
               <img
                 src={BflGroupLogo}
                 alt="logo"
                 className="img-fluid bfl-logo"
               />
-              <div className="register-box-buttons">
-                <button type="button" className="register-open" onClick={() => setShow(true)}>Register Open</button>
-                <button type="button">Till Open</button>
-                <Link to="/till">
-                <button type="button">Till Close</button>
+              <div className="till-box-buttons">
+                <Link to="/register">
+                <button type="button" >Register Open</button>
                 </Link>
+                <button type="button">Till Open</button>
+                <button type="button" className="till-close">Till Close</button>
                 <button type="button">Register Close</button>
               </div>
               <img
@@ -68,9 +67,9 @@ const Register = () => {
           </div>
         </div>
       </section>
-      <RegisterOpen show={show} handleClose={handleClose} />
+      {show && <Logout/>}
     </>
   );
 };
 
-export default Register;
+export default Till;

@@ -2,8 +2,8 @@ import React, { Fragment } from "react";
 import { BsFillCaretLeftFill } from "react-icons/bs";
 import logoBfl from "../../assets/images/main/bfl-group-logo.png";
 import Gift from "../../assets/images/payment-mode/gift-card.png";
-import Arrow from "../../assets/images/transactions/right-arrow.png";
-import Swipe from "../../assets/images/transactions/swipe.png";
+import Arrow from "../../assets/images/gif/Arrow.gif";
+import Swipe from "../../assets/images/gif/swipe.gif";
 import Sidebar from "../../Sidebar/Sidebar";
 
 const GiftVoucher = () => {
@@ -36,8 +36,10 @@ const GiftVoucher = () => {
               <div className="gift-icon">
                 <img src={Gift} alt="cards" className="img-fluid" />
               </div>
-              <img src={Arrow} alt="cards" className="img-fluid" />
+              <img src={Arrow} alt="cards" className="img-fluid arrow-main" /> 
+              <div className="scanner-box">
               <img src={Swipe} alt="cards" className="img-fluid" />
+            </div>
             </div>
           </div>
         </div>

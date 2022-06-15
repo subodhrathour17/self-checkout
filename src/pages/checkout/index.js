@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { useEffect, Fragment } from "react";
 import {
   Logo,
   BflGroupLogo,
@@ -18,8 +18,14 @@ import {
 import { Link } from "react-router-dom";
 import Sidebar from "../../Sidebar/Sidebar";
 import "./index.scss";
+import Barcode from "../Barcode/Barcode";
 
 const Checkout = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+  
   return (
     <Fragment>
       <header>
@@ -56,7 +62,7 @@ const Checkout = () => {
             </div>
           </div>
           <div className="row">
-              <Sidebar />
+            <Sidebar />
             <div className="col-12 col-md-10 article-list-wrapper">
               <div className="content-section">
                 <div className="row g-0 product-list-main">
@@ -179,6 +185,10 @@ const Checkout = () => {
                     <button>remove</button>
                   </div>
                 </div>
+                <div className="row  g-0 product-scan-main">
+                  <Barcode />
+                </div>
+
                 <div className="fixed-bottom">
                   <div className="col-12">
                     <div className="row g-0">
@@ -197,7 +207,8 @@ const Checkout = () => {
                       <div className="col-4 text-right action-button">
                         <button>Cancel</button>
                         <button>
-                          <img src={CashPayment} alt="Cash" width="20px" /><Link to="/payment-details">Pay</Link>
+                          <img src={CashPayment} alt="Cash" width="20px" />
+                          <Link to="/payment-details">Pay</Link>
                         </button>
                       </div>
                     </div>

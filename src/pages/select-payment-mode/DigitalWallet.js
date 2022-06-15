@@ -4,8 +4,8 @@ import logoBfl from "../../assets/images/main/bfl-group-logo.png";
 import Phonepe from "../../assets/images/transactions/Phone pe.png";
 import Paytm from "../../assets/images/transactions/Paytm.png";
 import Amazon from "../../assets/images/transactions/Amazon Pay.png";
-import Arrow from "../../assets/images/transactions/right-arrow.png";
-import Scanner from "../../assets/images/transactions/Scanner.png";
+import Arrow from "../../assets/images/gif/Arrow.gif";
+import Scanner from "../../assets/images/gif/Scanner.gif";
 import { Link } from "react-router-dom";
 import Sidebar from "../../Sidebar/Sidebar";
 
@@ -50,8 +50,10 @@ const DigitalWallet = () => {
                   </li>
                 </ul>
               </div>
-              <img src={Arrow} alt="cards" className="img-fluid" /> 
+              <img src={Arrow} alt="cards" className="img-fluid arrow-main" /> 
+              <div className="scanner-box">
               <Link to="/sucessfull"><img src={Scanner} alt="cards" className="img-fluid sucessful-scan" /></Link>
+            </div>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Welcome from './pages/Welcome/Welcome.js';
+import Welcome from "./pages/Welcome/Welcome.js";
 import Login from "./pages/login";
 import Register from "./pages/register";
 import Checkout from "./pages/checkout";
@@ -15,17 +15,19 @@ import RemoveTag from "./pages/Remove-tag/index.js";
 import RemoveBox from "./pages/Remove-tag/Remove.js";
 import RecieptRating from "./pages/Rating/index.js";
 import Sidebar from "./Sidebar/Sidebar.js";
-
+import Logout from "./popup/logout.js";
+import Till from "./pages/register/tillClose.js";
+import Barcode from "./pages/Barcode/Barcode.js";
 
 const AppRoute = () => {
   return (
     <Fragment>
-
-      <Router basename="/demo">
+      <Router>
         <Routes>
           <Route exact path="/" element={<Welcome />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/register" element={<Register />} />
+          <Route exact path="/till" element={<Till />} />
           <Route exact path="/checkout" element={<Checkout />} />
           <Route exact path="/drop-you-items" element={<DropItems />} />
           <Route exact path="/payment" element={<PaymentMode />} />
@@ -33,11 +35,13 @@ const AppRoute = () => {
           <Route exact path="/gift-voucher" element={<GiftVoucher />} />
           <Route exact path="/digital-Wallet" element={<DigitalWallet />} />
           <Route exact path="/receipt" element={<Receipt />} />
-          <Route exact path="/sucessfull" element={<PaymentSucess/>}/>
-          <Route exact path="/remove-tag" element={<RemoveTag/>}/>
-          <Route exact path="/remove-green" element={<RemoveBox/>}/>
-          <Route exact path="/rating" element={<RecieptRating/>}/>
-          <Route exact path="/sidebar" element={<Sidebar/>} />
+          <Route exact path="/sucessfull" element={<PaymentSucess />} />
+          <Route exact path="/remove-tag" element={<RemoveTag />} />
+          <Route exact path="/remove-green" element={<RemoveBox />} />
+          <Route exact path="/rating" element={<RecieptRating />} />
+          <Route exact path="/sidebar" element={<Sidebar />} />
+          <Route exact path="/logout" element={<Logout />} />
+          <Route exact path="/barcode" element={<Barcode />} />
         </Routes>
       </Router>
     </Fragment>

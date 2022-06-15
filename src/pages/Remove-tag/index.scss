@@ -14,7 +14,7 @@
   }
 }
 .remove-main{
-  width: 89% !important;
+  width: 89% ;
   position: fixed;
   right: 0;
   top: 0;
@@ -96,10 +96,26 @@
     position: absolute;
     left: 42%;
     top: 19%;
-    background-image: url(../../assets/images/remove/removebg.png);
+    background-image: url(../../assets/images/gif/remove-bg.gif);
     background-repeat: no-repeat;
     background-size: contain;
+     img {
+      width: 60px;
+      position: absolute;
+      bottom: 25px;
+      left: 41%;
+      border-radius: 50%;
+  }
+  h6 {
+    position: absolute;
+    top: 34%;
+    font-size: 30px;
+    color: #46df4c;
+    text-align: center;
+    text-shadow: 0 4 4 0 #000000 25%;
 }
+}
+
 
 @media only screen and (max-width:1980px) {
 
@@ -111,7 +127,7 @@
   
 }
 .remove-main {
-  width: 93% !important;
+  width: 89% ;
 }
 }
 
@@ -121,7 +137,7 @@
 }
 .remove-main {
   position: absolute;
-  width: 86% !important;
+  width: 86% ;
 }
 .payment-sucess-main .sucess-message h3 {
   padding: 10px 2rem 0 ;
@@ -139,9 +155,16 @@
   
 }
 
+
+.remove-circle-main{
+  background-image: url(../../assets/images/gif/remove-bg.gif);
+  height: 300px;
+  width: 300px;
+}
+
 @media only screen and (max-width:992px) {
     .payment-sucess-main-box {
-      height: 94vh !important;
+      height: 94vh ;
   }
   
 }
@@ -159,7 +182,7 @@
     }
   }
   .remove-main {
-    width: 100% !important;
+    width: 100% ;
 }
 }
 
@@ -177,7 +200,7 @@
     }
   }
   .remove-main {
-    width: 100% !important;
+    width: 100% ;
     position: absolute;
     top: 3rem;
 }
