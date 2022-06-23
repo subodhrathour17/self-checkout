@@ -10,7 +10,7 @@ const DigitalWallet = () => {
     <Fragment>
     <section className="digit">
     <div className="digitalwallet">
-        <button className='digit-card-button-g'><img className='' src={GoButton} alt="" /></button>
+        <a href='/payment' className='digit-card-button-g btn'><img className='' src={GoButton} alt="" /></a>
        <h1 className='digit-text-g-h1'>
            <span>Select Payment Mode</span>
        </h1>

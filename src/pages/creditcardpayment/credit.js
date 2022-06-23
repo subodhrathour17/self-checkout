@@ -11,7 +11,8 @@ const Credit = () => {
     <Fragment>
     <section className="credit">
     <div className="credit-c">
-        <button className='credit-card-button'><img className='' src={GoButton} alt="" /></button>
+    <a href='/payment' className='digit-card-button-g btn'><img className='' src={GoButton} alt="" /></a>
+      
        <h1 className='cresit-text-c'>
            <span>Select Payment Mode</span>
        </h1>

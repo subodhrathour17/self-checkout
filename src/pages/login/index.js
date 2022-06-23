@@ -1,4 +1,5 @@
-import React, { Fragment } from "react";
+import axios from "axios";
+import React, { Fragment, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   BflGroupLogo,
@@ -11,10 +12,29 @@ import "./index.css";
 
 const Login = () => {
   const navigate = useNavigate();
-
   const submitHandler = () => {
     navigate("/register");
+    
   };
+  const[data,setData]= useState([])
+ useEffect(()=>{
+  const LoginUserpost= async ()=>{
+    try{
+    //  const url="https://reqres.in/api/login"
+     const res= await axios({
+      method: 'post',
+      url: 'https://reqres.in/api/login',
+      data:{
+        "email": "eve.holt@reqres.in",
+        "password": "cityslicka"
+    }
+    })
+     setData(res.data)
+     console.log(res.data);
+    }catch(e){console.log(e);}
+ }
+  LoginUserpost()
+ },[])
   return (
     <Fragment>
       <section className="login">

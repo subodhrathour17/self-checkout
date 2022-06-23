@@ -1,10 +1,11 @@
-import React ,{ Fragment } from 'react'
+import React ,{ Fragment, useState} from 'react'
 import {BflGroupLogo,
-    GoBack,Status,MaskGroup,Down,Visa,Discover,MasterCard, GiftCard, Wallet,Line,Number1,Line2,Number2 ,Number3,UpDesignImg
+    GoBack,Status,MaskGroup,Down,Visa,Discover,MasterCard, GiftCard, Wallet,
+    Line,Number1,Line2,Number2 ,Number3,UpDesignImg,LoyalCustomer
 } from "../../assets/images";
 import "./index.css";
+import LoyalReceiptOpen from '../../popup/loyal'
 const Payment = () => {
-    
   return (
     <Fragment>
       <section className="payment">
@@ -36,7 +37,7 @@ function Paytext1() {
   }
   function StatusTick() {
     return (
-      <div className="BackGround">
+      <div className="BackGround BackGround-p">
       <div className="StatusTick">
         <img className="vector" src={Status} />
       </div>
@@ -64,7 +65,7 @@ function Paytext1() {
   }
   function UpDesign() {
     return (
-      <div className=" back-design-pyment back-design-m-screen  back-design-main form-backsmall-p  background-img-s">
+      <div className=" back-design-pyment back-design-m-screen  back-design-main form-backsmall-p background-img-s">
         <img className='top-image top-img-s bi-im-s' src={UpDesignImg} />
         
       </div>
@@ -81,10 +82,20 @@ function Paytext1() {
   }
  
   const Cards = () => {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => {
+      setShow(false);
+    };
+  
+    const handleOpen = () => {
+      setShow(true);
+    };
+    
     return (
-      <div className='cardmain card-full card-m card-m-pay card-s'>
-      <div className="form-back form-full form-m form-m-cd-text form-s-p">
-        <h1 className='tex-h1 text-s-h1'>Credit / Debit Card</h1>
+      <div className='cardmain cardmain-payment card-full card-m card-m-pay card-s'>
+    <div className="form-back form-full form-m form-m-cd-text form-s-p" >
+    <a href='/credit'>    <h1 className='tex-h1 text-s-h1'>Credit / Debit Card</h1></a>
       <div className="card-design-all card-design-all-full card-design-all-m  card-design-all-s">
       <img
         className="card-visa"
@@ -99,22 +110,22 @@ function Paytext1() {
       </div>
       
     </div>
-    
+   
     </div>
-    <div className="form-back form-back-text-full form-m form-s-p">
-        <h3 className='text-s-h3'>Gift Card</h3>
+    <div className="form-back form-back-text-full form-m form-s-p" onClick={handleOpen}>
+        <h3 className='text-s-h3'>Loyalty Customer</h3>
       <div className="card-design-all card-design-all-full-gift card-design-all-m-gift card-design-all-s-gift">
       <img
         className="gift-card-img"
-        src={GiftCard}
+        src={LoyalCustomer}
         />
       
       
     </div>
     
     </div>
-    <div className="form-back form-back-text-full form-m form-s-p">
-        <h2 className='wallet-text text-s-h2'>Wallet</h2>
+    {/* <div className="form-back form-back-text-full form-m form-s-p">
+        <a href="/digitalwallet"><h2 className='wallet-text text-s-h2'>Wallet</h2></a>
       <div className="card-design-all  card-design-all-full-w card-design-all-m-wallet card-design-all-s-wallet">
       <img
         className="wallet-img"
@@ -123,7 +134,10 @@ function Paytext1() {
       
     </div>
     
+    
+    </div> */}
+    <LoyalReceiptOpen show={show} handleClose={handleClose}/>
     </div>
-    </div>
+    
     )
   }

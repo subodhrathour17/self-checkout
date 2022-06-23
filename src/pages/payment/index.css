@@ -44,14 +44,17 @@
     width: 232px;
     z-index: 1;
   }
-  .BackGround{
+  a{
+    color: black;
+  }
+  .BackGround-p{
     position: absolute;
       margin-top: 20px;
       margin-left: 10px;
       width: 139px;
       background-color:#333333;
       height: 40rem;
-      border-radius: 10px;
+      
   }
   .StatusTick {
     display: flex;
@@ -102,21 +105,15 @@
      margin-left: 3.5rem;
  }
   .back-design-main{
-    /* align-items: center;
-    margin-top: 20px;
-    min-width: 1500px;
-    margin-left: 3rem;
-    margin-bottom: 30rem;
-    border-radius: 10px; */
-    /* background-color:#FEB23B;
-    border-bottom-right-radius: 700%;
-    border-bottom-left-radius: 500%; */
-    /* z-index: 2; */
     align-items: center;
     margin-top: 11px;
     min-width: 1500px;
     margin-left: 1.7rem;
-    /* margin-bottom: 30rem; */
+   
+  }
+  .back-design-main img{
+    height: 317px;
+    width: 1400px;
   }
   .top-image{
       margin-left: 10%;
@@ -126,12 +123,12 @@
     margin-top: -1.6rem;
     margin-left: 138px;
     height: 120px;
-    width: 1288px;
+    width: 1400px;
   }
-  .cardmain{
+  .cardmain-payment{
       position: relative;
       display: flex;
-      margin-left: -1.5rem;
+      margin-left: 12.5rem;
   }
   .form-back{
     border-radius: 10px;
@@ -197,7 +194,9 @@
 
   .gift-card-img{
     align-self: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    width: 79px;
+    border-radius: 100%;
   }
   .wallet-img{
     align-self: center;
@@ -213,7 +212,7 @@
   }
   .form-back h3{
     margin-top: 15rem;
-    margin-left: 6.5rem;
+    margin-left: 4.5rem;
     position: absolute;
     font-size: 1.5rem;
   }
@@ -281,7 +280,7 @@
     width: 246px;
   }
   .card-m{
-    margin-left: 12rem;
+    margin-left: 22rem;
   }
   .card-design-all-m{
     left: -18px;

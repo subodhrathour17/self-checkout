@@ -5,16 +5,25 @@ import { Logo,Digital } from "../assets/images";
 
 import "./index.css";
 
-const DegitalReceiptOpen = ({ show, handleClose }) => {
-  
+import { useState } from "react";
+import LoyalProfileReceiptOpen from "./loyal-profile";
 
+const LoyalReceiptOpen = ({ show, handleClose }) => {
+  const [dataShow, setFromShow] = useState(false);
+
+  const showTill = () => {
+    setFromShow(true);
+  };
+  const closeTill = () => {
+    setFromShow(false);
+  };
   
   return (
     <Fragment>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-         <Image style={{marginLeft:'-40px',width:'30px'}} src={Digital}/>
-          <spam style={{fontWeight:'bold',marginLeft:'-20px'}}>Degital Reciept</spam>
+         {/* <Image style={{marginLeft:'-40px',width:'30px'}} src={Digital}/>
+          <spam style={{fontWeight:'bold',marginLeft:'-20px'}}>Degital Reciept</spam> */}
           <Image src={Logo} alt="suntech-logo" />
           
         </Modal.Header>
@@ -28,24 +37,18 @@ const DegitalReceiptOpen = ({ show, handleClose }) => {
               <Form.Control type="tel" placeholder="8744029109" />
             </Col>
           </Form.Group>
-          <Form.Group as={Row} className="mb-3 register-main">
-            <Form.Label column sm="2" required>
-              Email Id :-
-            </Form.Label>
-            <Col sm="10">
-              <Form.Control type="email" placeholder="@gmail.com" />
-              
-            </Col>
-          </Form.Group>
+        
           <div className="button-section">
-            <Button variant="warning" >
-              Continue <GoArrowRight size={20} />
+            
+             <Button variant="warning" onClick={showTill}>
+           Submit<GoArrowRight size={20} />
             </Button>
           </div>
         </Modal.Body>
       </Modal>
+      <LoyalProfileReceiptOpen dataShow={dataShow} closeTill={closeTill} />
     </Fragment>
   );
 };
 
-export default DegitalReceiptOpen;
+export default LoyalReceiptOpen;

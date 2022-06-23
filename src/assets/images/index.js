@@ -6,7 +6,6 @@ import Merge from './merge.png'
 import Vector1 from './vector1.png'
 import Vector2 from './vector2.png'
 import Vector6 from './vector6.png'
-
 import Rectangle30 from './rectangle30.png';
 import Young from './young.png';
 import Comp1 from './comp1.png';
@@ -52,10 +51,24 @@ import Paytm from './paytm.png'
 import PhonePe from './phonepe.png'
 import AmazonPay from './amazonpay.png'
 
+//loyal customer
+import LoyalCustomer from './loyal.png'
+import LoyalGoldIcon from './group-102.png'
+import OtpIcon from './otp-icon.png'
+
+//home screen
+import TopDesign from './top-design.png'
+import WhiteDesign from './white-degin-home.png'
+import DarkDubi from "./darkdubi.png"
+import Cashier from './cashier-icon.png'
+
+
 export { Logo, BflGroupLogo, Merge, Vector2,
      Vector6, Vector1, Rectangle30, Young, 
      Comp1, Girl, GoBack,Status,MaskGroup,Down,
      Visa,Discover,MasterCard,GiftCard,Wallet,Line,Number1,Line2,
      Number2 ,Number3,Digital,PrintReciept,NoReciept,Number4,UpDesignImg,PayDownImg,
-     AppleImg,GoogleImg,ArrowImg,CardMachine,GoButton,GiftMachine,ScanQr,Paytm,PhonePe,AmazonPay
+     AppleImg,GoogleImg,ArrowImg,CardMachine,GoButton,
+     GiftMachine,ScanQr,Paytm,PhonePe,AmazonPay,
+     LoyalCustomer,LoyalGoldIcon,OtpIcon, TopDesign,WhiteDesign,DarkDubi,Cashier
     };
