@@ -23,14 +23,14 @@ import MasterCard from './mastercard.png';
 import GiftCard from './giftcard.png';
 import Wallet from './wallet.png';
 import Line from './line.png';
-import one from './one.png';
-import two from './two.png';
-import three from './three.png';
-import four from './four.png';
 import Number1 from './number2.png';
 import Line2 from './line2.png';
 import Number2 from './number3.png';
 import Number3 from './number4.png';
+import one from './one.png';
+import two from './two.png';
+import three from './three.png';
+import four from './four.png';
 import Happy from './happy.png'
 import sad from './sad.png'
 // Security
@@ -45,8 +45,63 @@ import tag4 from './tag4.png'
 import greentag from './greentag.png'
 import circular from './circular.png'
 
-export { Logo, BflGroupLogo,circular,greentag, Merge, Vector2,security,pant2,pant1,shirt,
+
+// abhiabhi
+//print reciept Screen
+
+import Digital from './digital-img.png';
+
+import PrintReciept from './print-img.png';
+
+import NoReciept from './noreceipt-img.png';
+
+import Number4 from './number4-y.png';
+
+import UpDesignImg from './up-design-new.png'
+
+
+
+//payment Done Screen
+
+import PayDownImg from './paydownimg.png'
+
+
+
+//credit-card-payment-page
+
+import AppleImg from './apay.png'
+
+import GoogleImg from './gpay.png'
+
+import ArrowImg from './arrow.png'
+
+import CardMachine from './credit-card-machine.png'
+
+import GoButton from './goback.png'
+
+//gift-card-screen
+
+import GiftMachine from './giftmachine.png'
+
+import ScanQr from './scanimg.png'
+
+import Paytm from './paytm.png'
+
+import PhonePe from './phonepe.png'
+
+import AmazonPay from './amazonpay.png'
+import Rec30white from './rec30white.png'
+
+//home
+import TopDesign from './top-design.png'
+import WhiteDesign from './white-degin-home.png'
+import DarkDubi from "./darkdubi.png"
+import Cashier from './cashier-icon.png'
+
+export { TopDesign,WhiteDesign,Cashier,DarkDubi,Logo, BflGroupLogo,circular,greentag, Merge, Vector2,security,pant2,pant1,shirt,
      Vector6, Vector1,tag4, Rectangle30, Young, Happy,sad,detag,
-     Comp1,tag1, Girl, GoBack,Status,MaskGroup,Down,one,two,three,four,
-     Visa,Discover,MasterCard,GiftCard,Wallet,Line,Number1,Line2,Number2 ,Number3 
+     Comp1,tag1, Girl, GoBack,Status,MaskGroup,Down,one,two,three,four,Rec30white,
+     Visa,Discover,MasterCard,GiftCard,Wallet,Line,Number1,Line2,Number2 ,Number3 ,Digital,PrintReciept,NoReciept,Number4,UpDesignImg,PayDownImg,
+
+     AppleImg,GoogleImg,ArrowImg,CardMachine,GoButton,GiftMachine,ScanQr,Paytm,PhonePe,AmazonPay
     };

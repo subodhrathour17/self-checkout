@@ -1,13 +1,13 @@
 
 /* REmove Tag Heading */
 .stop{
-    margin-top: 2%;
-    margin-left: 44%;
+    margin-top: 25px;
+    margin-left: 580px;
 }
 /* REmove Tag Heading */
 .shead span{
-    margin-top: 3%;
-    margin-left: 38%;
+    margin-top: 43px;
+    margin-left: 438px;
     position: absolute;
     z-index: 18;
     font-size: 30px;
@@ -16,14 +16,15 @@
 }
 .scontainer{
     display: flex;
-    margin-top: 10%;
-    margin-left: 11.01%;
-    width: 88.89%;
+    margin-top: 110px;
+    margin-left: 139px;
+    min-width: fit-content;
+    width: 1140px;
     height: 350px;
     border-top: 6px solid yellow;
     border-bottom: 6px solid yellow;
     position: absolute;
-    z-index: 18;
+    z-index: 1;
     background-color: #F9F9AC;
 
 
@@ -79,36 +80,70 @@
     border-radius: 100%;
 }
 
-
-@media screen and (max-width: 768px) {
-    .scontainer{
-        margin-top: 10%;
-        margin-left: 15.6%;
-        width: 54.29%;
-        height: 400px;
+/* 
+@media(max-width: 768px) {
+    .stop{
+        margin-top: 2px;
+        margin-left: 7%;
+    }
+    .scontainer-s{
+        top: 10%;
+        left: 2.6%;
+        min-width: 91.29%;
+        max-height: 404px;
     
     }
+   
     .sitems{
         margin-left: 2px;
         margin-top: 2px;
     }
-    .sbg{
-        opacity: 0.7;
-        height: 240px;
-        margin-left: 48rem;
+    .sbg-s{
+        max-height: 192px;
+        min-width: 211px;
+        left: -7.1rem;
+    }
+    .stag-s{
+        margin-left: -1rem;
     }
     .stop{
-        margin-left: 39%;
+        margin-left: 29%;
     }
     .shead span{
         margin-top: 2%;
         margin-left: 29%;
-        font-size: 24px;
+        font-size: 4px;
       
     }
+    .scontainer-s .scloths{
+        width: 40px;
+        height: 40px;
+      }
+      .sclothtitle{
+          font-size: 12px;
+      }
+      .sclothname{
+        font-size: 12px;
+
+      }
+      .scontainersuccess-s{
+        left: 11px;
+        top: 66px;
+      }
+      .sbgsuccess-s{
+        left: -72px;
+        top: 56px;
+        max-width: 298px;
+        max-height: 199px
+      }
+      .stag2-s{
+        margin-top: 108px;
+        max-width: 213px;
+        max-height: 160px;
+      }
   }
   
-  @media screen and (max-width: 992px) {
+  @media (max-width: 992px) {
     .stop{
         margin-top: 2px;
         margin-left: 37%;
@@ -160,4 +195,4 @@
   @media (max-width: 1400px) {
     
   }
-  
+   */

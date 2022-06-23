@@ -1,15 +1,14 @@
 import React ,{ Fragment } from 'react'
-import {BflGroupLogo,
-    Status,MaskGroup,Down,Line,Number1,Line2,Number2 ,Number3 ,one,two,three,four,
+import {BflGroupLogo,Line,Line2,one,two,three,four,
 } from "../../assets/images";
+import "../security_tag/navlayout.css";
 import "./navlayout.css";
-const Navlayout = () => {
+const Navforcart = () => {
     
   return (
     <Fragment>
       <section className="payment">
       <div className="gobutton-btn text-left pt-10 ">
-        {/* <button className='go-btn  login-color'  type="submit"><img src={GoBack} alt="vector" className="img-goback" /></button> */}
         <Paytext1 />
         <StatusTick/>
         
@@ -19,23 +18,21 @@ const Navlayout = () => {
   )
 }
 
-export default Navlayout
+export default Navforcart
 
 function Paytext1() {
     return (
       <div className="Paytext1 ">
         <h1 className="titlesegoeui-semi-bold-tundora-44-5px">
-          {/* <span className="segoeui-semi-bold-tundora-44-5px">Select Payment Mode</span> */}
         </h1>
-        <img className="bfl-logo" src={BflGroupLogo} />
-        <UpDesign/>
+        <img className="bfl-logoforcart" src={BflGroupLogo} />
         
       </div>
     );
   }
   function StatusTick() {
     return (
-      <div className="BackGround">
+      <div className="sidebaratc">
       <div className="StatusTick">
         <img className="vector" src={one} />
       </div>
@@ -45,38 +42,21 @@ function Paytext1() {
     </div>
     <img className="number-1" src={two} />
 
-
     <div className="pay-list">
       <span>Pay</span>
       <img className="line-2" src={Line2} />
     </div>
+    <img className="number-1 number-3" src={three} />
+
     <div className="pay-list">
       <span className='remove-tag'>Remove Tag</span>
       <img className="line-3" src={Line2} />
     </div>
-    <img className="number-1" src={three} />
+    <img className="number-1 number-4" src={four} />
     <div className="pay-list">
       <span className='recipt'>Recipt</span>
     </div>
-      <DownDesign/>
       </div> 
-    );
-  }
-  function UpDesign() {
-    return (
-      <div className="back-design-r">
-        <img className='top-image' src={MaskGroup} />
-        
-      </div>
-    );
-  }
-  function DownDesign() {
-    return (
-    <div className="downdesign">
-    <img className="down-design " src={Down}/>
-    
-    </div>
-    
     );
   }
   

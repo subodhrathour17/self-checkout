@@ -14,7 +14,7 @@ const Feedback = () => {
     <p class="card-text ft ft2">Happy With Our Service?</p>
     <img className='fhappy' src={Happy} alt="happy" srcset="" />
     <img src={sad} className="fsad" alt="sad" srcset="" />
-    <p class="card-text ft">What did you Like?</p>
+    <p class="card-text ft ft3">What did you Like?</p>
     <div className='btngroup'>
 
     <a href="/" class="btn btn-warning fb">Ambience</a>

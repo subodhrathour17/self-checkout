@@ -14,7 +14,7 @@ const Securitysuccess = () => {
       <div className='shead'>
       <span>Please Remove the Security Tag</span>
       </div>
-      <div className="scontainer scontainersuccess">
+      <div className="scontainer scontainersuccess scontainersuccess-s">
         <div className='sitems' >
           <div>
         <img className='scloths'  src={shirt} alt="" srcset="" />
@@ -40,8 +40,8 @@ const Securitysuccess = () => {
           </div>
           <hr />
         </div>
-        <img className='stag2 App-logo' src={circular} alt="" srcset="" />
-        <img className='sbg sbgsuccess' src={security} alt="" srcset="" />
+        <img className='stag2 App-logo stag2-s' src={circular} alt="" srcset="" />
+        <img className='sbg sbgsuccess sbgsuccess-s' src={security} alt="" srcset="" />
       </div>
     </>
   )

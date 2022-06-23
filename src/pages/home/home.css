@@ -1,0 +1,98 @@
+.home-content{
+    position: relative;
+    min-height:604.5px ;
+    background-color: #FDD106;
+}
+.top-degin{
+    position: absolute;
+    width: 533px;
+    height: 129px;
+    margin-left: 1px;
+    margin-top: -116px;
+}
+.white-degin{
+    position: absolute;
+    width: 560px;
+    height: 603.5px;
+    margin-left: 719px;
+   
+}
+.mask-degin{
+    width: 800px;
+    height: 300px;
+    margin-top:305px;
+    position: absolute;
+    /* width: 1136px;
+    height: 500px;
+    margin-top:218px; */
+}
+.cashier-degin{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 30px;
+    top: 10px;    
+}
+.languageOptin{
+    position:absolute;
+}
+.languageOptin h1{
+    margin-top: 100px;
+    margin-left: 250px;
+    font-size: 40px;
+}
+.languageOptin h2{
+    margin-left: 140px;
+    font-size: 40px;
+}
+.home-screen-button{
+    position: absolute;
+    left: 210px;
+    top: 300px;
+}
+.button-arabic-home{
+    width: 200px;
+    color: white; 
+    border-radius: 10px;
+    background-color: #303030;
+    padding: 10px;
+    border: 2px solid white;
+    height: 50px;
+}
+.button-english-home{
+    border: 2px solid white;
+    width: 200px; 
+    border-radius: 10px;
+    color: white; 
+    background-color: #303030;
+    margin-right:50px ;
+    height: 50px;
+}
+.welcome-text-home{
+    position: absolute;
+    left: 798px;
+    top: 328.14px;
+    font-family: 'Work Sans'; 
+    /* color: #000000; */
+}
+.welcome-text-home h1{
+margin-top: -200px;
+font-size: 60px;
+margin-left: 170px;
+}
+.welcome-text-home h2{
+    margin-left: 110px;
+    font-size: 60px;
+}
+.bfl-degin{
+    margin-left: 150px;
+    width: 220px;
+  
+}
+.suntech-logo-degin{
+width: 250px;
+height: 73.77px;
+margin-left: 220px;
+margin-top: 175px;
+}
+

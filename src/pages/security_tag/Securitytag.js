@@ -8,13 +8,15 @@ const Securitytag = () => {
       <Navlayout>
        </Navlayout>
        <h4 className='stop'>Remove Tag</h4>
+      
       <div className='shead'>
       <span>Please Remove the Security Tag</span>
       </div>
-      <div className="scontainer">
+
+      <div className="scontainer scontainer-s scontainer-m">
         <div className='sitems' >
           <div>
-        <img className='scloths'  src={shirt} alt="" srcset="" />
+        <img className='scloths scloths-sub'  src={shirt} alt="" srcset="" />
         <span className='sclothtitle'>Tshirt</span>
         <span className='sclothname'>Roadstar</span>
           <img className='sstatustag' src={tag4} alt="" srcset="" />
@@ -37,8 +39,8 @@ const Securitytag = () => {
           </div>
           <hr />
         </div>
-        <img className='stag' src={detag} alt="" srcset="" />
-        <img className='sbg' src={security} alt="" srcset="" />
+        <img className='stag stag-s' src={detag} alt="" srcset="" />
+        <img className='sbg sbg-s' src={security} alt="" srcset="" />
       </div>
     </>
   )

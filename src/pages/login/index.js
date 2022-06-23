@@ -1,4 +1,6 @@
 import React, { Fragment } from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   BflGroupLogo,
@@ -11,10 +13,34 @@ import "./index.css";
 
 const Login = () => {
   const navigate = useNavigate();
+  const[username,setUser]=useState("");
+  const[password,setPassword]=useState("");
 
-  const submitHandler = () => {
-    navigate("/register");
-  };
+  const HandleLogin=async (e)=>{
+    e.preventDefault();
+    let item={username,password};
+    console.log(username ,password);
+    let result = await fetch("http://103.86.176.93:9696/Self_Checkout/v1/auth/token/SignIn",{
+      method:'POST',
+      headers:{
+        "Content-Type":"application/json",
+        "Accept":"application/json",
+        "Access-Control-Allow-Origin" :'*',
+      },
+      body:JSON.stringify(item)
+    });
+    result=await result.json();
+    console.log(result);
+    localStorage.setItem("user",JSON.stringify(result))
+  }
+  // const submitHandler = () => {
+  //   navigate("/register");
+  // };
+  useEffect(()=>{
+    if(localStorage.getItem('user')){
+      navigate("/");
+    }
+  })
   return (
     <Fragment>
       <section className="login">
@@ -33,13 +59,13 @@ const Login = () => {
                 <h2>Welcome Back</h2>
               </div>
 
-              <form type="form" onSubmit={submitHandler}>
+              <form type="form" onSubmit={(e)=>{HandleLogin(e)}}>
                 <div className="login-main">
                   <div className="login-box pb-3">
                     <div className="login-icon">
                       <img src={Vector2} alt="profile" className="img-fluid" />
                     </div>
-                    <input type="text" placeholder="Enter User Id" required />
+                    <input type="text" onChange={(e)=>setUser(e.target.value)} placeholder="Enter User Id" required />
                   </div>
                   <div className="login-box">
                     <div className="login-icon">
@@ -48,6 +74,7 @@ const Login = () => {
                     <input
                       type="password"
                       placeholder="Enter Password"
+                      onChange={(e)=>setPassword(e.target.value)}
                       required
                     />
                   </div>

@@ -46,7 +46,7 @@
     margin-left: 43%;
 }
 .fskip{
-    padding: 18px 65px;
+    padding: 8px 65px;
     border-bottom-left-radius: 200px;
     border-top-left-radius: 200px;
     margin-left: 29%;
@@ -78,5 +78,11 @@
         border-top-left-radius: 200px;
         margin-left: 29%;
     
+    }
+}
+
+@media(max-width:768px){
+    .ft3{
+        margin-left: 135px;
     }
 }

@@ -9,7 +9,6 @@ const Navlayout = () => {
     <Fragment>
       <section className="payment">
       <div className="gobutton-btn text-left pt-10 ">
-        {/* <button className='go-btn  login-color'  type="submit"><img src={GoBack} alt="vector" className="img-goback" /></button> */}
         <Paytext1 />
         <StatusTick/>
         
@@ -25,9 +24,8 @@ function Paytext1() {
     return (
       <div className="Paytext1 ">
         <h1 className="titlesegoeui-semi-bold-tundora-44-5px">
-          {/* <span className="segoeui-semi-bold-tundora-44-5px">Select Payment Mode</span> */}
         </h1>
-        <img className="bfl-logo" src={BflGroupLogo} />
+        <img className="bfl-logo bfl-logo-M bfl-logo-S" src={BflGroupLogo} />
         <UpDesign/>
         
       </div>
@@ -35,7 +33,7 @@ function Paytext1() {
   }
   function StatusTick() {
     return (
-      <div className="BackGround">
+      <div className="BackGround-M BackGround-R BackGround-S">
       <div className="StatusTick">
         <img className="vector" src={Status} />
       </div>
