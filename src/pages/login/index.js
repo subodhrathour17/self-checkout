@@ -21,16 +21,22 @@ const Login = () => {
   const LoginUserpost= async ()=>{
     try{
     //  const url="https://reqres.in/api/login"
-     const res= await axios({
+     const res= await fetch({
       method: 'post',
-      url: 'https://reqres.in/api/login',
+      headers:{ 
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+      },
+      url: 'http://103.86.176.93:9696/Self_Checkout/v1/auth/token/SignIn',
       data:{
-        "email": "eve.holt@reqres.in",
-        "password": "cityslicka"
-    }
+        "username": "Gaurav",
+        "password": "Gaurav000"
+    }, 
+    body:JSON.stringify(data)
     })
-     setData(res.data)
-     console.log(res.data);
+    res=await res.json()
+     setData(res)
+     console.log(res);
     }catch(e){console.log(e);}
  }
   LoginUserpost()

@@ -1,7 +1,11 @@
+.home-main{
+    box-sizing: border-box;
+}
 .home-content{
     position: relative;
     height: 716px;
     background-color: #FDD106;
+    
 }
 .top-degin{
     position: absolute;
@@ -98,5 +102,36 @@ height: 73.77px;
 margin-left: 310px;
 margin-top: 170px;
 }
+@media (max-width: 1400px) {
+    .home-content .design-top-f{
+        margin-left: 10px;
+        width: 1530px;
+    }
+    .white-degin-f{
+        left: 10px;
+        height: 770px;
+
+    }
+    .home-content-f{
+        width: 1540px;
+        height: 770px;
+    }
+    .mask-degin-f{
+        top: 59px;
+    }
+}
+
+@media (max-width: 992px ) and (min-height: 768px) {
+    .home-content-m .white-degin-m{
+        width: 595px;
+        background-color: white;
+        
+    }
+    .mask-degin-m{
+        width: 965px;
+    }
+
+}
+
 
 

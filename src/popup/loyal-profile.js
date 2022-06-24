@@ -6,7 +6,7 @@ import LoyalProfileOtpOpen from "../popup/loyal-otp";
 
 import "./index.css";
 
-const LoyalProfileReceiptOpen = ({dataShow, closeTill}) => {
+const LoyalProfileReceiptOpen = ({dataShow, closeMobile}) => {
   const [otpShow, setTillShow] = useState(false);
 
   const showTill = () => {
@@ -19,7 +19,7 @@ const LoyalProfileReceiptOpen = ({dataShow, closeTill}) => {
   
   return (
     <Fragment>
-      <Modal show={dataShow} onHide={closeTill}>
+      <Modal show={dataShow} onHide={closeMobile}>
         <Modal.Header closeButton>
          
           <Image src={Logo} alt="suntech-logo" />

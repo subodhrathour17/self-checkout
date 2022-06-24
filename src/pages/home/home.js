@@ -11,10 +11,10 @@ const Home = () => {
     <Fragment>
       <section className="home">
       <div className="home-main">
-        <div className="home-content">
-        <img className="top-degin" src={TopDesign} alt="top-design"  />
-        <img className="white-degin" src={WhiteDesign} alt="white-design"  /> 
-        <img className="mask-degin" src={DarkDubi} alt="mask-design"  /> 
+        <div className="home-content home-content-f home-content-m">
+        <img className="top-degin design-top-f" src={TopDesign} alt="top-design "  />
+        <img className="white-degin white-degin-f white-degin-m" src={WhiteDesign} alt="white-design"  /> 
+        <img className="mask-degin mask-degin-f mask-degin-m" src={DarkDubi} alt="mask-design"  /> 
       
        <a href="/login">
         <img className="cashier-degin" src={Cashier} alt="cashier-design"  />
