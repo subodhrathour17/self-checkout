@@ -1,26 +1,58 @@
 import React, { useState, Fragment } from "react";
-import {
-  BflGroupLogo,
-  Comp1,
-  Girl,
-  Logo,
-  Rectangle30,
-  Vector6
-} from "../../assets/images";
+import { BflGroupLogo,Comp1,Girl,Logo,Rectangle30,Vector6} from "../../assets/images";
 import RegisterOpen from "../../popup/register-open";
+import RegisterClose from "../../popup/register-close";
+import Storeopen from "../../popup/Storeopen";
+import TillOption from "../../popup/till-option";
 import "./index.css";
+import Storeclose from "../../popup/StoreClose";
 
 const Register = () => {
   const [show, setShow] = useState(false);
+  const [showClose, setShowClose] = useState(false);
+  const [showTill, setShowTill] = useState(false);
+  const [showStore, setShowStore] = useState(false);
+  const [showStoreClose, setShowStoreClose] = useState(false);
 
+  // register
   const handleClose = () => {
     setShow(false);
   };
+    const handleOpen = () => {
+      setShow(true);
+    };
+  const regClose = () => {
+    setShowClose(false);
+  };
+    const regOpen = () => {
+      setShowClose(true);
+    };
 
-  const handleOpen = () => {
-    setShow(true);
+  // till
+  const handleCloseTill = () => {
+    setShowTill(false);
+  };
+    const handleOpenTill = () => {
+    setShowTill(true);
   };
 
+  // store
+  const handleOpenStore = () => {
+    setShowStore(true);
+  };
+  const handleCloseStore = () => {
+    setShowStore(false);
+  };
+  const handleOpenStoreClose = () => {
+    setShowStoreClose(true);
+  };
+  const handleCloseStoreClose = () => {
+    setShowStoreClose(false);
+  };
+    const role=JSON.parse(localStorage.getItem('user')).user.userName;
+    // if(role=='kunal'){
+    //   document.getElementById('openstore').disabled=false;
+    // }
   return (
     <Fragment>
       <section className="register">
@@ -40,6 +72,7 @@ const Register = () => {
 
               <div className="circle">
                 <img src={Girl} alt="gril" className="img-fluid" />
+                <span>{JSON.parse(localStorage.getItem('user')).user.userName}</span>
               </div>
 
               <div className="main-img text-center d-flex">
@@ -58,21 +91,29 @@ const Register = () => {
                   <img src={BflGroupLogo} alt="logo" className="img-fluid" />
                 </div>
                 <div className="buttons pb-4">
+                
+                  <button className="color-btn text-light" onClick={handleOpenStore}>
+                    Start of Day
+                    </button>
+                </div>
+
+                <div className="buttons pb-4">
                   <button className="color-btn text-light" onClick={handleOpen}>
                     Register Open
                   </button>
                 </div>
 
                 <div className="buttons pb-4">
-                  <button>Till Open</button>
+                  <button className="color-btn text-light" onClick={handleOpenTill}>
+                    Till Option
+                  </button>
                 </div>
 
                 <div className="buttons pb-4">
-                  <button>Till Close</button>
+                  <button className="color-btn text-light" onClick={regOpen}>Register Close</button>
                 </div>
-
-                <div className="buttons pb-4">
-                  <button>Register Close</button>
+                <div className="buttons pb-4 ">
+                  <button className="color-btn text-light" onClick={handleOpenStoreClose}>End of Day</button>
                 </div>
 
                 <div className="vector-img">
@@ -84,6 +125,10 @@ const Register = () => {
         </div>
       </section>
       <RegisterOpen show={show} handleClose={handleClose}/>
+      <RegisterClose show={showClose} handleClose={regClose}/>
+      <TillOption show={showTill} handleClose={handleCloseTill}/>
+      <Storeopen show={showStore} handleClose={handleCloseStore}/>
+      <Storeclose show={showStoreClose} handleClose={handleCloseStoreClose}/>
     </Fragment>
   );
 };

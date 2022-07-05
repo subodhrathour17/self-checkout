@@ -14,9 +14,7 @@ const Home = () => {
         <img className="white-degin" src={WhiteDesign} alt="white-design"  /> 
         <img className="mask-degin" src={DarkDubi} alt="mask-design"  /> 
       
-       <a href="/login">
-        <img className="cashier-degin" src={Cashier} alt="cashier-design"  />
-        </a>
+       <a href='/login'><img className="cashier-degin" src={Cashier} alt="cashier-design"/></a>
         <div className="languageOptin">
           <h1>الرجاء تحديد أي لغة</h1>
           <h2>Please Select any Language</h2>
