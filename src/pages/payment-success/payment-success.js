@@ -1,10 +1,15 @@
 import React, { Fragment } from 'react'
+import CreditDebitOpen from "../../popup/debitCredit"
 import {BflGroupLogo,
     GoBack,Status,Visa,Discover,MasterCard, 
     GiftCard, Wallet,Line,Number1,Line2,Number2 ,Number3,UpDesignImg,PayDownImg 
 } from "../../assets/images";
 import "./index.css";
+
+
 const PaymentSuccess = () => {
+ 
+  let totalAmo=localStorage.getItem("totalamount")
   return (
     <Fragment>
       <section className="payment">
@@ -19,14 +24,14 @@ const PaymentSuccess = () => {
         <div className='subtract'>
            <div className='total-amount'>Total Amount</div>
            <div className='AED'>AED</div>
-           <div className='price'>150.08</div>
+           <div className='price'>{totalAmo}</div>
            
            <div className='Paymenthasbeenrecivedfrom'>Payment has been recived from:</div>
            <div className='visa-img-pay-done'> <img src={Visa} alt="" /></div>
            
            <div className='No'>No: 5421********8574</div>
            <div className='AED2'>AED</div>
-           <div className='Final-price'>150.8</div>
+           <div className='Final-price'>{totalAmo}</div>
            <img className='check-mark-verified' src={Status } alt="" />
         </div>
         <h3 className='YourPaymentwasSuccessful'>Your Payment was Successful</h3>

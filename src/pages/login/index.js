@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 import React, { Fragment, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -11,36 +11,27 @@ import {
 import "./index.css";
 
 const Login = () => {
-  const navigate = useNavigate();
-  const submitHandler = () => {
-    navigate("/register");
-    
-  };
-  const[data,setData]= useState([])
- useEffect(()=>{
-  const LoginUserpost= async ()=>{
-    try{
-    //  const url="https://reqres.in/api/login"
-     const res= await fetch({
-      method: 'post',
-      headers:{ 
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-      },
-      url: 'http://103.86.176.93:9696/Self_Checkout/v1/auth/token/SignIn',
-      data:{
-        "username": "Gaurav",
-        "password": "Gaurav000"
-    }, 
+  const [username,setUser]= useState('');
+  const [password,setPassword] = useState('');
+
+const submitHandler =  async (e)=>{
+  e.preventDefault();
+  let data = {username,password};
+  console.log(data)
+  let result =await fetch("http://103.86.176.93:9696/Self_Checkout/v1/auth/token/SignIn",
+  {
+    method:'POST',
+    headers:{
+      'Content-Type':'application/json',
+      'Accept':'application/json',
+      'Access-Control-Allow-Origin':'*',
+    },
     body:JSON.stringify(data)
-    })
-    res=await res.json()
-     setData(res)
-     console.log(res);
-    }catch(e){console.log(e);}
- }
-  LoginUserpost()
- },[])
+    });
+  result=await result.json();
+  console.log(result);
+}
+
   return (
     <Fragment>
       <section className="login">
@@ -59,19 +50,22 @@ const Login = () => {
                 <h2>Welcome Back</h2>
               </div>
 
-              <form type="form" onSubmit={submitHandler}>
+              <form type="form" onSubmit={(e)=>{submitHandler(e)}}>
                 <div className="login-main">
                   <div className="login-box pb-3">
                     <div className="login-icon">
                       <img src={Vector2} alt="profile" className="img-fluid" />
                     </div>
-                    <input type="text" placeholder="Enter User Id" required />
+                    <input type="text"
+                    onChange={(e)=>setUser(e.target.value)}
+                    placeholder="Enter User Id" required />
                   </div>
                   <div className="login-box">
                     <div className="login-icon">
                       <img src={Vector1} alt="password" className="img-fluid" />
                     </div>
                     <input
+                    onChange={(e)=>setPassword(e.target.value)}
                       type="password"
                       placeholder="Enter Password"
                       required

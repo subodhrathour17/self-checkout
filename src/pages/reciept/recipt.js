@@ -1,5 +1,5 @@
 import React ,{ Fragment, useState } from 'react'
-
+import { useNavigate } from "react-router-dom";
 import {BflGroupLogo,
     GoBack,Status,MaskGroup,Down,Line,Digital,PrintReciept,NoReciept,Number4,UpDesignImg
 } from "../../assets/images";
@@ -84,6 +84,8 @@ function Paytext1() {
  
   const Cards = () => {
     const [show, setShow] = useState(false);
+    const [printRec,setPrintRec]= useState(false)
+    const navigate =useNavigate();
 
   const handleClose = () => {
     setShow(false);
@@ -92,6 +94,11 @@ function Paytext1() {
   const handleOpen = () => {
     setShow(true);
   };
+  const printsubmit=()=>{
+    // setPrintRec(true);
+    navigate("/printdata")
+    
+  }
   return (
     <div className='cardmain p-card  card-small'>
       <div className="form-back form-backbig text1-d text1-1400 form-backsmall " onClick={handleOpen}>
@@ -100,8 +107,8 @@ function Paytext1() {
             <img className="digital-img digital-small" src={Digital} />
             </div>
         </div>
-      <div className="form-back text1-d text2 form-backsmall ">
-        <h3>Print Receipt</h3>
+       <div className="form-back text1-d text2 form-backsmall "onClick={printsubmit}>
+       <h3>Print Receipt</h3>
           <div className="png-all print-all-print print-small">
           <img
             className="print-reciept"

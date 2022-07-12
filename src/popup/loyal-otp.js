@@ -1,12 +1,21 @@
-import React, {  Fragment } from "react";
+import React, { useState, Fragment } from "react";
 import { Button, Modal, Image, Form, Col, Row } from "react-bootstrap";
 import { GoArrowRight } from "react-icons/go";
 import { Logo,OtpIcon } from "../assets/images";
 
 import "./index.css";
+import Tatti from "./balance-split";
 
 const LoyalProfileOtpOpen = ({otpShow, closeTill}) => {
-  
+  const [showTatti, setShowTatti] = useState(false);
+
+  const handleCloseTatti = () => {
+    setShowTatti(false);
+  };
+
+  const handleOpenTatti = () => {
+    setShowTatti(true);
+  };
   return (
     <Fragment>
       <Modal show={otpShow} onHide={closeTill}>
@@ -35,10 +44,11 @@ const LoyalProfileOtpOpen = ({otpShow, closeTill}) => {
             </form>
           </div>
           <div className="button-section">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" style={{width:'80px', marginTop: "30px",marginRight:"50px",marginLeft:"70px"}}>Next</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style={{width:'80px', marginTop: "30px",marginRight:"50px",marginLeft:"70px"}} onClick={handleOpenTatti}>Next</button>
           </div>
         </Modal.Body>
       </Modal>
+      <Tatti show={showTatti} handleClose={handleCloseTatti} />
     </Fragment>
   );
 };

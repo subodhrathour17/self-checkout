@@ -2,6 +2,7 @@ import React, {  Fragment } from "react";
 import { Button, Modal, Image, Form, Col, Row } from "react-bootstrap";
 import { GoArrowRight } from "react-icons/go";
 import { Logo } from "../assets/images";
+// import CustomerData from '../data.json'
 
 import "./index.css";
 
@@ -10,6 +11,7 @@ import LoyalProfileReceiptOpen from "./loyal-profile";
 
 const LoyalReceiptOpen = ({ show, handleClose }) => {
   const [dataShow, setFromShow] = useState(false);
+  const [phone,setPhone]=useState()
 
   const showMobile = () => {
     setFromShow(true);
@@ -17,6 +19,39 @@ const LoyalReceiptOpen = ({ show, handleClose }) => {
   const closeMobile = () => {
     setFromShow(false);
   };
+
+  // const FetchData=async ()=>{
+
+
+
+  //   let item={phone};
+
+  //   console.log("In fetch Data Items are",item);
+
+  //   let result = await fetch({CustomerData},{
+
+  //     method:'POST',
+
+  //     headers:{
+
+  //       "Content-Type":"application/json",
+
+  //       "Accept":"application/json",
+
+  //       "Access-Control-Allow-Origin" :'*',
+
+  //     },
+
+  //     body:JSON.stringify(item)
+
+  //   });
+
+  //   result=await result.json();
+
+  //   console.log(result);
+
+
+  // }
   
   return (
     <Fragment>

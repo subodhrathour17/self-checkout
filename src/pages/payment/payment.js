@@ -5,6 +5,7 @@ import {BflGroupLogo,
 } from "../../assets/images";
 import "./index.css";
 import LoyalReceiptOpen from '../../popup/loyal'
+import LoyalProfileReceiptOpen from '../../popup/loyal-profile';
 const Payment = () => {
   return (
     <Fragment>
@@ -83,13 +84,25 @@ function Paytext1() {
  
   const Cards = () => {
     const [show, setShow] = useState(false);
+    const [dataShow, setFromShow] = useState(false);
 
-    const handleClose = () => {
-      setShow(false);
+    // const handleClose = () => {
+    //   setShow(false);
+    // };
+  
+    // const handleOpen = () => {
+    //   setShow(true);
+    // };
+    const showMobile = () => {
+
+      setFromShow(true);
+  
     };
   
-    const handleOpen = () => {
-      setShow(true);
+    const closeMobile = () => {
+  
+      setFromShow(false);
+  
     };
     
     return (
@@ -112,7 +125,7 @@ function Paytext1() {
     </div>
    
     </div>
-    <div className="form-back form-back-text-full form-m form-s-p" onClick={handleOpen}>
+    <div className="form-back form-back-text-full form-m form-s-p" onClick={showMobile}>
         <h3 className='text-s-h3'>Loyalty Customer</h3>
       <div className="card-design-all card-design-all-full-gift card-design-all-m-gift card-design-all-s-gift">
       <img
@@ -136,7 +149,7 @@ function Paytext1() {
     
     
     </div> */}
-    <LoyalReceiptOpen show={show} handleClose={handleClose}/>
+    <LoyalProfileReceiptOpen dataShow={dataShow} closeMobile={closeMobile}/>
     </div>
     
     )

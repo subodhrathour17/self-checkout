@@ -63,6 +63,40 @@ import DarkDubi from "./darkdubi.png"
 import Cashier from './cashier-icon.png'
 
 
+
+//saurav
+import one from './one.png';
+import two from './two.png';
+import three from './three.png';
+import four from './four.png';
+import Happy from './happy.png'
+import sad from './sad.png'
+// Security
+
+import shirt  from './shirt.png'
+import pant1  from './pant1.png'
+import pant2  from './pant2.png'
+import security from './security.png'
+import detag from './detag.png'
+import tag1 from './tag1.png'
+import tag4 from './tag4.png'
+import greentag from './greentag.png'
+import circular from './circular.png'
+
+
+
+
+
+//credit-card-payment-page
+
+
+//gift-card-screen
+
+
+
+import Rec30white from './rec30white.png'
+
+
 export { Logo, BflGroupLogo, Merge, Vector2,
      Vector6, Vector1, Rectangle30, Young, 
      Comp1, Girl, GoBack,Status,MaskGroup,Down,
@@ -70,5 +104,6 @@ export { Logo, BflGroupLogo, Merge, Vector2,
      Number2 ,Number3,Digital,PrintReciept,NoReciept,Number4,UpDesignImg,PayDownImg,
      AppleImg,GoogleImg,ArrowImg,CardMachine,GoButton,
      GiftMachine,ScanQr,Paytm,PhonePe,AmazonPay,
-     LoyalCustomer,LoyalGoldIcon,OtpIcon, TopDesign,WhiteDesign,DarkDubi,Cashier
+     LoyalCustomer,LoyalGoldIcon,OtpIcon, TopDesign,WhiteDesign,DarkDubi,Cashier,security,pant2,pant1,one,two,three,four,Rec30white,
+     Happy,sad,detag,tag1,tag4,circular,greentag,shirt,
     };

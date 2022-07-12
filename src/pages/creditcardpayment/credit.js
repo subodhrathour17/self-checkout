@@ -1,17 +1,27 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import {BflGroupLogo,
     GoBack,Status,Visa,Discover,MasterCard, 
     GiftCard, Wallet,Line,Number1,Line2,Number2 ,Number3,UpDesignImg,
     PayDownImg,Down,AppleImg,GoogleImg,ArrowImg,CardMachine,GoButton
 } from "../../assets/images";
 import "./index.css";
+import CreditDebitOpen from '../../popup/debitCredit'
 
 const Credit = () => {
+  const [show, setShow] = useState(false);
+
+    const handleClose = () => {
+      setShow(false);
+    };
+  
+    const handleOpen = () => {
+      setShow(true);
+    };
   return (
     <Fragment>
     <section className="credit">
-    <div className="credit-c">
-    <a href='/payment' className='digit-card-button-g btn'><img className='' src={GoButton} alt="" /></a>
+    <div className="credit-c" onClick={handleOpen}>
+    {/* <a href='/payment' className='digit-card-button-g btn'><img className='' src={GoButton} alt="" /></a> */}
       
        <h1 className='cresit-text-c'>
            <span>Select Payment Mode</span>
@@ -21,7 +31,7 @@ const Credit = () => {
        <img className='bgl-logo-pay-done-c' src={BflGroupLogo} alt="" />
        <img className='updesign-c' src={UpDesignImg } alt="" />
        <img className='down-degin-credit-img' src={Down } alt="" />
-       <div className='form-for-tender'> 
+       <div className='form-for-tender' > 
        <div className='visa-credit'><img className='' src={Visa } alt="" /></div>
        <div className='discover-credit'><img className='' src={Discover } alt="" /></div>
        <div className='master-credit'><img className='' src={MasterCard } alt="" /></div>
@@ -32,6 +42,7 @@ const Credit = () => {
        <div className="card-machine-img"><img className='' src={CardMachine } alt="" /></div>
     </div>
     </section>
+       <CreditDebitOpen show={show} handleClose={handleClose}/>
   </Fragment>
   )
 }

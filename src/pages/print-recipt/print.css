@@ -1,0 +1,108 @@
+/* 
+
+  
+
+.strename{
+    margin-top: 30px;
+    margin-left: 390px;
+   
+    
+}
+.hr {
+    border: none;
+    border-top: 3px dotted rgb(9, 9, 9);
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 790px;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+.store-name{
+    margin-top: 5px;
+    margin-left: 360px;
+}
+.item-list-p{
+    display: flex;
+}
+.item-number-p{
+    margin-top: 10px;
+    margin-left: 50px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+.item-Data-p{
+    margin-top: 10px;
+    margin-left: 50px;
+   
+}
+.item-list-data-p{
+    margin-top: 10px;
+    margin-left: 70px;
+}
+.item-qty-p{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.item-rate-p{
+    margin-top: 10px;
+    margin-left: 90px;
+}
+.item-disc-p{
+    margin-top: 10px;
+    margin-left: 90px;
+}
+.item-amount-p{
+    margin-top: 10px;
+    margin-left: 90px;
+}
+.item-tc-p{
+    margin-top: 10px;
+    margin-left: 75px;
+}
+.amount-detail-p{
+    display: flex;
+    flex-direction: column;
+}
+.amount-data-p{
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 5px;
+}
+.amount-final-p{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 590px;
+}
+.amount-final-data-p{
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 5px;
+}
+h3{
+    margin-top: 10px;
+    margin-left: 350px;
+}
+.tax-data-p{
+    display: flex;
+}
+.tax-list-p{
+    margin-top: 10px;
+    margin-left: 50px;
+    padding-right: 210px;
+}
+.tax-total-value-p{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.tax-total-value-data-p{
+    position: absolute;
+    margin-left: 680px;
+    margin-top: -25px;
+}
+.tax-invoice-p{
+    margin-top: 10px;
+    margin-left: 50px;
+} */
