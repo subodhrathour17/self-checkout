@@ -48,7 +48,7 @@ const LoyalProfileReceiptOpen = ({dataShow, closeMobile}) => {
   const TotalDueAmount =(e)=>{
     e.preventDefault();
     if(payable>dueamo){
-        alert("Enter valid payable amount")
+        alert("Enter valid Redeem Point")
         // navigate('/credit');
     }else{
 
@@ -113,7 +113,7 @@ console.log(payable);
            <a href="/payment"><button type="button" class="btn btn-secondary" data-dismiss="modal" style={{width:'80px',marginTop: "30px"}}>No</button></a>
           </div>
             </form>
-            <button onClick={submitHandler}>get</button>
+            {/* <button onClick={submitHandler}>get</button> */}
         </Modal.Body>
       </Modal>
       <LoyalProfileOtpOpen otpShow={otpShow} closeTill={closeTilll} />

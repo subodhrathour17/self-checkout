@@ -4,8 +4,10 @@ import { GoArrowRight } from "react-icons/go";
 import { Logo } from "../assets/images";
 import "./index.css";
 
-const Tatti = ({ show, handleClose }) => {
+const RedeemPoint = ({ show, handleClose }) => {
   let redeemPoint= localStorage.getItem("redeemPoint")
+  let totalamount= localStorage.getItem("totalamount")
+  let finalAmo = totalamount-redeemPoint
   return (
     <Fragment>
       <Modal show={show} onHide={handleClose}>
@@ -17,7 +19,7 @@ const Tatti = ({ show, handleClose }) => {
           <div className="loyal-user">
                 <div className="p-name" style={{marginTop: "26px", fontWeight: "bold"}}>
                     <label >Total Amount</label>
-                <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'300px', }}> <span>{ 150}</span></div>
+                <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'300px', }}> <span>{totalamount}</span></div>
                 <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'350px', }}> <span>{"AED"}</span></div>
                 </div>
                 <div style={{position:"absolute",width: "450px",height: "-2px",left: "25px",top: "75px",border: "1px solid #333333"}}> </div>
@@ -29,7 +31,7 @@ const Tatti = ({ show, handleClose }) => {
                 <div style={{position:"absolute",width: "450px",height: "-2px",left: "25px",top: "120px",border: "1px solid #333333"}}> </div>
 
                 <div className="p-name" style={{marginTop: "25px",fontWeight: "bold"}}><label >Balance Due :- </label>
-                <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'300px', }}> <span>{100 }</span></div>
+                <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'300px', }}> <span>{finalAmo }</span></div>
                 <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'350px', }}> <span>{"AED"}</span></div>
                 {/* <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'300px', }}> <input type="number"  required style={{width:"100px" } }/></div> */}
                 </div>
@@ -52,4 +54,4 @@ const Tatti = ({ show, handleClose }) => {
   );
 };
 
-export default Tatti;
+export default RedeemPoint;

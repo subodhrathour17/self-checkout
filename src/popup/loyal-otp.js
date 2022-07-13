@@ -4,7 +4,7 @@ import { GoArrowRight } from "react-icons/go";
 import { Logo,OtpIcon } from "../assets/images";
 
 import "./index.css";
-import Tatti from "./balance-split";
+import RedeemPoint from "./balance-split";
 
 const LoyalProfileOtpOpen = ({otpShow, closeTill}) => {
   const [showTatti, setShowTatti] = useState(false);
@@ -48,7 +48,7 @@ const LoyalProfileOtpOpen = ({otpShow, closeTill}) => {
           </div>
         </Modal.Body>
       </Modal>
-      <Tatti show={showTatti} handleClose={handleCloseTatti} />
+      <RedeemPoint show={showTatti} handleClose={handleCloseTatti} />
     </Fragment>
   );
 };

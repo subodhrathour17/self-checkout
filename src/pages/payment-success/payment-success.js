@@ -29,7 +29,9 @@ const PaymentSuccess = () => {
            <div className='Paymenthasbeenrecivedfrom'>Payment has been recived from:</div>
            <div className='visa-img-pay-done'> <img src={Visa} alt="" /></div>
            
-           <div className='No'>No: 5421********8574</div>
+           <div className='No'>{localStorage.getItem('card1')}</div>
+           <div className='No'style={{marginTop:"50px"}}>{localStorage.getItem('card2')}</div>
+
            <div className='AED2'>AED</div>
            <div className='Final-price'>{totalAmo}</div>
            <img className='check-mark-verified' src={Status } alt="" />

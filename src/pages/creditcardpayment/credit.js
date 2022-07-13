@@ -20,7 +20,6 @@ const Credit = () => {
   return (
     <Fragment>
     <section className="credit">
-    <div className="credit-c" onClick={handleOpen}>
     {/* <a href='/payment' className='digit-card-button-g btn'><img className='' src={GoButton} alt="" /></a> */}
       
        <h1 className='cresit-text-c'>
@@ -39,6 +38,8 @@ const Credit = () => {
        <div className='google-pay-credit'><img className='' src={GoogleImg } alt="" /></div>
        </div>
        <div className="arror-credit-card"><img className='' src={ArrowImg } alt="" /></div>
+    <div className="credit-c" onClick={handleOpen}>
+
        <div className="card-machine-img"><img className='' src={CardMachine } alt="" /></div>
     </div>
     </section>
