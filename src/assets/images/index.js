@@ -44,6 +44,7 @@ import tag1 from './tag1.png'
 import tag4 from './tag4.png'
 import greentag from './greentag.png'
 import circular from './circular.png'
+import logoutpro2 from './logoutpro2.png'
 
 
 // abhiabhi
@@ -98,7 +99,7 @@ import WhiteDesign from './white-degin-home.png'
 import DarkDubi from "./darkdubi.png"
 import Cashier from './cashier-icon.png'
 
-export { TopDesign,WhiteDesign,Cashier,DarkDubi,Logo, BflGroupLogo,circular,greentag, Merge, Vector2,security,pant2,pant1,shirt,
+export { TopDesign,WhiteDesign,logoutpro2,Cashier,DarkDubi,Logo, BflGroupLogo,circular,greentag, Merge, Vector2,security,pant2,pant1,shirt,
      Vector6, Vector1,tag4, Rectangle30, Young, Happy,sad,detag,
      Comp1,tag1, Girl, GoBack,Status,MaskGroup,Down,one,two,three,four,Rec30white,
      Visa,Discover,MasterCard,GiftCard,Wallet,Line,Number1,Line2,Number2 ,Number3 ,Digital,PrintReciept,NoReciept,Number4,UpDesignImg,PayDownImg,

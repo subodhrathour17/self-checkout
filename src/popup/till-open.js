@@ -1,11 +1,29 @@
-import React, { Fragment } from "react";
+import React, { useState,Fragment } from "react";
 import { Button, Modal, Image, Form, Col, Row } from "react-bootstrap";
 import { GoArrowRight } from "react-icons/go";
 import { Logo } from "../assets/images";
 import "./index.css";
+import Tillopensucess from "./till-open-sucess";
 
 const TillOpen = ({tillShow, closeTill}) => {
+  const [tillOpenShow, setTillOpenShow] = useState(false);
 
+  const showTillOpen = () => {
+    if(localStorage.getItem("register")===JSON.stringify('open')){
+    if(localStorage.getItem("till")===JSON.stringify('open')){
+      alert("Till is Already Opened")
+     }else{
+       localStorage.setItem("till",JSON.stringify('open'));
+       setTillOpenShow(true);
+     }
+    }else{
+      alert("Register is Not Opened");
+
+    }
+  };
+  const closeTillOpen = () => {
+    setTillOpenShow(false);
+  };
   return (
     <Fragment>
       <Modal show={tillShow} onHide={closeTill}>
@@ -31,12 +49,14 @@ const TillOpen = ({tillShow, closeTill}) => {
             </Col>
           </Form.Group>
           <div className="button-section">
-            <Button variant="warning" onClick={closeTill}>
+            <Button variant="warning" onClick={showTillOpen}>
               Continue <GoArrowRight size={20} />
             </Button>
           </div>
         </Modal.Body>
       </Modal>
+      <Tillopensucess show={tillOpenShow} handleClose={closeTillOpen} />
+
     </Fragment>
   );
 };

@@ -55,7 +55,11 @@ const Login = () => {
     result=await result.json();
     console.log(result);
     if(result.token!=null){
-      localStorage.setItem("user",JSON.stringify(result))
+      localStorage.setItem("user",JSON.stringify(result.user))
+      localStorage.setItem("token",JSON.stringify(result.token))
+    }
+    else{
+      alert("Username or Password is incorrect");
     }
 
   }
@@ -105,13 +109,14 @@ const Login = () => {
 
              <div className="col-lg-12">
 
-              <form type="form" onSubmit={HandleLogin}>
+              <form type="form" onSubmit={HandleLogin} autoComplete="off">
                 <div className="login-main">
                   <div className="login-box">
                     <div className="login-icon">
                       <img src={Vector2} alt="profile" className="img-fluid" />
                     </div>
                     <input type="text"
+                    pattern="^[a-z]+$"
                      onChange={handleChange} 
                      placeholder="Enter Username"
                      name="username"
