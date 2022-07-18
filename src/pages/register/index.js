@@ -139,9 +139,18 @@ const Register = () => {
     setShowClose(false);
   };
     const regOpen = () => {
-    localStorage.setItem("register",JSON.stringify('close'));
-         setShowClose(true);
-      setTimeout(()=>window.location.reload(true),1000) 
+      if(localStorage.getItem("till")===JSON.stringify("close")){
+        if(localStorage.getItem("register")===JSON.stringify("close")){
+          setRegisterCloseEnable(true);    
+        }else{
+          localStorage.setItem("register",JSON.stringify('close'));
+          setShowClose(true);
+          setTimeout(()=>window.location.reload(true),1000) 
+        }
+      }else{
+        setRegisterCloseEnable(true);    
+      }
+    
 
     };
 
@@ -183,7 +192,7 @@ const Register = () => {
               <div className="circle" style={{display:"flex"}}>
                 <img src={Girl} alt="gril" className="img-fluid" style={{height:"90px",minWidth:"100px"}}/>
                 <div style={{marginTop:"13px"}}>
-                <p style={{fontSize:"25px",fontWeight:"bold"}}>{name}</p>
+                <p style={{fontSize:"23px"}}>{name}</p>
                 <button style={{border:"none",background:"000"}} onClick={handleOpenLogout}><img src={logoutpro2} alt="downArrowForLogout" className="img-fluid" style={{height:"25px",marginTop:"-30px"}} /></button>
                 </div>
               </div>

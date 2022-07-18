@@ -10,7 +10,7 @@ const TillClose = ({tillShow, closeTill}) => {
 
   const showTillClose = () => {
     if(localStorage.getItem("till")===JSON.stringify('close')){
-      alert("Till is Already Closed")
+      // alert("Till is Already Closed")
      }else{
        localStorage.setItem("till",JSON.stringify('close'));
        setTillCloseShow(true);
@@ -39,7 +39,7 @@ const TillClose = ({tillShow, closeTill}) => {
             <Form.Label column sm="2" className="mt-4">
             </Form.Label>
             <Col sm="10" className="mt-4">
-              <Form.Control type="date" placeholder="30-05-2022" />
+              {/* <Form.Control type="date" placeholder="30-05-2022" /> */}
             </Col>
           </Form.Group>
           <div className="button-section">
