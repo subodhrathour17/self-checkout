@@ -99,7 +99,7 @@
     width: 226px;
     height: 46px;
     left: 13px;
-    top: 6px;
+    top: 304px;
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 700;
@@ -122,11 +122,24 @@
     
  }
  .AED{
+   margin-bottom: -40px;
+   width: 77px;
+   height: 49px;
+   margin-top: 55px;
+   margin-left: 1093px;
+   font-family: 'Barlow';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40.8351px;
+   line-height: 47px;
+   color: #333333;
+ }
+ .AED1{
     position: absolute;
     width: 77px;
     height: 49px;
-    left: 545px;
-    top: 6px;
+    left: 1090px;
+    top: 213px;
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 700;
@@ -138,8 +151,8 @@
     position: absolute;
     width: 116px;
     height: 49px;
-    left: 1067px;
-    top: 6px;
+    left: 1010px;
+    top: 55px;
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 700;
@@ -147,37 +160,76 @@
     line-height: 49px;
     color: #333333;
  }
+ .price2{
+   position: absolute;
+   width: 116px;
+   height: 49px;
+   left: 1010px;
+   top: 119px;
+   font-family: 'Barlow';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40.8351px;
+   line-height: 49px;
+   color: #333333;
+}
  .visa-img-pay-done{
     position: absolute;
-    width: 76px;
-    height: 47.21px;
-    left: 494px;
-    top: 126px;
+    left: 516px;
+    top: 55px;
     filter: drop-shadow(0px 4.60606px 4.60606px rgba(0, 0, 0, 0.25));
  }
- .No{
+ .visa-img-pay-done img{
+    width: 71px;
+ }
+ .master-img-pay-done{
     position: absolute;
+    left: 516px;
+    top: 121px;
+    filter: drop-shadow(0px 4.60606px 4.60606px rgba(0, 0, 0, 0.25));
+ }
+ .master-img-pay-done img{
+    width: 71px;
+ }
+ .No{
+    /* position: absolute; */
     width: 303px;
     height: 49px;
-    left: 6px;
-    top: 304px;
+    margin-left: 19px;
+    margin-top: -119px;
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 600;
-    font-size: 30.8351px;
+    font-size: 31px;
     line-height: 49px;
     color: #333333;
  }
+ .No1{
+   /* position: absolute; */
+   width: 303px;
+   height: 49px;
+   margin-left: 67px;
+   margin-top: 19px;
+   font-family: 'Barlow';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 31px;
+   line-height: 49px;
+   color: #333333;
+}
+ /* .No::before{
+    content: "No:-";
+ } */
  .AED2{
     position: absolute;
-    width: 83px;
+    
     height: 48px;
-    left: 545px;
-    top: 304px;
+    left: 12px;
+    top: 217px;
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 40.8351px;
+    font-size: 42px;
     line-height: 48px;
     color: #333333;
  }
@@ -185,8 +237,34 @@
     position: absolute;
     width: 116px;
     height: 49px;
-    left: 1067px;
+    left: 1010px;
     top: 304px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40.8351px;
+    line-height: 49px;
+    color: #333333;
+ }
+ .Final-price-ade{
+    position: absolute;
+    width: 77px;
+    height: 49px;
+    left: 1090px;
+    top: 301px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40.8351px;
+    line-height: 49px;
+    color: #333333;
+ }
+ .due-price{
+    position: absolute;
+    width: 116px;
+    height: 49px;
+    left: 1010px;
+    top: 217px;
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 700;
@@ -206,6 +284,13 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 51.5px;
  }
+ .success-dot {
+    background-color: rgb(3, 3, 3);
+    height: 1px;
+    width: 1161px;
+    margin-left: 17px;
+    margin-top: 118px;
+  }
  @keyframes subodh{
      from{
          transform: scale(1);

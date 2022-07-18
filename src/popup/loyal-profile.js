@@ -1,46 +1,17 @@
 import React, {  Fragment, useEffect, useState } from "react";
-import { Button, Modal, Image, Form, Col, Row } from "react-bootstrap";
-import { GoArrowRight } from "react-icons/go";
+import { Button, Modal, Image,} from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import { Logo,Digital,LoyalGoldIcon } from "../assets/images";
-import LoyalProfileOtpOpen from "../popup/loyal-otp";
+import { Logo,LoyalGoldIcon } from "../assets/images";
 
 
 import "./index.css";
-import axios from "axios";
+
 
 const LoyalProfileReceiptOpen = ({dataShow, closeMobile}) => {
   let accumulatedPoint = 1000;
   let totalreedem = accumulatedPoint /10;
   const [otpShow, setTillShow] = useState(false);
-  const [data1,setData1]=useState();
  
-
-
-    const submitHandler= async ()=>{
-      try{
-       
-       const res= await axios.get("data.json",{
-        headers : { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-         }
-      })
-      
-      let test = JSON.stringify(res)
-       setData1(res)
-       console.log(test);
-      }catch(e){console.log(e);}
-   }
-
-  
-
-  const showTill = () => {
-    setTillShow(true);
-  };
-  const closeTilll = () => {
-    setTillShow(false);
-  };
   const [dueamo,setDueamo]=useState(totalreedem);
   const[payable,setPayable]=useState();
   localStorage.setItem("redeemPoint",payable);
@@ -66,9 +37,6 @@ useEffect(()=>{
       navigate('/paymentsuccess');
   }
 },[dueamo])
-console.log("total",totalreedem);
-console.log("due",dueamo);
-console.log(payable);
 
   return (
     <Fragment>
@@ -109,14 +77,14 @@ console.log(payable);
                 <div style={{marginTop: "30px",textAlign:'center'}}><span >Would you like to reedem points now</span></div>
           </div>
           <div className="button-section">
-          <Button  type="submit" class="btn btn-secondary" data-dismiss="modal" style={{width:'80px', marginTop: "30px",marginRight:"50px"}} onClick={showTill} >Yes</Button>
-           <a href="/payment"><button type="button" class="btn btn-secondary" data-dismiss="modal" style={{width:'80px',marginTop: "30px"}}>No</button></a>
+         
           </div>
             </form>
-            {/* <button onClick={submitHandler}>get</button> */}
+            <Button  type="submit" class="btn btn-secondary" data-dismiss="modal" style={{width:'80px', marginTop: "15px",marginLeft:"150px",marginRight:"50px", marginBottom:"30px"}}  >Yes</Button>
+           <a href="/payment"><button type="button" class="btn btn-secondary" data-dismiss="modal" style={{width:'80px',marginTop: "-15px"}}>No</button></a>
         </Modal.Body>
       </Modal>
-      <LoyalProfileOtpOpen otpShow={otpShow} closeTill={closeTilll} />
+      {/* <LoyalProfileOtpOpen otpShow={otpShow} closeTill={closeTilll} /> */}
 
     </Fragment>
   );

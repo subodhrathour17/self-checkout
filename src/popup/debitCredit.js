@@ -1,6 +1,6 @@
 import React, {  Fragment } from "react";
-import { Button, Modal, Image, Form, Col, Row } from "react-bootstrap";
-import { Logo } from "../assets/images";
+import { Button, Modal, Image, } from "react-bootstrap";
+import { Logo ,MasterCard, Visa} from "../assets/images";
 
 import "./index.css";
 
@@ -13,7 +13,7 @@ import { useEffect } from "react";
 const CreditDebitOpen = ({ show, handleClose,}) => {
   let totalAmo = 250;
   localStorage.setItem("totalamount",totalAmo);
-
+  
   const [dataShow, setFromShow] = useState(false);
   const [showReceipt,setShowReceipt] = useState(false)
   const [dueamot,setDueamo]=useState(totalAmo);
@@ -43,8 +43,13 @@ const CreditDebitOpen = ({ show, handleClose,}) => {
     {
       if(dueamot>0){
         // console.log("check=",check);
-      localStorage.setItem("card1","************7634");
-      localStorage.setItem("card1type","visa");
+        const asd=totalAmo-payable;
+      localStorage.setItem("card1","2205********7634");
+      localStorage.setItem("payable2",asd);
+      localStorage.setItem("card1type",Visa);
+      localStorage.setItem("payable",payable);
+      
+      
         setDueamo(dueamot-payable);
         setFlag(false);
         
@@ -52,8 +57,9 @@ const CreditDebitOpen = ({ show, handleClose,}) => {
           setFlag(true);
         }, 5000);
        
-        localStorage.setItem("card2","************8914");
-        localStorage.setItem("card2ype","master");
+        localStorage.setItem("card2","8576********8914");
+        localStorage.setItem("card2ype",MasterCard);
+        
     }
 }
 }
@@ -63,6 +69,7 @@ useEffect(()=>{
 
       if(check<2){
         localStorage.removeItem('card2');
+        localStorage.removeItem("card2ype")
       }
       setShowReceipt(true);
       
@@ -76,6 +83,9 @@ useEffect(()=>{
 // console.log("total",totalAmo);
 // console.log("due",dueamot);
 // console.log("show",show);
+// console.log("payable",payable);
+localStorage.setItem("dueamo",dueamot);
+
 
   return (
     <Fragment>
@@ -88,32 +98,33 @@ useEffect(()=>{
         </Modal.Header>
         <Modal.Body>
             <form style={{marginLeft:'30px'}} >
-          <div classNameName="loyal-user">
-                <div classNameName="p-name" style={{marginTop: "30px", fontWeight: "bold"}}>
+          <div className="loyal-user">
+                <div className="p-name" style={{marginTop: "30px", fontWeight: "bold"}}>
                     <label >Total Amount</label>
                 <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'300px', }}> <span>{ totalAmo }</span></div>
                 <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'350px', }}> <span>{"AED"}</span></div>
                 </div>
-                <div style={{position:"absolute",width: "450px",height: "-2px",left: "25px",top: "75px",border: "1px solid #333333"}}> </div>
-                <div classNameName="p-name"style={{marginTop: "30px",fontWeight: "bold"}}><label>Balance Due</label>
+                <div style={{position:"absolute",width: "450px",height: "-2px",left: "25px",top: "72px",border: "1px solid #333333"}}> </div>
+                <div className="p-name"style={{marginTop: "30px",fontWeight: "bold"}}><label>Balance Due</label>
                
                 <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'300px', }}> <span>{dueamot }</span></div>
                 <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'350px', }}> <span>{"AED"}</span></div>
                 </div>
                 <div style={{position:"absolute",width: "450px",height: "-2px",left: "25px",top: "120px",border: "1px solid #333333"}}> </div>
 
-                <div classNameName="p-name" style={{marginTop: "30px",fontWeight: "bold"}}><label >Amount to be Paid :- </label>
+                <div className="p-name" style={{marginTop: "30px",fontWeight: "bold"}}><label >Amount to be Paid :- </label>
                 <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'300px', }}> <input type="number" placeholder={dueamot}   onChange={(e)=>setPayable(e.target.value)} style={{width:"100px" } }/></div>
                 </div>
-                <div classNameName="button-section">
+                <div className="button-section">
                 </div>
                
-                <a href="/payment"><Button type="button" className="btn btn-secondary" data-dismiss="modal" style={{width:'80px',marginTop: "0px"}}>No</Button></a>
           </div>
           
             </form>
-            <Button  type="submit" className="btn btn-secondary" data-dismiss="modal" required  style={{width:'80px', marginTop: "0px",marginRight:"50px",marginLeft:"100px" }  } onClick={TotalDueAmount}>Pay
+            <Button  type="submit" className="btn btn-primary" data-dismiss="modal" required  style={{width:'80px', marginTop: "80px",marginRight:"80px",marginLeft:"130px" }  } onClick={TotalDueAmount}>Pay
                 </Button>
+            <a href="/payment"><Button type="button" className="btn btn-primary" data-dismiss="modal" style={{width:'80px',marginTop: "95px",marginBottom: "20px"}}>No</Button></a>
+
         </Modal.Body>
       </Modal>
 

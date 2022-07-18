@@ -24,33 +24,6 @@ const sendEmail=(e)=>{
           
         </Modal.Header>
         <Modal.Body>
-         {/* <form action="" onSubmit={sendEmail}  > */}
-          {/* <Form.Group as={Row} className="mb-3 register-main">
-            <Form.Label column sm="2" required >
-              Mobile Number:-
-            </Form.Label>
-            <Col sm="10">
-              <Form.Control type="tel" placeholder="8744029109" name='mobile' />
-            </Col>
-          </Form.Group>
-          <Form.Group as={Row} className="mb-3 register-main">
-            <Form.Label column sm="2" required  >
-              Email Id :-
-            </Form.Label>
-            <Col sm="10">
-              <Form.Control type="email" placeholder="@gmail.com" name='user-email'/>
-              
-            </Col>
-          </Form.Group> */}
-          {/* <input type="tel" placeholder="8744029109" name='mobile'/>
-          <input type="email" placeholder="@gmail.com" name='user-email'/> */}
-          {/* <div className="button-section">
-            <Button variant="warning" >
-              Continue <GoArrowRight size={20} />
-            </Button>
-          </div> */}
-          {/* <input type="submit" />
-          </form> */}
           <div>
             <form onSubmit={sendEmail}>
               <div class="form-example">
