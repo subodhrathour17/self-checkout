@@ -5,9 +5,14 @@
 .rectangle img {
   width: 40%;
 }
-.disable-color{
-  background-color: rgba(179, 179, 179, 0.553);
+.enable-color{
+  background: black !important;
 }
+.disable-color{
+  color:black !important;
+  background: rgba(179, 179, 179, 0.667) !important;
+}
+
 
 .circle {
   width: 8%;
@@ -64,9 +69,9 @@
   background: rgba(177, 177, 177, 1);
   color: #fff;
 }
-.color-btn {
+/* .color-btn {
   background: rgba(48, 48, 48, 1) !important;
-}
+} */
 
 .vector-img img {
   width: 100%;

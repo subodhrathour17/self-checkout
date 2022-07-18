@@ -116,7 +116,7 @@ const Login = () => {
                       <img src={Vector2} alt="profile" className="img-fluid" />
                     </div>
                     <input type="text"
-                    pattern="^[a-z]+$"
+                    // pattern="^[a-z]+$"
                      onChange={handleChange} 
                      placeholder="Enter Username"
                      name="username"

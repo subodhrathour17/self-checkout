@@ -6,19 +6,19 @@ import "./index.css";
 import Tillopensucess from "./till-open-sucess";
 
 const TillOpen = ({tillShow, closeTill}) => {
+  const dateInput = new Date().toISOString().split('T')[0];
   const [tillOpenShow, setTillOpenShow] = useState(false);
 
   const showTillOpen = () => {
     if(localStorage.getItem("register")===JSON.stringify('open')){
     if(localStorage.getItem("till")===JSON.stringify('open')){
-      alert("Till is Already Opened")
+      // alert("Till is Already Opened")
      }else{
        localStorage.setItem("till",JSON.stringify('open'));
        setTillOpenShow(true);
      }
     }else{
       alert("Register is Not Opened");
-
     }
   };
   const closeTillOpen = () => {
@@ -45,7 +45,7 @@ const TillOpen = ({tillShow, closeTill}) => {
               Enter Till Date :-
             </Form.Label>
             <Col sm="10" className="mt-4">
-              <Form.Control type="date" placeholder="30-05-2022" />
+              <Form.Control type="date" id="date"  value={dateInput} />
             </Col>
           </Form.Group>
           <div className="button-section">

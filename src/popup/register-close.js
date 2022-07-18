@@ -1,5 +1,5 @@
-import React, { useState, Fragment } from "react";
-import { Button, Modal, Image, Form, Col, Row } from "react-bootstrap";
+import React, { Fragment } from "react";
+import { Modal, Image, Form, Col, Row } from "react-bootstrap";
 import { Logo } from "../assets/images";
 import "./index.css";
 

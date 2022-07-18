@@ -9,15 +9,110 @@ import Storeclose from "../../popup/StoreClose";
 import { useEffect } from "react";
 import Logout from "../../popup/Logout";
 
-const Register = () => {
 
+
+const Register = () => {
+  const name=JSON.parse(localStorage.getItem('user')).userName;
+
+  // Show/Hide PopUp
   const [show, setShow] = useState(false);
   const [showClose, setShowClose] = useState(false);
   const [showTill, setShowTill] = useState(false);
   const [showStore, setShowStore] = useState(false);
   const [showStoreClose, setShowStoreClose] = useState(false);
-  const[storeEnable , setStoreEnable] = useState(false);
   const[showLogout , setShowLogout] = useState(false);
+  
+
+  // Buttons Disable/Enable
+
+  // for Cashier Only
+  const[isCashier , setIsCashier] = useState(false);
+  // end Casshier button
+
+  // For Manager Only
+  const[isStoreOpen,setIsStoreOpen]=useState(false);
+  const[isStoreCloseOpen,setIsStoreCloseOpen]=useState(false);
+  const[registerEnable,setRegisterEnable]=useState(true);
+  const[registerCloseEnable,setRegisterCloseEnable]=useState(true);
+
+  useEffect(()=>{
+
+    if(name==='Gaurav'){
+     setIsCashier(true)
+    }
+    
+ },[])
+ 
+
+
+ useEffect(()=>{
+  if(localStorage.getItem("store")===JSON.stringify('open')){
+    setIsStoreOpen(true);
+    setIsStoreCloseOpen(false);
+  }
+ },isStoreOpen)
+
+ useEffect(()=>{
+  
+  if(localStorage.getItem("store")===JSON.stringify('close')){
+    setIsStoreOpen(false);
+    setIsStoreCloseOpen(true);
+  
+  }
+ },isStoreCloseOpen)
+
+  useEffect(()=>{
+   if(localStorage.getItem("register")===JSON.stringify('open')){
+    setRegisterEnable(true);
+    setRegisterCloseEnable(false);
+      
+    }
+  
+  },registerEnable)
+
+  useEffect(()=>{
+   if(localStorage.getItem("register")===JSON.stringify('close')){
+   setRegisterEnable(false);
+   setRegisterCloseEnable(true);    
+   }
+  },registerCloseEnable)
+
+   // store open
+   const handleOpenStore = () => {
+        
+      localStorage.setItem("store",JSON.stringify('open'));
+      setShowStore(true);
+      setTimeout(()=>window.location.reload(true),1000) 
+
+    }
+  
+  const handleCloseStore = () => {
+    setShowStore(false);
+  };
+
+  // Store Close
+  const handleOpenStoreClose = () => {
+    if(localStorage.getItem("register")===JSON.stringify('close')){
+    if(localStorage.getItem("store")===JSON.stringify('close')){
+      setIsStoreOpen(false);
+      setIsStoreCloseOpen(true);
+    }else{ 
+      localStorage.setItem("store",JSON.stringify('close'));
+      setShowStoreClose(true);
+      setTimeout(()=>window.location.reload(true),1000) 
+
+    }
+  }else{
+    setIsStoreCloseOpen(true);
+  }
+  };
+  const handleCloseStoreClose = () => {
+    setShowStoreClose(false);
+  };
+
+
+
+
 
   // register open
   const handleClose = () => {
@@ -25,33 +120,29 @@ const Register = () => {
   };
     const handleOpen = () => {
     if(localStorage.getItem("store")===JSON.stringify('open')){
+    if(localStorage.getItem("register")===JSON.stringify('open')){
+     setRegisterEnable(true);
+    }else{
 
-      if(localStorage.getItem("register")===JSON.stringify('open')){
-        alert("Register is Already Opened")
-       }else{
-         localStorage.setItem("register",JSON.stringify('open'));
-         setShow(true);
-       }
-      }else{
-        alert("Store  is Not Opened")
-      }
-    };
+      localStorage.setItem("register",JSON.stringify('open'));
+      setRegisterEnable(false);
+      setShow(true);
+      setTimeout(()=>window.location.reload(true),1000) 
+
+    }
+    }else{
+    setRegisterEnable(true);
+    }
+        };
     // Register Close
   const regClose = () => {
     setShowClose(false);
   };
     const regOpen = () => {
-    if(localStorage.getItem("till")===JSON.stringify('close')){
-      if(localStorage.getItem("register")===JSON.stringify('close')){
-        alert("Register is Already Closed")
-       }else{
-         localStorage.setItem("register",JSON.stringify('close'));
+    localStorage.setItem("register",JSON.stringify('close'));
          setShowClose(true);
+      setTimeout(()=>window.location.reload(true),1000) 
 
-       }
-      }else{
-        alert("Please Close Till First");
-      }
     };
 
   // till
@@ -62,36 +153,7 @@ const Register = () => {
     setShowTill(true);
   };
 
-  // store open
-  const handleOpenStore = () => {
-    if(localStorage.getItem("store")===JSON.stringify('open')){
-     alert("Store is Already Opened")
-    }else{
-
-      localStorage.setItem("store",JSON.stringify('open'));
-      setShowStore(true);
-    }
-  };
-  const handleCloseStore = () => {
-    setShowStore(false);
-  };
-  // Store Close
-  const handleOpenStoreClose = () => {
-    if(localStorage.getItem("register")===JSON.stringify('close')){
-    if(localStorage.getItem("store")===JSON.stringify('close')){
-      alert("Store is Already Closed")
-     }else{
-      localStorage.setItem("store",JSON.stringify('close'));
-      setShowStoreClose(true);
-     }
-    }else{
-      alert("Close The Register First");
-    }
-  };
-  const handleCloseStoreClose = () => {
-    setShowStoreClose(false);
-  };
-
+ 
   // Logout
   const handleOpenLogout = () => {
     setShowLogout(true);
@@ -99,21 +161,7 @@ const Register = () => {
   const handleCloseLogout = () => {
     setShowLogout(false);
   };
-    const role=JSON.parse(localStorage.getItem('user')).userName;
 
-    useEffect(()=>{
-
-    console.log(role);
-    if(role==='Gaurav'){
-      console.log("i am in if condition")
-      setStoreEnable(true);
-      var d = document.getElementById("openstore");
-        d.className += "disable-color";
-      var d = document.getElementById("closestore");
-        d.className += "disable-color";
-      // document.getElementById('openstore').disabled=false;
-    }
-  },[])
 
   return (
     <Fragment>
@@ -135,7 +183,7 @@ const Register = () => {
               <div className="circle" style={{display:"flex"}}>
                 <img src={Girl} alt="gril" className="img-fluid" style={{height:"90px",minWidth:"100px"}}/>
                 <div style={{marginTop:"13px"}}>
-                <p style={{fontSize:"25px",fontWeight:"bold"}}>{JSON.parse(localStorage.getItem('user')).userName}</p>
+                <p style={{fontSize:"25px",fontWeight:"bold"}}>{name}</p>
                 <button style={{border:"none",background:"000"}} onClick={handleOpenLogout}><img src={logoutpro2} alt="downArrowForLogout" className="img-fluid" style={{height:"25px",marginTop:"-30px"}} /></button>
                 </div>
               </div>
@@ -155,31 +203,27 @@ const Register = () => {
                 <div className="logo text-center">
                   <img src={BflGroupLogo} alt="logo" className="img-fluid" />
                 </div>
-                <div className="buttons pb-4">
-                
-                  <button type="button" className="color-btn" 
-                  id="openstore" onClick={handleOpenStore} disabled={storeEnable}>
-                    Start of Day
-                    </button>
-                </div>
+                { !isCashier ? <div className="buttons pb-4" ><button type="button" className={ isStoreOpen ? 'disable-color' : 'enable-color' } id="openstore" onClick={handleOpenStore} disabled={isStoreOpen}> Start of Day </button></div> : '' } 
 
                 <div className="buttons pb-4">
-                  <button className="color-btn text-light" onClick={handleOpen}>
+                  <button className={ registerEnable ? 'disable-color' : 'enable-color' } id="openregister" onClick={handleOpen} disabled={registerEnable}>
                     Register Open
                   </button>
                 </div>
 
                 <div className="buttons pb-4">
-                  <button className="color-btn text-light" onClick={handleOpenTill}>
+                  <button className={'enable-color'} onClick={handleOpenTill}>
                     Till Option
                   </button>
                 </div>
 
                 <div className="buttons pb-4">
-                  <button className="color-btn text-light" onClick={regOpen}>Register Close</button>
+                  <button type="button" className={ registerCloseEnable ? 'disable-color' : 'enable-color' }  id="closeregister" onClick={regOpen} disabled={registerCloseEnable}>Register Close</button>
                 </div>
                 <div className="buttons pb-4 ">
-                  <button type="button" className="color-btn" id="closestore" onClick={handleOpenStoreClose}  disabled={storeEnable}>End of Day</button>
+                  {!isCashier ?
+                  <button type="button"  className={ isStoreCloseOpen ? 'disable-color' : 'enable-color' }  id="closestore" onClick={handleOpenStoreClose} disabled={isStoreCloseOpen}>End of Day</button>:''
+                }
                 </div>
 
                 <div className="vector-img">
