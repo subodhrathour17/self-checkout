@@ -55,11 +55,15 @@ const Register = () => {
  useEffect(()=>{
   
   if(localStorage.getItem("store")===JSON.stringify('close')){
+    // setRegisterEnable(true);
     setIsStoreOpen(false);
     setIsStoreCloseOpen(true);
-  
+  }
+  else if(localStorage.getItem("register")===JSON.stringify('open')){
+    setIsStoreCloseOpen(true);
   }
  },isStoreCloseOpen)
+
 
   useEffect(()=>{
    if(localStorage.getItem("register")===JSON.stringify('open')){
@@ -70,10 +74,21 @@ const Register = () => {
   
   },registerEnable)
 
+ 
+
   useEffect(()=>{
-   if(localStorage.getItem("register")===JSON.stringify('close')){
+    
+   if(localStorage.getItem("register")===JSON.stringify('close')&&localStorage.getItem("store")===JSON.stringify('open')){
    setRegisterEnable(false);
    setRegisterCloseEnable(true);    
+   }
+   else if(localStorage.getItem("register")===JSON.stringify('close')&&localStorage.getItem("store")===JSON.stringify('close')){
+    setRegisterEnable(true);
+    setRegisterCloseEnable(true); 
+
+   }
+   else if(localStorage.getItem("till")===JSON.stringify('open')){
+    setRegisterCloseEnable(true); 
    }
   },registerCloseEnable)
 
@@ -192,7 +207,7 @@ const Register = () => {
               <div className="circle" style={{display:"flex"}}>
                 <img src={Girl} alt="gril" className="img-fluid" style={{height:"90px",minWidth:"100px"}}/>
                 <div style={{marginTop:"13px"}}>
-                <p style={{fontSize:"23px"}}>{name}</p>
+                <p style={{fontSize:"20px"}}>{name}</p>
                 <button style={{border:"none",background:"000"}} onClick={handleOpenLogout}><img src={logoutpro2} alt="downArrowForLogout" className="img-fluid" style={{height:"25px",marginTop:"-30px"}} /></button>
                 </div>
               </div>
@@ -222,7 +237,10 @@ const Register = () => {
 
                 <div className="buttons pb-4">
                   <button className={'enable-color'} onClick={handleOpenTill}>
-                    Till Option
+                  <span className="left-arrow"></span>
+                  <span className="left-arrow"></span>
+                  <span className="left-arrow"></span>
+                    <span>Till Options</span>
                   </button>
                 </div>
 

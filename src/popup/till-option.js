@@ -16,10 +16,7 @@ const TillOption = ({ show, handleClose }) => {
   const[tillCloseEnable,setTillCloseEnable]=useState(false);
 
   useEffect(()=>{
-    // if(localStorage.getItem("till")===JSON.stringify('open')){
-    //   setTillEnable(true)
-
-    //  }
+   
     if(localStorage.getItem("register")===JSON.stringify('open')){
       if(localStorage.getItem("till")===JSON.stringify('open')){
         setTillEnable(true)

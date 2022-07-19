@@ -28,13 +28,6 @@ const AppRoute = () => {
           <Route exact path="/feedback" element={<Feedback />} />
           <Route exact path="/security" element={<Securitytag />} />
           <Route exact path="/securitysuccess" element={<Securitysuccess />} />
-          
-          {/* <Route exact path="/payment" element={<Payment/>} />
-          <Route exact path="/recipt" element={<Recipt/>} />
-          <Route exact path="/paymentsuccess" element={<PaymentSuccess/>} />
-          <Route exact path="/credit" element={<Credit/>} />
-          <Route exact path="/gift" element={<Gift/>} />
-          <Route exact path="/digitalwallet" element={<DigitalWallet/>} /> */}
         </Routes>
       </Router>
     </Fragment>
