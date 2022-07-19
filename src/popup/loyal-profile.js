@@ -11,8 +11,8 @@ import axios from "axios";
 import RedeemPoint from "./balance-split";
 
 const LoyalProfileReceiptOpen = ({dataShow, closeMobile}) => {
-  const [accumulatedPoint, setAccumulatedPoint] = useState(1000);
-  let totalreedem = accumulatedPoint /10;
+  const [accumulatedPoin, setAccumulatedPoint] = useState(1000);
+  let totalreedem = accumulatedPoin /10;
   const [otpShow, setTillShow] = useState(false);
 
   const [show, setShow] = useState(false);
@@ -40,14 +40,14 @@ const LoyalProfileReceiptOpen = ({dataShow, closeMobile}) => {
     if(payable>dueamo){
         alert("Enter valid Redeem Point")
         // navigate('/credit');
-    }else{
-
-    
-    if(dueamo>0){
+    }
+    else{
+        if(dueamo>0){
         setDueamo(dueamo-payable);
         setAccumulatedPoint((dueamo-payable)*10);
-       
-        // navigate('/credit');
+    setShow(true);
+
+        
        
     }
 }
@@ -57,9 +57,10 @@ useEffect(()=>{
       navigate('/paymentsuccess');
   }
 },[dueamo])
-console.log("total",totalreedem);
-console.log("due",dueamo);
-console.log(payable);
+// console.log("total",totalreedem);
+// console.log("due",dueamo);
+// console.log("payable",payable);
+// console.log("acpoint",accumulatedPoin);
 
   return (
     <Fragment>
@@ -83,7 +84,7 @@ console.log(payable);
                 </div>
                 <div style={{position:"absolute",width: "150px",height: "-2px",left: "320px",top: "63px",border: "1px solid #333333"}}> </div>
                 <div className="p-name" style={{marginTop: "15px",fontWeight: "bold"}}><label >Accumulated Point :- </label>
-                <div style={{ position:'absolute' ,marginTop:'-40px',marginLeft:'300px',}}> <span>{accumulatedPoint}</span></div>
+                <div style={{ position:'absolute' ,marginTop:'-40px',marginLeft:'300px',}}> <span>{accumulatedPoin}</span></div>
                 </div>
                 
                 <div style={{position:"absolute",width: "150px",height: "-2px",left: "320px",top: "95px",border: "1px solid #333333"}}> </div>
@@ -102,7 +103,8 @@ console.log(payable);
         
          
             </form>
-            <Button  type="submit" class="btn btn-secondary" data-dismiss="modal" style={{width:'80px', marginTop: "30px",marginRight:"71px",marginLeft:"128px",marginBottom:"30px"}} onClick={handleOpen} >Yes</Button>
+            <Button  type="submit" class="btn btn-secondary" data-dismiss="modal" style={{width:'80px', marginTop: "30px",marginRight:"71px",marginLeft:"128px",marginBottom:"30px"}} onClick={TotalDueAmount} >Yes</Button>
+
            <a href="/payment"><button type="button" class="btn btn-secondary" data-dismiss="modal" style={{width:'80px',marginTop: "1px"}}>No</button></a>
           
             {/* <button onClick={submitHandler}>get</button> */}
