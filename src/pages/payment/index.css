@@ -1,0 +1,341 @@
+
+.gobutton-btn{
+    height: 90px;
+    width: auto;
+    position: fixed;
+}
+.go-btn{
+    background-color: #FEB23B;
+    width: auto;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-color: white;
+    
+}
+.img-goback{
+    margin: 10px;
+}
+.Paytext1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    left: 501px;
+    min-height: 94px;
+    position: fixed;
+    top: 11px;
+    width: 439px;
+  }
+  
+  .title {
+    min-height: 59px;
+    min-width: 439px;
+    margin-left: 13rem;
+  }
+
+  .bfl-logo{
+    height: 67px;
+    margin-top: 10px;
+    margin-left: 83%;
+    left: 0;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    width: 232px;
+    z-index: 1;
+  }
+  a{
+    color: black;
+  }
+  .BackGround-p{
+    position: absolute;
+      margin-top: 20px;
+      margin-left: 10px;
+      width: 139px;
+      background-color:#333333;
+      height: 40rem;
+      
+  }
+  .StatusTick {
+    display: flex;
+    height: 49px;
+    min-width: 49px;
+    padding: 50px 15.5px;
+    margin-left: 35px;
+  }
+  .vector {
+    height: 40px;
+    width: 40px;
+  }
+  .article-list {
+   margin-top: 11rem;
+   margin-left: 2rem;
+    position: fixed;
+    color: #fff;
+    top: 0;
+    z-index: 1;
+  }
+ .line-1 {
+   margin-top: 1.7rem;
+   height: 50px;
+   position: fixed;
+   margin-left: -2.3rem;
+  }
+  .line-2 {
+    margin-top: 1.7rem;
+    height: 50px;
+    position: fixed;
+    margin-left: -0.8rem;
+   }
+   .line-3{
+    position: fixed;
+       margin-top: 1.7rem;
+       margin-left: -2.7rem;
+       height: 50px;
+   }
+ .number-1{
+     margin-top: 4.5rem;
+     margin-left: 2.8rem;
+ }
+ .remove-tag {
+     margin-left: -1.8rem;
+ }
+ .pay-list{
+     color: #ffff;
+     margin-left: 3.5rem;
+ }
+  .back-design-main{
+    align-items: center;
+    margin-top: 11px;
+    min-width: 1500px;
+    margin-left: 1.7rem;
+   
+  }
+  .back-design-main img{
+    height: 317px;
+    width: 1400px;
+  }
+  .top-image{
+      margin-left: 10%;
+  }
+
+  .down-design {
+    margin-top: -1.6rem;
+    margin-left: 138px;
+    height: 120px;
+    width: 1400px;
+  }
+  .cardmain-payment{
+      position: relative;
+      display: flex;
+      margin-left: 12.5rem;
+  }
+  .form-back{
+    border-radius: 10px;
+    border:  2px solid #333333;
+    position: relative;
+    width: rem;
+    height: 20rem;
+    background-color: white;
+    z-index: 18;
+    margin-top: 15rem;
+    margin-left: 1rem;
+   
+  }
+  .p1{
+      margin-left: 13rem;
+  }
+  .form-back h1{
+      margin-top: 15rem;
+      margin-left: 3rem;
+      position: absolute;
+      font-size: 1.5rem;
+  }
+  .card-design-all {
+    border:  2px solid #333333;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    align-items: flex-start;
+    background-color: rgba(245, 240, 240, 0);
+    border-radius: 79.5px;
+    display: flex;
+    flex-direction: column;
+    min-height: 159px;
+    padding: 33px 15px;
+    width: 159px;
+    z-index: 25;
+  }
+  
+  .card-visa {
+    align-self: center;
+    height: 36px;
+    margin-right: 2px;
+    width: 59px;
+  }
+  
+  .flex-row {
+    align-items: flex-start;
+    display: flex;
+    margin-top: 7px;
+    min-width: 127px;
+  }
+  
+  .card-discover {
+    height: 36px;
+    width: 59px;
+  }
+  
+  .card-mastercard {
+    height: 36px;
+    margin-left: 9px;
+    width: 59px;
+  }
+
+  .gift-card-img{
+    align-self: center;
+    margin-top: 10px;
+    width: 79px;
+    border-radius: 100%;
+  }
+  .wallet-img{
+    align-self: center;
+    margin-top: 15px;
+    height: 70px;
+    width: 80px;
+  }
+  .form-back h2{
+    margin-top: 15rem;
+    margin-left: 7.5rem;
+    position: absolute;
+    font-size: 1.5rem;
+  }
+  .form-back h3{
+    margin-top: 15rem;
+    margin-left: 4.5rem;
+    position: absolute;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .card-s{
+      max-width: 688px;
+    }
+    .card-s .form-s-p{
+      left: -46px;
+    }
+    .card-s .card-design-all-s{
+      left: -53px;
+    }
+    .card-s .card-design-all-s-gift{
+      left: -51px;
+    }
+    .card-s .card-design-all-s-wallet{
+      left: -51px;
+    }
+    .form-s-p .text-s-h1{
+    left: -20px;
+    font-size: 19px;
+    font-weight: bold;
+    }
+    .form-s-p .text-s-h3{
+      left: -37px;
+      font-size: 19px;
+      font-weight: bold;
+      }
+      .form-s-p .text-s-h2{
+        left: -40px;
+        font-size: 19px;
+        font-weight: bold;
+        }
+        .background-img-s .bi-im-s{
+          width: 80rem;
+          left: -100px;
+          top: 10px;
+          
+        }
+        .Paytext-s-text .pa-tex-sc{
+          margin-left: -354px;
+          font-size: 26px;
+        }
+        .bfl-logo-s-pa .bfl-lo-sc{
+          margin-left: 37rem;
+        }
+  }
+  
+@media (max-width: 992px) {
+  .Paytext-M-text h1{
+    margin-left: 8rem;
+  }
+  .bfl-logo-m-pa .bfl-logo-m {
+    left: -5rem;
+}
+ .back-design-m-screen .top-image{
+  margin-left: 14rem;
+    margin-top: 3px;
+  }
+  
+  .card-m .form-m{
+    margin-left: 19px;
+    width: 246px;
+  }
+  .card-m{
+    margin-left: 22rem;
+  }
+  .card-design-all-m{
+    left: -18px;
+  }
+  .card-design-all-m-gift{
+   left: -18px;
+  }
+  .card-design-all-m-wallet{
+    left: -18px;
+  }
+  .form-m-cd-text .tex-h1{
+    margin-left: 24px;
+    margin-top: 202px;
+}
+.form-m h3{
+  margin-left: 84px;
+  margin-top: 202px;
+}
+  .form-m h2{
+    margin-left: 97px;
+    margin-top: 202px;
+}
+  
+  
+}
+  
+@media (max-width: 1400px) {
+   .Paytext-full-text span{
+    margin-left: -15rem;
+   }
+   
+  .card-full{
+    left: -3px;
+    width: 98rem;
+  }
+  .card-design-all-full{
+    margin-left: 3.9rem;
+  }
+  .card-design-all-full-gift{
+    margin-left: 3.9rem;
+  }
+  .card-design-all-full-w{
+    margin-left: 3.9rem;
+  }
+  .form-full h1{
+    left: -8px;
+    font-weight: bold;
+  }
+  .form-back-text-full h3{
+    left: -15px;
+    font-weight: bold;
+  }
+  .form-back-text-full h2{
+    left: -15px;
+    font-weight: bold;
+  }
+
+} 

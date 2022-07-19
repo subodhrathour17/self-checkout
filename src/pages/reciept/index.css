@@ -1,0 +1,350 @@
+
+.gobutton-btn{
+    height: 90px;
+    width: auto;
+    position: fixed;
+}
+.go-btn{
+    /* background-color: #FEB23B; */
+    width: auto;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-color: white;
+    
+}
+.img-goback{
+    margin: 10px;
+}
+.Paytext1-r {
+    display: flex;
+    flex-direction: column;
+    left: 600px;
+    margin-left: -29rem;
+    min-height: 94px;
+    position: fixed;
+    top: 11px;
+    width: 439px;
+  }
+  
+  .title-r {
+    min-height: 59px;
+    min-width: 439px;
+    margin-left: 30rem;
+  }
+
+  .bfl-logo{
+    height: 67px;
+    margin-top: 10px;
+    margin-left: 83%;
+    left: 0;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    width: 232px;
+    z-index: 1;
+  }
+  .BackGround{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 139px;
+    background-color:#333333;
+    height: 40rem;
+      
+  }
+  .StatusTick {
+    display: flex;
+    height: 49px;
+    min-width: 49px;
+    padding: 50px 15.5px;
+    margin-left: 35px;
+  }
+  .vector {
+    height: 50px;
+    width: 50px;
+    margin-top: -10px;
+    margin-left: -6px;
+  }
+  .article-list {
+   margin-top: 11rem;
+   margin-left: 2rem;
+    position: fixed;
+    color: #fff;
+    top: 0;
+    z-index: 1;
+  }
+ .line-1 {
+   margin-top: 1.7rem;
+   height: 50px;
+   position: fixed;
+   margin-left: -2.3rem;
+  }
+  .line-2 {
+    margin-top: 1.7rem;
+    height: 50px;
+    position: fixed;
+    margin-left: -0.8rem;
+   }
+   .line-3{
+    position: fixed;
+       margin-top: 1.7rem;
+       margin-left: -2.7rem;
+       height: 50px;
+   }
+ .number-1{
+     margin-top: 4.5rem;
+     margin-left: 2.8rem;
+ }
+ .remove-tag {
+     margin-left: -1.8rem;
+ }
+ .recipt{
+     color: #ffff;
+     margin-left: 3rem;
+ }
+  .back-design {
+    align-items: center;
+    margin-top: 11px;
+    min-width: 1500px;
+    margin-left: -9rem;
+    margin-bottom: 30rem;
+   
+    
+  }
+  .top-image{
+      margin-left: 10%;
+  }
+
+  .down-design-r{
+    margin-top: -1.5rem;
+    margin-left: 139px;
+    height: 120px;
+    width: 1600px;
+  }
+  .cardmain{
+      position: relative;
+      display: flex;
+      /* justify-content: center;
+      align-items: center; */
+      margin-top: -2rem;
+  }
+  .form-back{
+    border-radius: 10px;
+    border:  2px solid #333333;
+    /* position: relative; */
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    /* z-index: 18; */
+    /* margin-top: 15rem; */
+    margin-left: 11.5rem;
+   
+  }
+
+  .cardmain :hover{
+    background-color: #FEB23B;
+
+  }
+  .p1{
+      margin-left: 13rem;
+  }
+  .form-back h1{
+      margin-top: 15rem;
+      margin-left: 3rem;
+      /* position: absolute; */
+      font-size: 1.5rem;
+  }
+  .png-all {
+    border:  2px solid #333333;
+    /* position: absolute; */
+    margin-top: 1rem;
+    margin-left: 5rem;
+    align-items: flex-start;
+    background-color: rgba(245, 240, 240, 0);
+    border-radius: 79.5px;
+    display: flex;
+    flex-direction: column;
+    min-height: 159px;
+    padding: 33px 15px;
+    width: 159px;
+    z-index: 25;
+  }
+  
+  .digital-img{
+    align-self: center;
+    height: 80px;
+  }
+  .text1-d h1{
+    align-items: center;
+    margin-left: 5rem;
+  }
+  .print-reciept {
+    width: 70px;
+    align-self: center;
+  }
+  .text2 h3{
+    align-items: center;
+    margin-left: 5.4rem;
+  }
+  .text3 h2{
+    align-items: center;
+    margin-left: 2.9rem;
+  }
+  .no-reciept{
+    align-self: center;
+    width: 85px;
+  }
+@media (max-width: 768px) {
+ .form-backsmall{
+  max-width: 155px;
+  top: 27px;
+  /* max-height: 17rem;
+  display: flex;
+  flex-direction: row;
+  left: 10px; */
+}
+.card-small{
+ 
+ flex-direction: row;
+ margin-left: 41px;
+}
+.png-small{
+  
+  width: 79px;
+}
+.print-small{
+  width: 79px;
+}
+.no-re-small{
+  width: 79px;
+}
+.text1-d h1{
+  font-size: 10px;
+  font-weight: bolder;
+  top: 4px;
+}
+.text1-d h3{
+  font-size: 10px;
+  font-weight: bolder;
+}
+.form-backsmall h2{
+  font-size: 1;
+  font-weight: bold;
+}
+.Paytext1-r h1 {
+  margin-top: 1rem;
+  margin-left: 5rem;
+  left: 190px;
+  font-size: 34px;
+  font-weight: bold;
+}
+.Paytext1-r-s img {
+  left: -12rem;
+}
+}
+
+@media (max-width: 992px) {
+  .Paytext1-r img{
+    margin-left: 45rem;
+  }
+  .back-design{
+    margin-left: 31rem;
+    margin-top: -5px;
+    margin-right: 1rem;
+  }
+  .back-design img{
+      width: 57%;
+      margin-left: -31rem;
+  }
+
+.form-back{
+  margin-top: 295px;
+  width: 17rem;
+  height: 17rem;
+  margin-left: 3rem;
+  left: -29px;
+ }
+ .png-all-dig img{
+   margin-left: -50px;
+   /* border: 3px solid black; */
+   border-radius: 10px;
+   margin-top: -0.9px;
+ }
+ .print-all-print img{
+  margin-left: -50px;
+  /* border: 3px solid black; */
+  width: 69px;
+  border-radius: 10px;
+  margin-top: -0.9px;
+ }
+ .p-card h1 {
+  left: -12px;
+  margin-top: 175px;
+}
+.text3 h2 {
+  left: -18px;
+  font-size: 23px;
+  margin-top: 175px;
+  top: -43px;
+}
+.text2 h3 {
+  left: -19px;
+  /* margin-top: 175px; */
+  top: -43px;
+}
+ .no-all-receipt img{
+  margin-left: -50px;
+  /* border: 3px solid black; */
+  width: 85px;
+  border-radius: 10px;
+  margin-top: -0.9px;
+ }
+ .png-all{
+   border: none;
+ }
+.title-r{ 
+  margin-top: 1rem;
+  margin-left: 12rem;
+  left: 190px;
+  font-size: 34px;
+  font-weight: bold;
+}
+.down-design-r{
+  margin-top: -1.5rem;
+  margin-left: 139px;
+  height: 128px;
+  width: 848px;
+}
+ 
+}
+
+
+@media (max-width: 1400px) {
+  .cardmain{
+    padding-right: 10%;
+  }
+ .form-backbig{
+   margin-left: 190px;
+}
+.png-all{
+  margin-left: 60px;
+}
+.text1-1400 h1{
+  margin-left: 51px;
+}
+.text2 h3{
+  margin-top: 220px;
+  margin-left: 4rem;
+}
+.text3 h2{
+  margin-top: 220px;
+  margin-left: 1.4rem;
+}
+.Paytext1-r{
+  margin-left: -29rem;
+}
+.title{
+  margin-left: 30rem;
+}
+}

@@ -1,0 +1,141 @@
+.home-main{
+    box-sizing: border-box;
+}
+.home-content{
+    position: relative;
+    height: 716px;
+    background-color: #FDD106;
+    
+}
+.top-degin{
+    position: absolute;
+    width: 1533px;
+    height: 329px;
+    margin-left: 1px;
+    margin-top: -116px;
+}
+.white-degin{
+    position: absolute;
+    width: 600px;
+    height: 714px;
+    margin-left: 934px;
+   
+}
+.mask-degin{
+    width: 1100px;
+    height: 500px;
+    margin-top:215px;
+    position: absolute;
+    /* width: 1136px;
+    height: 500px;
+    margin-top:218px; */
+}
+.cashier-degin{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 30px;
+    top: 10px; 
+    z-index: 50;   
+}
+.languageOptin{
+    position:absolute;
+}
+.languageOptin h1{
+    margin-top: 100px;
+    margin-left: 250px;
+    font-size: 50px;
+}
+.languageOptin h2{
+    margin-left: 140px;
+    font-size: 50px;
+}
+.home-screen-button{
+    position: absolute;
+    /* width: 685px; */
+    /* height: 95px; */
+    left: 210px;
+    top: 300px;
+}
+.button-arabic-home{
+    width: 200px;
+    color: white; 
+    border-radius: 10px;
+    background-color: #303030;
+    padding: 10px;
+    border: 2px solid white;
+   
+    height: 50px;
+}
+.button-english-home{
+    border: 2px solid white;
+    width: 200px; 
+    border-radius: 10px;
+    color: white; 
+    background-color: #303030;
+    margin-right:50px ;
+    height: 50px;
+}
+.welcome-text-home{
+    position: absolute;
+    left: 938px;
+    top: 428.14px;
+    font-family: 'Work Sans'; 
+    /* color: #000000; */
+}
+.welcome-text-home h1{
+margin-top: -200px;
+font-size: 60px;
+margin-left: 250px;
+}
+.welcome-text-home h2{
+    margin-left: 190px;
+    font-size: 60px;
+}
+.bfl-degin{
+    margin-left: 210px;
+    width: 250px;
+  
+}
+.suntech-logo-degin{
+    width: 250px;
+height: 73.77px;
+margin-left: 310px;
+margin-top: 170px;
+}
+@media (max-width: 1400px) {
+    .home-content .design-top-f{
+        margin-left: 10px;
+        width: 1530px;
+    }
+    .white-degin-f{
+        left: 10px;
+        height: 770px;
+
+    }
+    .home-content-f{
+        width: 1540px;
+        height: 770px;
+    }
+    .mask-degin-f{
+        top: 59px;
+    }
+}
+
+@media (max-width: 992px ) {
+    .home-main{
+       height: auto;
+    }
+    .home-content-m .white-degin-m{
+        width: 595px;
+        background-color: white;
+        
+    }
+    .mask-degin-m{
+        width: 965px;
+    }
+
+}
+
+
+

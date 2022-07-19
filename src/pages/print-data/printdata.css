@@ -1,0 +1,122 @@
+#invoice-POS{
+    box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
+    padding:2mm;
+    margin: 0 auto;
+    width: 44mm;
+    background:#ffff;
+}
+  p{
+    font-size: .7em;
+    color: #666;
+    line-height: 1.2em;
+  }
+ 
+  #top .logo{
+      height: 60px;
+      width: 60px; 
+  }
+  #legalcopy{
+    margin-top: 5mm;
+  }
+  
+  .item-list{
+    margin-top: 10px;
+    display: flex;
+    /* background-color: rgb(128, 125, 125); */
+}
+.item-number{
+    /* margin-top: 1px; */
+    margin-left: 3px;
+    padding-right: 8px;
+    font-size: 4px;
+    /* margin-left: 5px;
+    padding-right: 10px;
+    font-size: 2px; */
+    /* color: #FFF; */
+    font-weight: bolder;
+}
+.item-Data{
+    margin-top: 1px;
+    margin-left: 2px;
+    font-size: 4px;
+    /* color: #FFF; */
+    font-weight: bolder;
+}
+.item-list-data{
+    margin-top: 1px;
+    margin-left: 4px;
+    font-size: 4px;
+    /* color: #FFF; */
+    font-weight: bolder;
+}
+.item-qty{
+    margin-top: 1px;
+    margin-left: 9px;
+    font-size: 4px;
+    /* color: #FFF; */
+    font-weight: bolder;
+}
+.item-rate{
+    margin-top: 1px;
+    margin-left: 18px;
+    font-size: 4px;
+    /* color: #FFF; */
+    font-weight: bolder;
+}
+.item-disc{
+    margin-top: 1px;
+    margin-left: 19px;
+    font-size: 4px;
+    /* color: #FFF; */
+    font-weight: bolder;
+}
+.item-amount{
+    margin-top: 1px;
+    margin-left: 19px;
+    font-size: 4px;
+    /* color: #FFF; */
+    font-weight: bolder;
+}
+
+.amount-detail{
+    font-size: 7px;
+    margin-left: 0px;
+}
+.amount-data{
+    margin-top: 5px;
+}
+.amount-final{
+    font-size: 7px;
+    margin-left: 113px;
+    margin-top: -140px;
+}
+    
+
+.amount-final-data{
+    margin-top: 5px;
+    padding: -5px;
+}
+.hr-dot {
+    border: none;
+    border-top: 3px dotted rgb(9, 9, 9);
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 150px;
+    margin-left: 0.1px;
+    margin-top: 10px;
+  }
+  .tax-data{
+    display: flex;
+  }
+  .tax-list{
+    padding: 8px;
+    margin-left: -4.8px;
+    font-size: 14px;
+  }
+  .tax-total-value-data{
+    position: absolute;
+    margin-left: 120px;
+    font-size: 12px;
+    margin-top: -18px;
+  }
