@@ -21,7 +21,7 @@ const CreditDebitOpen = ({ show, handleClose,}) => {
   const [check,setCheck]=useState(0);
 
   const[payable,setPayable]=useState(totalAmo);
-
+  
   const showMobile = () => {
     setFromShow(true);
   };
@@ -44,6 +44,7 @@ const CreditDebitOpen = ({ show, handleClose,}) => {
       if(dueamot>0){
         // console.log("check=",check);
         const asd=totalAmo-payable;
+        
       localStorage.setItem("card1","2205********7634");
       localStorage.setItem("payable2",asd);
       localStorage.setItem("card1type",Visa);
@@ -66,7 +67,6 @@ const CreditDebitOpen = ({ show, handleClose,}) => {
 useEffect(()=>{
     if(dueamot===0){
       // console.log("useEffect wala check=",check);
-
       if(check<2){
         localStorage.removeItem('card2');
         localStorage.removeItem("card2ype")
@@ -80,10 +80,10 @@ useEffect(()=>{
     
 },[dueamot])
 
-// console.log("total",totalAmo);
-// console.log("due",dueamot);
-// console.log("show",show);
-// console.log("payable",payable);
+console.log("total",totalAmo);
+console.log("due",dueamot);
+console.log("show",show);
+console.log("payable",payable);
 localStorage.setItem("dueamo",dueamot);
 
 
@@ -104,6 +104,7 @@ localStorage.setItem("dueamo",dueamot);
                 <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'300px', }}> <span>{ totalAmo }</span></div>
                 <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'350px', }}> <span>{"AED"}</span></div>
                 </div>
+                {/* <div className="p-name"style={{marginTop: "30px",fontWeight: "bold"}}><label>Tendered Amount     {payable==0?'':payable}</label></div> */}
                 <div style={{position:"absolute",width: "450px",height: "-2px",left: "25px",top: "72px",border: "1px solid #333333"}}> </div>
                 <div className="p-name"style={{marginTop: "30px",fontWeight: "bold"}}><label>Balance Due</label>
                

@@ -103,11 +103,28 @@ const PrintData = () => {
                 <div className="amount-final-data"> <span>{"10"}   {"AED"}</span> </div>
             </div>
             <div className='hr-dot'></div>
-        <span style={{marginLeft:"38px"}}>Tax Details</span>
+            <div className="test-tax">
+                <span >{data1.TaxDetails}</span>
+                <br />
+                <span style={{marginLeft:"10px"}}>Tax Details</span>
+            </div>
         <div className="tax-data">
-                <div className="tax-list"> <span>{"Tax Desc"}</span> </div>
-                <div className="tax-list"> <span>{"Taxable"}</span> </div>
-                <div className="tax-list"> <span>{"Tax"}</span> </div>
+   
+                <div className="tax-list">
+                    <span style={{fontSize:'3px'}}>{data1.TaxDiscount}</span>
+                    <br />
+                     <span style={{fontSize:'5px'}}>{"Tax Desc"}</span>
+                 </div>
+                <div className="tax-list">
+                <span style={{fontSize:'3px'}}>{data1.Taxable}</span>
+                    <br />
+                <span>{"Taxable"}</span> 
+                </div>
+                <div className="tax-list"> 
+                <span style={{fontSize:'3px'}}>{data1.Tax}</span>
+                    <br />
+                <span>{"Tax"}</span> 
+                </div>
             </div>
             <div className='hr-dot'></div>
             <br /><br />

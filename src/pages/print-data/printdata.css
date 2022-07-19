@@ -110,9 +110,9 @@
     display: flex;
   }
   .tax-list{
-    padding: 8px;
-    margin-left: -4.8px;
-    font-size: 14px;
+    margin-left: 16px;
+    font-size: 6px;
+    margin-right: 16px;
   }
   .tax-total-value-data{
     position: absolute;
@@ -139,4 +139,8 @@
   .cashiersid-re{
     margin-top: -31px;
     margin-left: 85px;
+  }
+  .test-tax{
+    font-size: 7px;
+    margin-left: 52px;
   }
