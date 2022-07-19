@@ -6,7 +6,7 @@ import TillOpened from "../popup/TillOpened";
 
 const TillOpen = ({ tillShow, closeTill }) => {
   const [currentDate] = useState(new Date().toISOString().slice(0, -14));
-  
+
   const [tillOpened, setTillopened] = useState(false);
 
   const tillOpenedClose = () => {
@@ -38,13 +38,8 @@ const TillOpen = ({ tillShow, closeTill }) => {
                 id="till-date"
                 type="date"
                 min={currentDate}
-                defaultValue={currentDate}
-                onChange={(e) =>
-                  localStorage.setItem(
-                    "selected-date",
-                    e.target.value || currentDate
-                  )
-                }
+                max={currentDate}
+                value={currentDate}
               />
             </Col>
           </Form.Group>

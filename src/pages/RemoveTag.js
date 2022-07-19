@@ -29,9 +29,9 @@ const RemoveTag = () => {
             <div className="col-md-6 text-center d-flex">
               <h1>{t("remove-tag")}</h1>
               <div className="customer-details">
-                {/* <p className="customer-name">Name :- {username}</p> */}
+                <p className="customer-name">Name :- {username}</p>
                 <p>
-                  {t("date")} :- {localStorage.getItem("selected-date")}
+                  {t("date")} :- {new Date().toISOString().slice(0, -14)}
                 </p>
               </div>
             </div>

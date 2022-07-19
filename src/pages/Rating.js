@@ -4,6 +4,7 @@ import GreenSmily from "../assets/images/main/green-smily.png";
 import { useTranslation } from 'react-i18next';
 
 import Header from '../components/Header.js';
+import { Link } from "react-router-dom";
 
 const RecieptRating = () => {
 	const { t } = useTranslation();
@@ -33,7 +34,9 @@ const RecieptRating = () => {
             <button className="btn btn-light">{t("user-interface")}</button>
           </div>
           <div className="submit-field">
+            <Link to ="/">
             <button className="btn btn-warning submit-button">{t("submit")}</button>
+            </Link>
             <button className="btn btn-warning skip-button">{t("skip")}</button>
           </div>
         </div>

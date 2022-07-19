@@ -7,8 +7,8 @@ import Removetag from "../assets/images/gif/remove-tag.gif"
 import { Link } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 import { useTranslation } from 'react-i18next';
-import Article from "../components/Article.js";
-import { getArticles } from "../api/article.js";
+// import Article from "../components/Article.js";
+// import { getArticles } from "../api/article.js";
 
 
 
@@ -67,8 +67,8 @@ const RemoveBox = () => {
 					<div className="col-md-6 text-center d-flex">
 						<h1>{t("remove-tag")}</h1>
 						<div className="customer-details">
-            {/* <p className="customer-name">Name :- {username}</p> */}
-						<p>{t("date")} :- {localStorage.getItem('selected-date')}</p>
+            <p className="customer-name">Name :- {username}</p>
+						<p>{t("date")} :-{new Date().toISOString().slice(0, -14)}</p>
 						</div>
 
 

@@ -31,9 +31,9 @@ const DropItems = () => {
           <div className="row">
             <div className="col-sm-8 bfl-main-logo d-flex">
               <div className="customer-details">
-                {/* <p className="customer-name">Name :- {username}</p> */}
+                <p className="customer-name">Name :- {username}</p>
                 <p>
-                  {t("date")} :- {localStorage.getItem("selected-date")}
+                  {t("date")} :- {new Date().toISOString().slice(0, -14)}
                 </p>
               </div>
               <img src={BflGroupLogo} alt="" className="img-fluid" />

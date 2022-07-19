@@ -1,10 +1,10 @@
 import React, { Fragment, useState } from "react";
-import { Button, Modal, Image, Form, Col, Row } from "react-bootstrap";
+import { Button, Modal, Image, Form, Row } from "react-bootstrap";
 import Otp from "../assets/images/payment-mode/otp.png";
 import { Link, useNavigate } from "react-router-dom";
 import { Logo } from "../assets/images";
-import Pay from "./Payment";
-import { useTranslation } from 'react-i18next';
+// import Pay from "./Payment";
+import { useTranslation } from "react-i18next";
 
 const Verification = ({ show, handleClose }) => {
   // const [showPay, setShowPay] = useState(false);
@@ -14,26 +14,19 @@ const Verification = ({ show, handleClose }) => {
   //   setShowPay(false);
   // };
 
-
-  const [error, setError] = useState("");
-  const [flag, setFlag] = useState(false);
+  // const [flag, setFlag] = useState(false);
   const [otp, setOtp] = useState("");
-  const [result, setResult] = useState("");
+  // const [result, setResult] = useState("");
   const navigate = useNavigate();
-
 
   const verifyOtp = async (e) => {
     e.preventDefault();
-    setError(" Please Enter A Vaild OTP");
-    if (otp === "" || otp === null) return;
-    try {
-      await result.confirm(otp);
+    if (otp === "" || otp === null) {
+      alert("Please Enter OTP !!");
+    } else {
       navigate("/drop-your-items");
-    } catch (err) {
-      setError(err.message);
     }
   };
-
 
   return (
     <Fragment>
@@ -42,7 +35,7 @@ const Verification = ({ show, handleClose }) => {
           <Image src={Logo} alt="suntech-logo" />
         </Modal.Header>
         <Modal.Body>
-        {/* <Form as={Row} className="mb-3 verify-main-box"
+          {/* <Form as={Row} className="mb-3 verify-main-box"
               onSubmit={verifyOtp}
               style={{ display: flag ? "block" : "none" }}
             >
@@ -80,9 +73,7 @@ const Verification = ({ show, handleClose }) => {
                 </div>
               </Form.Group>
             </Form> */}
-            <Form.Group as={Row} className="mb-3 verify-main-box"
-              onSubmit={verifyOtp}
-              >
+          <Form.Group as={Row} className="mb-3 verify-main-box" type="form">
             <Form.Label column sm="12">
               <img src={Otp} alt="opt" className="img-fluid" />
             </Form.Label>
@@ -94,16 +85,16 @@ const Verification = ({ show, handleClose }) => {
             </Form.Label>
             <div className="enter-otp">
               <Form.Label
-                  column
-                  sm="10"
-                  className="mt-4 justify-content-center"
-                >
-                  <Form.Control
-                    type="otp"
-                    placeholder="Enter OTP"
-                    onChange={(e) => setOtp(e.target.value)}
-                  />
-                </Form.Label>
+                column
+                sm="10"
+                className="mt-4 justify-content-center"
+              >
+                <Form.Control
+                  type="otp"
+                  placeholder="Enter OTP"
+                  onChange={(e) => setOtp(e.target.value)}
+                />
+              </Form.Label>
             </div>
             <p>
               {t("otp-not-received")}{" "}
@@ -112,10 +103,10 @@ const Verification = ({ show, handleClose }) => {
               </Link>
             </p>
             <div className="button-section-main">
-                  <Button type="submit" variant="primary">
-                    {t("submit")}
-                  </Button>
-                </div>
+              <Button type="submit" variant="primary" onClick={verifyOtp}>
+                {t("submit")}
+              </Button>
+            </div>
           </Form.Group>
         </Modal.Body>
       </Modal>
