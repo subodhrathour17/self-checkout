@@ -38,7 +38,7 @@ const RecieptRating = () => {
             <button className="btn btn-warning submit-button">{t("submit")}</button>
             </Link>
             <button className="btn btn-warning skip-button">{t("skip")}</button>
-          </div>
+          </div> 
         </div>
       </section>
     </Fragment>
