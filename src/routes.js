@@ -1,49 +1,55 @@
 import React, { Fragment } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Welcome from "./pages/Welcome/Welcome.js";
-import Login from "./pages/login";
-import Register from "./pages/register";
+import Welcome from "./pages/Welcome.js";
+import Login from "./pages/Login.js";
+import Register from "./pages/Register.js";
 import Checkout from "./pages/checkout";
-import DropItems from "./pages/drop-your-item";
-import PaymentMode from "./pages/select-payment-mode/index.js";
-import PaymentDetails from "./pages/select-payment-mode/PaymentMode.js";
-import GiftVoucher from "./pages/select-payment-mode/GiftVoucher.js";
-import DigitalWallet from "./pages/select-payment-mode/DigitalWallet.js";
-import Receipt from "./pages/select-payment-mode/Receipt.js";
-import PaymentSucess from "./pages/select-payment-mode/PaymentSucess.js";
-import RemoveTag from "./pages/Remove-tag/index.js";
-import RemoveBox from "./pages/Remove-tag/Remove.js";
-import RecieptRating from "./pages/Rating/index.js";
-import Sidebar from "./Sidebar/Sidebar.js";
-import Logout from "./popup/logout.js";
-import Till from "./pages/register/tillClose.js";
-import Barcode from "./pages/Barcode/Barcode.js";
+import DropItems from "./pages/DropItems.js";
+import CardPayment from "./pages/CardPayment.js";
+import PaymentDetails from "./pages/PaymentDetails.js";
+import GiftVoucher from "./pages/GiftVoucher.js";
+import DigitalWallet from "./pages/DigitalWallet.js";
+import Receipt from "./pages/PaymentReceipt.js";
+import PaymentSuccess from "./pages/PaymentSuccess.js";
+import RemoveTag from "./pages/RemoveTag.js";
+import RemoveBox from "./pages/RemoveBox.js";
+import ReceiptRating from "./pages/Rating.js";
+import Logout from "./popup/Logout.js";
+import Till from "./pages/TillClose.js";
+import ErrorPage from "./components/ErrorPage.js";
+import { UserAuthContextProvider } from "./context/UserAuthContext";
+import PhoneSignUp from "./popup/MobileVerification.js";
 
 const AppRoute = () => {
   return (
     <Fragment>
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Welcome />} />
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/register" element={<Register />} />
-          <Route exact path="/till" element={<Till />} />
-          <Route exact path="/checkout" element={<Checkout />} />
-          <Route exact path="/drop-you-items" element={<DropItems />} />
-          <Route exact path="/payment" element={<PaymentMode />} />
-          <Route exact path="/payment-details" element={<PaymentDetails />} />
-          <Route exact path="/gift-voucher" element={<GiftVoucher />} />
-          <Route exact path="/digital-Wallet" element={<DigitalWallet />} />
-          <Route exact path="/receipt" element={<Receipt />} />
-          <Route exact path="/sucessfull" element={<PaymentSucess />} />
-          <Route exact path="/remove-tag" element={<RemoveTag />} />
-          <Route exact path="/remove-green" element={<RemoveBox />} />
-          <Route exact path="/rating" element={<RecieptRating />} />
-          <Route exact path="/sidebar" element={<Sidebar />} />
-          <Route exact path="/logout" element={<Logout />} />
-          <Route exact path="/barcode" element={<Barcode />} />
-        </Routes>
-      </Router>
+      <UserAuthContextProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Welcome />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/till" element={<Till />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/drop-your-items" element={<DropItems />} />
+            <Route path="/payments/cards" element={<CardPayment />} />
+            <Route path="/payments" element={<PaymentDetails />} />
+            <Route path="/payments/gift-voucher" element={<GiftVoucher />} />
+            <Route
+              path="/payments/digital-Wallets"
+              element={<DigitalWallet />}
+            />
+            <Route path="/receipt" element={<Receipt />} />
+            <Route path="/successful" element={<PaymentSuccess />} />
+            <Route path="/remove-tag" element={<RemoveTag />} />
+            <Route path="/remove-green" element={<RemoveBox />} />
+            <Route path="/rating" element={<ReceiptRating />} />
+            <Route path="/logout" element={<Logout />} />
+            <Route path= "/mobile" element ={<PhoneSignUp/>}/>
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+        </Router>
+      </UserAuthContextProvider>
     </Fragment>
   );
 };

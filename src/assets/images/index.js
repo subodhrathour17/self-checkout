@@ -48,6 +48,8 @@ import WalletRemove from './payment-mode/wallet-remove.png';
 import Mechine from './transactions/atm-mechine.png';
 import RightArrow from './transactions/right-arrow.png';
 import DownArrow from './transactions/down-arrow.png';
+import Flag from "../images/payment-mode/flag.png";
+
 
 export {
   Logo,
@@ -85,5 +87,6 @@ export {
   WalletRemove,
   Mechine,
   RightArrow,
-  DownArrow
+  DownArrow,
+  Flag
 };
