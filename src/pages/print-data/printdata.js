@@ -1,6 +1,7 @@
-import axios from 'axios';
 import React, { useState } from 'react'
 import { useEffect } from 'react';
+import { Logo} from "../../assets/images";
+import {  Image } from "react-bootstrap";
 import "./printdata.css"
 
 const PrintData = () => {
@@ -27,9 +28,11 @@ const PrintData = () => {
   return (
       <div id="invoice-POS">
     <center id="top">
+    
       <div className="logo"></div>
       <div className="info"> 
-        <h2>BFL STORE</h2>
+      <Image  style={{width:"150px"}} src={Logo} alt="suntech-logo" /> 
+        <h2>BFL</h2>
       </div>
       <div className='hr-dot'></div>
     </center>

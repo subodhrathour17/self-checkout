@@ -1,17 +1,27 @@
 import React, {  Fragment, useEffect, useState } from "react";
-import { Button, Modal, Image,} from "react-bootstrap";
+import { Button, Modal, Image, Form, Col, Row } from "react-bootstrap";
+import { GoArrowRight } from "react-icons/go";
 import { useNavigate } from "react-router-dom";
-import { Logo,LoyalGoldIcon } from "../assets/images";
+import { Logo,Digital,LoyalGoldIcon } from "../assets/images";
+
 
 
 import "./index.css";
-
+import axios from "axios";
+import RedeemPoint from "./balance-split";
 
 const LoyalProfileReceiptOpen = ({dataShow, closeMobile}) => {
-  let accumulatedPoint = 1000;
+  const [accumulatedPoint, setAccumulatedPoint] = useState(1000);
   let totalreedem = accumulatedPoint /10;
-  const [otpShow, setTillShow] = useState(false);
- 
+  const [show, setShow] = useState(false);
+  const handleClose = () => {
+    setShow(false);
+  };
+
+  const handleOpen = () => {
+    setShow(true);
+  };
+
   const [dueamo,setDueamo]=useState(totalreedem);
   const[payable,setPayable]=useState();
   localStorage.setItem("redeemPoint",payable);
@@ -20,14 +30,15 @@ const LoyalProfileReceiptOpen = ({dataShow, closeMobile}) => {
     e.preventDefault();
     if(payable>dueamo){
         alert("Enter valid Redeem Point")
-        // navigate('/credit');
+        
     }else{
 
     
     if(dueamo>0){
         setDueamo(dueamo-payable);
-       
-        // navigate('/credit');
+        setAccumulatedPoint((dueamo-payable)*10);
+        setShow(true);
+        
        
     }
 }
@@ -37,6 +48,9 @@ useEffect(()=>{
       navigate('/paymentsuccess');
   }
 },[dueamo])
+// console.log("total",totalreedem);
+// console.log("due",dueamo);
+// console.log(payable);
 
   return (
     <Fragment>
@@ -47,11 +61,11 @@ useEffect(()=>{
           
         </Modal.Header>
         <Modal.Body>
-            <form  onSubmit={TotalDueAmount} style={{marginLeft:'30px'}}>
+            <form   style={{marginLeft:'30px'}}>
           <div className="loyal-user">
                 <div className="p-name" style={{marginTop: "10px", fontWeight: "bold"}}>
                     <label >Person name :- </label>
-                <div style={{ position:'absolute' ,marginTop:'-30px',marginLeft:'290px',}}> <span>{"Subodh"}</span></div>
+                <div style={{ position:'absolute' ,marginTop:'-30px',marginLeft:'290px',}}> <span>{"Mariyam"}</span></div>
                 <div style={{ position:'absolute' ,marginTop:'-30px',marginLeft:'380px', color:"green"}}> <span>{"Active" }</span></div>
                 </div>
                 <div style={{position:"absolute",width: "150px",height: "-2px",left: "320px",top: "28px",border: "1px solid #333333"}}> </div>
@@ -65,26 +79,28 @@ useEffect(()=>{
                 
                 <div style={{position:"absolute",width: "150px",height: "-2px",left: "320px",top: "95px",border: "1px solid #333333"}}> </div>
                 <div className="p-name" style={{marginTop: "16px",fontWeight: "bold"}}><label >Equivalent Amount :- </label>
-                <div style={{ position:'absolute' ,marginTop:'-35px',marginLeft:'300px', }}> <span> {dueamo}   {"AED"}</span></div>
+                <div style={{ position:'absolute' ,marginTop:'-35px',marginLeft:'300px', }}> <span> {totalreedem}   {"AED"}</span></div>
                 </div>
                 
                 <div style={{position:"absolute",width: "150px",height: "-2px",left: "320px",top: "138px",border: "1px solid #333333"}}> </div>
                 <div className="p-name" style={{marginTop: "18px",fontWeight: "bold"}}><label >Enter Amount to Reedem:- </label>
-                <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'290px'}} required> <input onChange={(e)=>setPayable(e.target.value)} style={{width:"150px", backgroundColor:"#F2F2F2" ,border:"none"}} type="number" />  </div>
+                <div style={{ position:'absolute' ,marginTop:'-24px',marginLeft:'290px'}} required> <input onChange={(e)=>setPayable(e.target.value)} placeholder={dueamo} style={{width:"150px", backgroundColor:"#F2F2F2" ,border:"none"}} type="number" />  </div>
                 </div>
                 
                 <div style={{position:"absolute",width: "150px",height: "-2px",left: "320px",top: "196px",border: "1px solid #333333"}}> </div>
                 <div style={{marginTop: "30px",textAlign:'center'}}><span >Would you like to reedem points now</span></div>
           </div>
-          <div className="button-section">
+        
          
-          </div>
             </form>
-            <Button  type="submit" class="btn btn-secondary" data-dismiss="modal" style={{width:'80px', marginTop: "15px",marginLeft:"150px",marginRight:"50px", marginBottom:"30px"}}  >Yes</Button>
-           <a href="/payment"><button type="button" class="btn btn-secondary" data-dismiss="modal" style={{width:'80px',marginTop: "-15px"}}>No</button></a>
+            <Button  type="submit" className="btn btn-primary" data-dismiss="modal" style={{width:'80px', marginTop: "30px",marginRight:"71px",marginLeft:"128px",marginBottom:"30px"}} onClick={TotalDueAmount}>Yes</Button>
+           <a href="/payment"><button type="button" className="btn btn-primary" data-dismiss="modal" style={{width:'80px',marginTop: "1px"}}>No</button></a>
+          
+            {/* <button onClick={submitHandler}>get</button> */}
         </Modal.Body>
       </Modal>
-      {/* <LoyalProfileOtpOpen otpShow={otpShow} closeTill={closeTilll} /> */}
+     
+      <RedeemPoint show={show} handleClose={handleClose} />
 
     </Fragment>
   );

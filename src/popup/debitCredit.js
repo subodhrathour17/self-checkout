@@ -1,11 +1,8 @@
 import React, {  Fragment } from "react";
 import { Button, Modal, Image, } from "react-bootstrap";
 import { Logo ,MasterCard, Visa} from "../assets/images";
-
 import "./index.css";
-
 import { useState } from "react";
-import LoyalProfileReceiptOpen from "./loyal-profile";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -42,13 +39,11 @@ const CreditDebitOpen = ({ show, handleClose,}) => {
     else
     {
       if(dueamot>0){
-        // console.log("check=",check);
         const asd=totalAmo-payable;
-        
-      localStorage.setItem("card1","2205********7634");
-      localStorage.setItem("payable2",asd);
-      localStorage.setItem("card1type",Visa);
-      localStorage.setItem("payable",payable);
+        localStorage.setItem("card1","2205********7634");
+        localStorage.setItem("payable2",asd);
+        localStorage.setItem("card1type",Visa);
+        localStorage.setItem("payable",payable);
       
       
         setDueamo(dueamot-payable);
@@ -80,10 +75,10 @@ useEffect(()=>{
     
 },[dueamot])
 
-console.log("total",totalAmo);
-console.log("due",dueamot);
-console.log("show",show);
-console.log("payable",payable);
+// console.log("total",totalAmo);
+// console.log("due",dueamot);
+// console.log("show",show);
+// console.log("payable",payable);
 localStorage.setItem("dueamo",dueamot);
 
 
